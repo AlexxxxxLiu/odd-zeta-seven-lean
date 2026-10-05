@@ -1,0 +1,817 @@
+{
+  "verification_status": "passed",
+  "started_at": "2026-10-05T21:18:40.959Z",
+  "network_used": false,
+  "old_pnt_artifacts_used": false,
+  "compiled": [
+    {
+      "module": "Architect.Basic",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 3.736,
+      "log": ".replay/Architect_Basic.log",
+      "args": [
+        "-j1",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/Architect/Basic.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/Architect/Basic.lean"
+      ]
+    },
+    {
+      "module": "Architect.Command",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 0.712,
+      "log": ".replay/Architect_Command.log",
+      "args": [
+        "-j1",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/Architect/Command.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/Architect/Command.lean"
+      ]
+    },
+    {
+      "module": "Architect.Content",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 0.751,
+      "log": ".replay/Architect_Content.log",
+      "args": [
+        "-j1",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/Architect/Content.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/Architect/Content.lean"
+      ]
+    },
+    {
+      "module": "Architect.Attribute",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 1.076,
+      "log": ".replay/Architect_Attribute.log",
+      "args": [
+        "-j1",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/Architect/Attribute.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/Architect/Attribute.lean"
+      ]
+    },
+    {
+      "module": "Architect.CollectUsed",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 0.764,
+      "log": ".replay/Architect_CollectUsed.log",
+      "args": [
+        "-j1",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/Architect/CollectUsed.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/Architect/CollectUsed.lean"
+      ]
+    },
+    {
+      "module": "Architect.Tactic",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 0.844,
+      "log": ".replay/Architect_Tactic.log",
+      "args": [
+        "-j1",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/Architect/Tactic.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/Architect/Tactic.lean"
+      ]
+    },
+    {
+      "module": "Architect.Output",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 1.323,
+      "log": ".replay/Architect_Output.log",
+      "args": [
+        "-j1",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/Architect/Output.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/Architect/Output.lean"
+      ]
+    },
+    {
+      "module": "Architect.Load",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 0.715,
+      "log": ".replay/Architect_Load.log",
+      "args": [
+        "-j1",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/Architect/Load.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/Architect/Load.lean"
+      ]
+    },
+    {
+      "module": "Architect",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 0.695,
+      "log": ".replay/Architect.log",
+      "args": [
+        "-j1",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/Architect.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/Architect.lean"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 10.381,
+      "log": ".replay/PrimeNumberTheoremAnd_Mathlib_Analysis_SpecialFunctions_Log_Basic.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Log/Basic.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Sobolev",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 10.059,
+      "log": ".replay/PrimeNumberTheoremAnd_Sobolev.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/PrimeNumberTheoremAnd/Sobolev.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/PrimeNumberTheoremAnd/Sobolev.lean"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Fourier",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 6.323,
+      "log": ".replay/PrimeNumberTheoremAnd_Fourier.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/PrimeNumberTheoremAnd/Fourier.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/PrimeNumberTheoremAnd/Fourier.lean"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Defs",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 7.651,
+      "log": ".replay/PrimeNumberTheoremAnd_Defs.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/PrimeNumberTheoremAnd/Defs.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/PrimeNumberTheoremAnd/Defs.lean"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Asymptotics",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 2.209,
+      "log": ".replay/PrimeNumberTheoremAnd_Mathlib_Analysis_Asymptotics_Asymptotics.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/PrimeNumberTheoremAnd/Mathlib/Analysis/Asymptotics/Asymptotics.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/PrimeNumberTheoremAnd/Mathlib/Analysis/Asymptotics/Asymptotics.lean"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 0.917,
+      "log": ".replay/PrimeNumberTheoremAnd_Mathlib_Algebra_Notation_Support.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/PrimeNumberTheoremAnd/Mathlib/Algebra/Notation/Support.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/PrimeNumberTheoremAnd/Mathlib/Algebra/Notation/Support.lean"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.SmoothExistence",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 5.265,
+      "log": ".replay/PrimeNumberTheoremAnd_SmoothExistence.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/PrimeNumberTheoremAnd/SmoothExistence.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/PrimeNumberTheoremAnd/SmoothExistence.lean"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Wiener",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 41.247,
+      "log": ".replay/PrimeNumberTheoremAnd_Wiener.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/PrimeNumberTheoremAnd/Wiener.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/PrimeNumberTheoremAnd/Wiener.lean"
+      ]
+    },
+    {
+      "module": "MainlineThetaPrefix",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 22.694,
+      "log": ".replay/MainlineThetaPrefix.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/MainlineThetaPrefix.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/MainlineThetaPrefix.lean"
+      ]
+    },
+    {
+      "module": "MainlinePrimeIntervals",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 16.179,
+      "log": ".replay/MainlinePrimeIntervals.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/MainlinePrimeIntervals.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/MainlinePrimeIntervals.lean"
+      ]
+    },
+    {
+      "module": "MainlineWeightedPrimes",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 9.211,
+      "log": ".replay/MainlineWeightedPrimes.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/MainlineWeightedPrimes.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/MainlineWeightedPrimes.lean"
+      ]
+    },
+    {
+      "module": "MainlineH158ContentRates",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 16.088,
+      "log": ".replay/MainlineH158ContentRates.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/MainlineH158ContentRates.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/MainlineH158ContentRates.lean"
+      ]
+    },
+    {
+      "module": "PNTDependency",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 6.811,
+      "log": ".replay/PNTDependency.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-o",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build/PNTDependency.olean",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/src/PNTDependency.lean"
+      ]
+    },
+    {
+      "module": "TargetAudit",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 7.04,
+      "log": ".replay/TargetAudit.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/TargetAudit.lean"
+      ]
+    },
+    {
+      "module": "SourceSelectionAudit",
+      "returncode": 0,
+      "signal": null,
+      "elapsed_seconds": 7.487,
+      "log": ".replay/SourceSelectionAudit.log",
+      "args": [
+        "-j1",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/SourceSelectionAudit.lean"
+      ]
+    }
+  ],
+  "scope": "PNT prefix, weighted prime limits, and h158 finite prime-band cost rates; not the h158 global arithmetic bound.",
+  "h158_global_arithmetic_bound_proved": false,
+  "audit_parser_tests": {
+    "accepted": 3,
+    "rejected": 7
+  },
+  "input_sha256": {
+    "src/Architect/Basic.lean": "92ed89acca564cdfb0cb696a3c2e3b62a7ccca82cb6fca85d0f994ffd2b2cb60",
+    "src/Architect/Command.lean": "8497d574c12414908829e8b25a96e0ce52c643bd48da66b678d1623db395696a",
+    "src/Architect/Content.lean": "73de49bb499fc140dce470251e3f657368b788dca1659317e902f476ebb9556b",
+    "src/Architect/Attribute.lean": "1bce2337ed4de0e6e735819e89b4d35ad81c7e996e6cade79e8a9ef781dba314",
+    "src/Architect/CollectUsed.lean": "921633f79fef58cf0d8540477785c4d9213608642685c21733dd3c61855d154d",
+    "src/Architect/Tactic.lean": "385229c0e2e89a3680e34b7270c520ff4bace94fc46e4b2892fc091c4368b450",
+    "src/Architect/Output.lean": "ef52349573a02ff0714638fb47dfaf335c8c8a8c8b98192d3fc4d190ef4923d3",
+    "src/Architect/Load.lean": "6ae5e51b0f041d4cba8da31e0d8ff96ffa8ae89bf6dc33d84d7c0349dc92bd34",
+    "src/Architect.lean": "68748939e82259728644095b343599593f38abe65c971c14f910445a44f4ecf6",
+    "src/PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean": "7e3e2b8f84e6c170051a6474272455bed2432e6fddac5660072318b9b4eda7ec",
+    "src/PrimeNumberTheoremAnd/Sobolev.lean": "fe06e13fad5b47dbd324307ba246110515c4cb50f4c41d6cb15764fd53b1b8ef",
+    "src/PrimeNumberTheoremAnd/Fourier.lean": "44d2c28b251be0296f897e43a75a055f346a6199849b54ab204240fe4099e6c2",
+    "src/PrimeNumberTheoremAnd/Defs.lean": "64137811210c81187151a3d48ef170195cf36d58ea07a67ee61d1dc3212c82d0",
+    "src/PrimeNumberTheoremAnd/Mathlib/Analysis/Asymptotics/Asymptotics.lean": "c1cdb6bb509c6178bf17868c57e5b53721b87fb2774ef8562bc5945ffe5b11ae",
+    "src/PrimeNumberTheoremAnd/Mathlib/Algebra/Notation/Support.lean": "e688bf925c2130b291c536d3b93b72c20e41ae95d530c90915921d75a6f52504",
+    "src/PrimeNumberTheoremAnd/SmoothExistence.lean": "e689045a2d7f92c71c68fda6aa69a89d4a8692187475ba432ed010f453110ea0",
+    "src/PrimeNumberTheoremAnd/Wiener.lean": "d7567ef06f3e9212c8ef00ce5ca64b07e544809b82d1af9ffd9a4385a03f681b",
+    "src/MainlineThetaPrefix.lean": "bc9cf441baa42ba75d775fd69604d8c7438fbb3fc21fd99bf6f5f2dd13bc60dd",
+    "src/MainlinePrimeIntervals.lean": "323610329a4adac6d466c11cae1a92ce0e08f219676d56e8eaebb936d45599b0",
+    "src/MainlineWeightedPrimes.lean": "38e68179c42c68e183d59b0b42c2458fa732081405f05b99b32ab3914b6f99f0",
+    "src/MainlineH158ContentRates.lean": "8ef1fa0d2b7f6f94fe99cfa7c607878deb34337a489070f9af92d8bb9d45fe6e",
+    "src/PNTDependency.lean": "f5be5ab86704d0b570d5676a9c4a9a30146682a13437ae17cf39d08bdef9ec6a",
+    "licenses/pnt-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "licenses/architect-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "licenses/PNT-CITATION.cff": "8e74799dcd66954013a52fd0f2ce7532b8b9667ecab75d87c233761ce24df30e",
+    "audit-output.cjs": "697c7705f24b12563548f625572c56920011948d91c98f66cb5c9bfa4e124006",
+    "check-integration.cjs": "5e75adfaeead10486f847580fd11a9d9c74514cb50fd685bcd44060dbdd6a772",
+    "replay.cjs": "1465300f815296abaa143487297c00f6ae05bac08b51c181f96907ce0acf8b94",
+    "source-transform.cjs": "31b99c8929c36b15b2a0206d5939b5d939e0caf1adbd4ff5fe1deb6f85964e7f",
+    "test-integrity.cjs": "348881a49c44d396311903e7a01950ded6e4068630547ad209183b23461e00d1",
+    "vendor.cjs": "bb1a9d478888be7cf831dc9ef6661007f654c6b9b1af8ccb2563d1c0de97e858",
+    "provenance.json": "455ff15c2ecfe7ca880b2d9915bb57405b6f0138a351da0b0f9c7b8a81ff026a",
+    "lakefile.toml": "8559c539101b90f5f5af5b629ffb9764a247e04b534d07336a37a55d9051e28f",
+    "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88"
+  },
+  "foundation_packages": [
+    {
+      "name": "mathlib",
+      "revision": "dc4b8d60d5edb3c493c3662126b1b7ccae7d67cf",
+      "cache": "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/mathlib/.lake/build/lib/lean"
+    },
+    {
+      "name": "plausible",
+      "revision": "d9598f07b1bc701f1e3aae163d2681c1fd978793",
+      "cache": "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/plausible/.lake/build/lib/lean"
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "ba67e212be1197b84c1f1f6299488a10a3002713",
+      "cache": "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean"
+    },
+    {
+      "name": "importGraph",
+      "revision": "5020974361be4f90652801a0368827bc8ed70c42",
+      "cache": "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/importGraph/.lake/build/lib/lean"
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "a8acbfd87375ff4abe14ce09db5b7664d383bc7f",
+      "cache": "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/proofwidgets/.lake/build/lib/lean"
+    },
+    {
+      "name": "aesop",
+      "revision": "18889deb9e83ea7420ef51c160d6f88552e744e3",
+      "cache": "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/aesop/.lake/build/lib/lean"
+    },
+    {
+      "name": "Qq",
+      "revision": "507746ab8f4b643ccdacb2ec4cdb5853fa9f8ab3",
+      "cache": "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/Qq/.lake/build/lib/lean"
+    },
+    {
+      "name": "batteries",
+      "revision": "4cac2177c37f5530c4da76aa8e4307f3fc9e4dcb",
+      "cache": "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/batteries/.lake/build/lib/lean"
+    },
+    {
+      "name": "Cli",
+      "revision": "ab3a82db9fea14cf0fd7f5a2de650f4b534640af",
+      "cache": null
+    }
+  ],
+  "foundation_manifest_sha256": "00c58918319a8cf55d8ce9bca82ccb1887a6a7a3abd44af621bc369597576193",
+  "compiler": "Lean (version 4.34.0-rc2, arm64-apple-darwin24.6.0, commit 6a10ac8c22beadecabdbb0919c2b50214762f91d, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "lean_path": [
+    "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/.replay/build",
+    "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/mathlib/.lake/build/lib/lean",
+    "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/plausible/.lake/build/lib/lean",
+    "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/importGraph/.lake/build/lib/lean",
+    "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/aesop/.lake/build/lib/lean",
+    "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/Qq/.lake/build/lib/lean",
+    "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/.lake/packages/batteries/.lake/build/lib/lean"
+  ],
+  "target_axioms": {
+    "WeakPNT": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Set.Ico_subset_Ico_of_Icc_subset_Icc": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "th43_b": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "finsum_range_eq_sum_range": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "finsum_range_eq_sum_range'": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "log2_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Asymptotics.IsEquivalent.add_isLittleO'": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Asymptotics.IsEquivalent.add_isLittleO''": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WeakPNT'": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "WeakPNT''": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "isLittleO_sqrt_mul_log": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "tendsto_floor_add_one_div_self": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "isTheta_self_div_const": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "filter_prime_Iic_eq_Icc": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Icc_zero_eq_insert": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "chebyshev_asymptotic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "chebyshev_asymptotic_finsum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.theta_div_self_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.scaled_theta_div_nat_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.theta_interval_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.finite_step_theta_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeIntervalMass_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeIntervalMass_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.finite_step_prime_sum_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.finite_step_quadratic_cost_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeWeightedSum_partial_summation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeWeightedSum_id": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.scaled_theta_uniform": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.scaled_theta_intervalIntegrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.scaled_theta_integral_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeWeightedSum_id_scaled": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeWeightedSum_id_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeWeightedInterval_id_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeWeightedInterval_id_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeWeightedInterval_affine_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeWeightedInterval_affine_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.scaled_theta_weighted_integral_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeWeightedInterval_C1_partial_summation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeWeightedInterval_C1_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeWeightedInterval_polynomial_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.finite_piecewise_C1_prime_sum_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeWeightedInterval_sub_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeWeightedInterval_continuous_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.finite_piecewise_continuous_prime_sum_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.finite_piecewise_continuous_quadratic_cost_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeBandCost_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeBandCost_sub_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeBandCost_bounded_perturbation_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Weight54_rounding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Weight55_rounding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Weight56_rounding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158_upper_endpoints_not_prime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeBand_filter_open_eq_closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.primeBandCost_nat": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Content54_normalized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Content55_normalized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Content56_normalized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158_integral_affine": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Profile54_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Profile54_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Profile54_prime_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Profile55_prime_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Profile56_prime_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Weight54_band_rounding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Weight55_band_rounding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Weight56_band_rounding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Content54_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Content55_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Content56_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Content54_rate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Content55_rate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "OddZetaPNT.h158Content56_rate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "audited_targets": 72,
+  "transitive_axioms_standard_only": true,
+  "excluded_declarations_absent": true,
+  "admission_free_source_replay": true,
+  "inputs_unchanged": true,
+  "finished_at": "2026-10-05T21:21:41.503Z"
+}

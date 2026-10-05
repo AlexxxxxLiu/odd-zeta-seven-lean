@@ -1,0 +1,17 @@
+.DS_Store
+.lake/
+.verification/
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+/verification.json
+/verification.log
+/PNTDependency/.replay/
+/PNTDependency/replay-receipt.json
+/PNTDependency/integrity-receipt.json
+/PNTDependency/integration-receipt.json
+/PNTDependency/integration-build.log
+/PNTDependency/integration-audit.log
+/PNTDependency/.integration-consumer/
+/PNTDependency/.integrity-probe/

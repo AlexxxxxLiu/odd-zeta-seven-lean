@@ -1,0 +1,3016 @@
+
+=== source_backed_pnt_replay ===
+Architect.Basic: compiled (3.736s)
+Architect.Command: compiled (0.712s)
+Architect.Content: compiled (0.751s)
+Architect.Attribute: compiled (1.076s)
+Architect.CollectUsed: compiled (0.764s)
+Architect.Tactic: compiled (0.844s)
+Architect.Output: compiled (1.323s)
+Architect.Load: compiled (0.715s)
+Architect: compiled (0.695s)
+PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic: compiled (10.381s)
+PrimeNumberTheoremAnd.Sobolev: compiled (10.059s)
+PrimeNumberTheoremAnd.Fourier: compiled (6.323s)
+PrimeNumberTheoremAnd.Defs: compiled (7.651s)
+PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Asymptotics: compiled (2.209s)
+PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support: compiled (0.917s)
+PrimeNumberTheoremAnd.SmoothExistence: compiled (5.265s)
+PrimeNumberTheoremAnd.Wiener: compiled (41.247s)
+MainlineThetaPrefix: compiled (22.694s)
+MainlinePrimeIntervals: compiled (16.179s)
+MainlineWeightedPrimes: compiled (9.211s)
+MainlineH158ContentRates: compiled (16.088s)
+PNTDependency: compiled (6.811s)
+TargetAudit: compiled (7.04s)
+SourceSelectionAudit: compiled (7.487s)
+{
+  "verification_status": "passed",
+  "compiled": 24,
+  "audited_targets": 72,
+  "receipt": "/Users/jingweiliu/Documents/Codex/2026-08-06/referenced-chatgpt-conversation-this-is-an/publish/odd-zeta-seven-lean/PNTDependency/replay-receipt.json"
+}
+
+=== source_replay:OddZetaMixed.Budget ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158Kernel ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.MomentMatrix ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.PrimeGate ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.exists_prime_gate_above' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.infinite_prime_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.DenominatorClearing ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.common_denominator_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.list_common_denominator_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.clear_denominators' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.clear_denominators_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.one_le_abs_cleared_evaluation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.primitive_specialization_nonzero_integer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.primitive_determinant_nonzero_integer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.normalized_integral_totalDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.normalized_integral_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.normalized_determinant_degree_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.normalized_momentMatrix_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.normalized_momentMatrix_nonzero_integer' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.IntegerObstruction ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.SignedMinors ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.RateAssembly ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.TerminalAssembly ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.EvenBasis ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.evenBasis_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.evenBasis_leadingCoeff_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.evenBasis_comp_neg_X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.evenBasis_eval_int_eq_choose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.evenBasis_integer_valued' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.KernelBasis ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.RectangularExpansion ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.GateVandermonde ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158Poles ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.ProperFractions ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158PartialFractions ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158Residues ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.ZetaTail ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158Coefficients ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158Reflection ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.rising_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Numerator_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Denominator_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Kernel_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.centeredMultiplier_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.matrixEntryKernel_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158Parity ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158_pole_order_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_principal_coefficients_reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_even_pole_sum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_aggregate_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_odd_index_sum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158Evaluation ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.FourthDerivative ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158Functional ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.PrimitiveNormalization ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.integerPolynomialContent_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.integerPolynomialContent_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.integerPolynomialContent_dvd_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.integerPolynomialContent_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.exists_integer_primitive_part' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.exists_integer_coefficient_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.exists_primitive_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.exists_seven_primitive_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.primitive_prime_coefficient_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.primitive_coefficient_valuation_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.ScalarGaussCost ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.primitive_scalar_coefficient_valuation_isLeast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.primitive_scalar_gauss_valuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.log_abs_rat_eq_sum_padicValRat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.neg_log_abs_rat_eq_sum_padicValRat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.primitive_scalar_gauss_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.exists_primitive_normalization_with_gauss_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158SevenIdentity ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.RowScaling ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.rowScaling_fee_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.rowScaling_fee_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158Normalization ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158PrimitiveScalar_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Primitive_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PrimitivePolynomial_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PrimitiveNormalization_eval_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PrimitiveCost_eq_gauss_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_actual_rational_specialization_clearing' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.ExponentialRate ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158Application ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158TopCoefficient ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158PoleComplement_top_eval_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PrincipalCoefficients_top_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PrincipalCoefficients_top_center' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PoleComplement_top_padicValRat' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158Protected ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158Complex ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158ContourKernel ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LocalJets ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158GateArithmetic ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158GateCoefficients ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158GateJets ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.LocalReduction ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158GateEvaluation ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158GateAssembly ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158ContourDecay ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158GlobalArithmeticSeeds ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158Normalization_valuation_main_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_scaled_factorial_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PrimeScaledBasis_coeff_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PrimeScaledBasis_taylor_coeff_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_principal_coeff_nonneg_of_large_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_momentConstant_nonneg_of_large_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158SevenMatrix_coeff_nonneg_of_large_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158SevenMatrix_det_coeff_nonneg_of_large_prime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158SevenMatrix_det_gauss_nonneg_of_large_prime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158SevenMatrix_det_coeff_den_prime_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PrimitiveScalar_nonneg_of_large_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PrimitiveScalar_den_prime_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158FiniteCost ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.TrustAudit ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158GateGauss ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158Gate_scaled_constant_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_scaled_entry_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_scaled_determinant_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_scaled_determinant_coeff_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_determinant_coeff_valuation_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_determinant_constant_coeff_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_determinant_constant_coeff_valuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_formal_gauss_valuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_primitive_scalar_valuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed: 777 declarations, 703 theorem declarations in OddZetaMixed; only propext, Classical.choice, Quot.sound allowed.
+
+=== source_replay:OddZetaMixed.H158JetFunctional ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158ClusterFactorization ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158ScaledFactorization ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158VerticalIntegral ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.PrimeWeightedRates ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.LocalJetValuation ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.FormalPolynomialMinors ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158AssembledClusters ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MinorCostTransfer ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158ReflectionJets ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158RectangleResidues ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.FactorialRate ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158ClusterAnchorValuation ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.FormalBlockSelection ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158IntegralDetBound ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158ReflectionCosts ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158CentralCompression ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158ReflectionOrbits ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.WeightedBlockSelection ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158FoldedAssembly ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.WeightedSlotThreshold ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158ResidueCounts ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158CountReflection ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158ThresholdBudget ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158SmallPrimeBudget ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158IntegerValuedJets ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.H158IntegerValuedJets.normalizedRising_weighted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158IntegerValuedJets.evenBasis_weighted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158IntegerValuedJets.centeredMultiplier_weighted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158IntegerValuedJets.h158_polePacket_floor_from_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158IntegerValuedJets.h158_entry_floor_twenty_unconditional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158IntegerValuedJets.h158_determinant_floor_forty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158IntegerValuedJets.h158_primitiveCost_le_forty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== source_replay:OddZetaMixed.H158AllPrimeBudget ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158BasisChange ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158BasisIntegralBound ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158BasisVerticalIntegrand_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158BasisNormalizedVerticalIntegral_eq_functional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158BasisModulusProduct_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158BasisModulusDensity_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158BasisFunctional_det_abs_le_modulusMoments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158ScaledMonicEven_modulusMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158MonicComposition_modulusDensity_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveMonic_normalizedVerticalIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveMonic_modulusDensity_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveMonic_det_abs_le_modulusMoments' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158AdaptiveNorm ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158AdaptivePair_normSq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptivePairModulus_drift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveBlockNormSq_delta_le_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveDrift_power_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveBlockNormSq_delta_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveMonic_normSq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveContourCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveContour_norm_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158ScaledAdaptiveContour_norm_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158SingletonValuation ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158FoldedSingleton ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158PairMoment_singleton_plateau' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PairMoment_reflected_singleton_plateau' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158CentralEvenMoment_singleton_plateau' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158CentralEvenMoment_plateau_of_high_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.LocalJetValuation.formal_minor_plateau_floor_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158PairMoment_singleton_minor_plateau' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158CentralEvenMoment_singleton_minor_plateau' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158CentralEvenMoment_minor_plateau_of_high_prime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.FoldedSingletonRegression.n4p127_right_actual_coordinate_not_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.FoldedSingletonRegression.n1p37_actual_pair_entry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.FoldedSingletonRegression.n1p37_actual_nonprincipal_pair_minor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.FoldedSingletonRegression.n1p37_central_swapped_minor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== source_replay:OddZetaMixed.H158FoldedHybrid ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.FoldedHybrid.formal_block_minor_allocation_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158PadCentralMoment_minor_zero_of_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PadCentralMoment_singleton_minor_plateau' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158FoldedHybrid_block_minor_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_folded_hybrid_minor_allocation_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_folded_hybrid_det_floor_of_allocation_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158_folded_hybrid_det_minimum_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FoldedHybridRegression.n1p37_hybrid_actual_determinant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.FoldedHybridRegression.n4p127_no_plateau_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== source_replay:OddZetaMixed.H158ExceptionalPrimes ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.H158ExceptionalPrimes.exceptionalPrimeSet_eq_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158ExceptionalPrimes.primeFactors_log_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158ExceptionalPrimes.exceptionalPrime_log_sum_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158ExceptionalPrimes.exceptionalPrimeCost_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158ExceptionalPrimes.exceptionalPrimeMajorant_subquadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158ExceptionalPrimes.exceptionalPrimeCost_upperQuadraticRate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== source_replay:OddZetaMixed.H158BasisNormalizationRate ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158BasisNormalization_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158BasisNormalization_log_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158BasisNormalization_log_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158BasisNormalization_eventually_log_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158BasisNormalization_eventually_exp_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158BasisNormalization_upperQuadraticExpRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158EndpointRemainder ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.HalfIntegerGamma ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.LogQuadraticMidpoint ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.HalfIntegerGammaEstimate ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158PhaseTail ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158FactorialNormalization ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158GammaKernel ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158GammaDensity ===
+--- compiler attempt -M8192 ---
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+'OddZetaMixed.h158ModulusWeight_uniform_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158ModulusWeight_uniform_envelope_abs' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158PhaseCeiling ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158PhaseCeiling_slope_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhaseCeiling_jump_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhaseCeiling_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhaseCeiling_rightContinuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhaseCeiling_at_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhaseCeiling_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhaseCeilingTheta_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhaseCeiling_degree_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhaseCeiling_degree_sum_fin_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.PolynomialExponentialEnvelope ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158AdaptiveDensity ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158PhaseEnvelope ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158PhasePotential_tail_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhasePairModulus_ae_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhasePotential_ae_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158AdaptiveMomentEnvelope ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158AdaptiveDensity_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveMoment_le_of_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158HybridMarginals ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158GlobalMajorant ===
+--- compiler attempt -M8192 ---
+OddZetaMixed/H158GlobalMajorant.lean:61:5: warning: Variable name `hdet` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hdet
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'OddZetaMixed.h158PrimitiveCost_le_generic_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PrimitiveCost_rate_of_generic_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158PrimeProfileRate ===
+--- compiler attempt -M8192 ---
+OddZetaMixed/H158PrimeProfileRate.lean:169:23: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+OddZetaMixed/H158PrimeProfileRate.lean:186:6: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+'OddZetaMixed.h158PiecewisePrimeProfile_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PiecewisePrimeProfile_ratio_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PrimitiveCost_rate_of_piecewise_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158RationalWalls ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158_eventually_avoid_rational_walls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_eventually_open_cell' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158AffinePrimeProfile ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158AffineProfile_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PrimitiveCost_rate_of_affine_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158MomentProductRate ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.RationalLogBounds ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158ConservativeBudget ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158CompactPhase ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.RationalArctanBounds ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158CompactPhaseData ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158CompactPhaseCertificates ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.CompactPhase.Certificates.constantE : Enclosure h158PhaseConstant
+OddZetaMixed.CompactPhase.Certificates.centerE : Enclosure (h158Phase ↑(3 / 2))
+OddZetaMixed/H158CompactPhaseCertificates.lean:1738:48: warning: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1740:48: warning: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1742:48: warning: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1744:48: warning: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1738:48: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1740:48: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1742:48: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1744:48: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1746:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1748:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1750:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1752:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1754:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1756:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1758:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1760:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1762:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1764:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1766:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+OddZetaMixed/H158CompactPhaseCertificates.lean:1768:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+=== source_replay:OddZetaMixed.H158CompactPhaseSelector ===
+--- compiler attempt -M8192 ---
+OddZetaMixed/H158CompactPhaseSelector.lean:52:2: warning: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+OddZetaMixed/H158CompactPhaseSelector.lean:76:2: warning: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+=== source_replay:OddZetaMixed.H158CompactPhaseSlackEvaluator ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158CompactPhaseSlackBatch00 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158CompactPhaseSlackBatch01 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158CompactPhaseSlackBatch02 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158CompactPhaseSlack ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158AnalyticCertified ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158AnalyticCertifiedRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158MiddleCellsStep ===
+--- compiler attempt -M8192 ---
+OddZetaMixed/H158MiddleCellsStep.lean:157:12: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+OddZetaMixed/H158MiddleCellsStep.lean:157:31: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+OddZetaMixed/H158MiddleCellsStep.lean:158:10: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+OddZetaMixed/H158MiddleCellsStep.lean:160:12: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+OddZetaMixed/H158MiddleCellsStep.lean:163:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+OddZetaMixed/H158MiddleCellsStep.lean:163:29: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+OddZetaMixed/H158MiddleCellsStep.lean:163:48: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+OddZetaMixed/H158MiddleCellsStep.lean:144:59: warning: This simp argument is unused:
+  not_lt_of_ge
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [stepValue, h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+OddZetaMixed/H158MiddleCellsStep.lean:180:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+=== source_replay:OddZetaMixed.H158MiddleCells ===
+--- compiler attempt -M8192 ---
+OddZetaMixed/H158MiddleCells.lean:35:41: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+OddZetaMixed/H158MiddleCells.lean:35:41: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+OddZetaMixed/H158MiddleCells.lean:101:2: warning: Unused tactic linter: `push_cast at hd hn` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+
+=== source_replay:OddZetaMixed.H158MiddleCellsProfileSupport ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddlePrimeRate ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.H158MiddleCells.Certificate.actual_affine_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.Certificate.majorant_ratio_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158MiddleCells.Certificate.primitive_cost_le_majorant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== source_replay:OddZetaMixed.H158ThreeBandAssembly ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158PrimitiveCost_rate_of_three_bands' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.SevenZetaConclusion ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.sevenZeta_irrational_iff_standard' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158LowCells ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch000 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch001 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch002 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch003 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch004 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch005 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch006 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch007 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch008 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch009 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch010 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch011 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch012 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch013 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch014 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch015 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch016 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch017 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch018 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch019 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch020 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch021 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch022 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch023 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch024 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch025 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch026 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch027 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch028 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch029 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch030 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch031 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch032 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch033 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch034 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch035 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch036 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch037 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch038 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch039 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch040 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch041 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch042 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch043 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsData.Batch044 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158LowCellsCertificateCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.H158LowCells.Certificate.actual_low_finite_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158LowCells.Certificate.actual_low_prime_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.H158LowCells.Certificate.actual_low_finite_bound; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.H158LowCells.Certificate.actual_low_prime_rate; only propext, Classical.choice, Quot.sound allowed.
+
+=== source_replay:OddZetaMixed.H158MiddleCellsGrid ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsData000 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsSavedProfile ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch000 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch001 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch002 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch003 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch004 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch005 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch006 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch007 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch008 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch009 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch010 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch011 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch012 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch013 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch014 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch015 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch016 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsFastGrid ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch017 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch018 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch019 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch020 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch021 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch022 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch023 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch024 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch025 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch026 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch027 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch028 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch029 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch030 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch031 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch032 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch033 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch034 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch035 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch036 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch037 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch038 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch039 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch040 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch041 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsBatch042 ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158MiddleCellsSavedCertificate ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.H158MiddleCells.savedCertificate_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.savedCertificate_integral_lt_433' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158MiddleCells.savedCells_selection_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.savedCertificate_profile_checked' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158MiddleCells.savedCells_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.savedProfile_actual_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158HighCellsSupport ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158HighCellsBounds ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158HighCellsGeometry ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158HighCellsGrid ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158HighCellsData.Batch00 ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.H158HighCells.Data.cell00_valid : cell00.Valid
+OddZetaMixed.H158HighCells.Data.cell01_valid : cell01.Valid
+OddZetaMixed.H158HighCells.Data.cell02_valid : cell02.Valid
+OddZetaMixed.H158HighCells.Data.cell03_valid : cell03.Valid
+OddZetaMixed.H158HighCells.Data.cell04_valid : cell04.Valid
+OddZetaMixed.H158HighCells.Data.cell05_valid : cell05.Valid
+OddZetaMixed.H158HighCells.Data.cell06_valid : cell06.Valid
+OddZetaMixed.H158HighCells.Data.cell07_valid : cell07.Valid
+OddZetaMixed.H158HighCells.Data.cell08_valid : cell08.Valid
+OddZetaMixed.H158HighCells.Data.cell09_valid : cell09.Valid
+
+=== source_replay:OddZetaMixed.H158HighCellsData.Batch01 ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.H158HighCells.Data.cell10_valid : cell10.Valid
+OddZetaMixed.H158HighCells.Data.cell11_valid : cell11.Valid
+OddZetaMixed.H158HighCells.Data.cell12_valid : cell12.Valid
+OddZetaMixed.H158HighCells.Data.cell13_valid : cell13.Valid
+OddZetaMixed.H158HighCells.Data.cell14_valid : cell14.Valid
+OddZetaMixed.H158HighCells.Data.cell15_valid : cell15.Valid
+OddZetaMixed.H158HighCells.Data.cell16_valid : cell16.Valid
+OddZetaMixed.H158HighCells.Data.cell17_valid : cell17.Valid
+OddZetaMixed.H158HighCells.Data.cell18_valid : cell18.Valid
+OddZetaMixed.H158HighCells.Data.cell19_valid : cell19.Valid
+
+=== source_replay:OddZetaMixed.H158HighCellsData.Batch02 ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.H158HighCells.Data.cell20_valid : cell20.Valid
+OddZetaMixed.H158HighCells.Data.cell21_valid : cell21.Valid
+OddZetaMixed.H158HighCells.Data.cell22_valid : cell22.Valid
+OddZetaMixed.H158HighCells.Data.cell23_valid : cell23.Valid
+OddZetaMixed.H158HighCells.Data.cell24_valid : cell24.Valid
+OddZetaMixed.H158HighCells.Data.cell25_valid : cell25.Valid
+OddZetaMixed.H158HighCells.Data.cell26_valid : cell26.Valid
+OddZetaMixed.H158HighCells.Data.cell27_valid : cell27.Valid
+OddZetaMixed.H158HighCells.Data.cell28_valid : cell28.Valid
+OddZetaMixed.H158HighCells.Data.cell29_valid : cell29.Valid
+
+=== source_replay:OddZetaMixed.H158HighCellsData.Batch03 ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.H158HighCells.Data.cell30_valid : cell30.Valid
+OddZetaMixed.H158HighCells.Data.cell31_valid : cell31.Valid
+OddZetaMixed.H158HighCells.Data.cell32_valid : cell32.Valid
+OddZetaMixed.H158HighCells.Data.cell33_valid : cell33.Valid
+OddZetaMixed.H158HighCells.Data.cell34_valid : cell34.Valid
+OddZetaMixed.H158HighCells.Data.cell35_valid : cell35.Valid
+OddZetaMixed.H158HighCells.Data.cell36_valid : cell36.Valid
+OddZetaMixed.H158HighCells.Data.cell37_valid : cell37.Valid
+OddZetaMixed.H158HighCells.Data.cell38_valid : cell38.Valid
+OddZetaMixed.H158HighCells.Data.cell39_valid : cell39.Valid
+
+=== source_replay:OddZetaMixed.H158HighCellsData.Batch04 ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.H158HighCells.Data.cell40_valid : cell40.Valid
+OddZetaMixed.H158HighCells.Data.cell41_valid : cell41.Valid
+OddZetaMixed.H158HighCells.Data.cell42_valid : cell42.Valid
+OddZetaMixed.H158HighCells.Data.cell43_valid : cell43.Valid
+OddZetaMixed.H158HighCells.Data.cell44_valid : cell44.Valid
+OddZetaMixed.H158HighCells.Data.cell45_valid : cell45.Valid
+OddZetaMixed.H158HighCells.Data.cell46_valid : cell46.Valid
+OddZetaMixed.H158HighCells.Data.cell47_valid : cell47.Valid
+OddZetaMixed.H158HighCells.Data.cell48_valid : cell48.Valid
+OddZetaMixed.H158HighCells.Data.cell49_valid : cell49.Valid
+
+=== source_replay:OddZetaMixed.H158HighCellsData.Batch05 ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.H158HighCells.Data.cell50_valid : cell50.Valid
+OddZetaMixed.H158HighCells.Data.cell51_valid : cell51.Valid
+OddZetaMixed.H158HighCells.Data.cell52_valid : cell52.Valid
+OddZetaMixed.H158HighCells.Data.cell53_valid : cell53.Valid
+OddZetaMixed.H158HighCells.Data.cell54_valid : cell54.Valid
+OddZetaMixed.H158HighCells.Data.cell55_valid : cell55.Valid
+OddZetaMixed.H158HighCells.Data.cell56_valid : cell56.Valid
+OddZetaMixed.H158HighCells.Data.cell57_valid : cell57.Valid
+OddZetaMixed.H158HighCells.Data.cell58_valid : cell58.Valid
+OddZetaMixed.H158HighCells.Data.cell59_valid : cell59.Valid
+
+=== source_replay:OddZetaMixed.H158HighCellsData.Batch06 ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.H158HighCells.Data.cell60_valid : cell60.Valid
+OddZetaMixed.H158HighCells.Data.cell61_valid : cell61.Valid
+OddZetaMixed.H158HighCells.Data.cell62_valid : cell62.Valid
+OddZetaMixed.H158HighCells.Data.cell63_valid : cell63.Valid
+OddZetaMixed.H158HighCells.Data.cell64_valid : cell64.Valid
+OddZetaMixed.H158HighCells.Data.cell65_valid : cell65.Valid
+OddZetaMixed.H158HighCells.Data.cell66_valid : cell66.Valid
+OddZetaMixed.H158HighCells.Data.cell67_valid : cell67.Valid
+OddZetaMixed.H158HighCells.Data.cell68_valid : cell68.Valid
+OddZetaMixed.H158HighCells.Data.cell69_valid : cell69.Valid
+
+=== source_replay:OddZetaMixed.H158HighCellsData ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158HighCellsProfile ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158HighCells ===
+--- compiler attempt -M8192 ---
+OddZetaMixed/H158HighCells.lean:283:63: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+
+=== source_replay:OddZetaMixed.H158HighCellsExceptions ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158HighCellsAllocation ===
+--- compiler attempt -M8192 ---
+OddZetaMixed/H158HighCellsAllocation.lean:176:70: warning: This simp argument is unused:
+  Int.cast_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [F, sum_sub_distrib, sum_neg_distrib, ← sum_mul, hrank]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+=== source_replay:OddZetaMixed.H158HighCellsCertified ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.H158HighPrimeRate ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.H158HighCells.highMajorant_ratio_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.highMajorant_dominates_selection' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158HighCertifiedRate ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.H158HighCells.Data.majorant_ratio_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.Data.actual_high_cost_le_majorant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== source_replay:OddZetaMixed.H158ArithmeticAssembly ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158ArithmeticRate_of_checked_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158ArithmeticCertified ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158ArithmeticCertifiedRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158GlobalInequality ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158_primitive_det_small_of_rates' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158SevenIrrational ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.exists_irrational_riemannZeta_seven_to_nineteen :
+  ∃ s ∈ {7, 9, 11, 13, 15, 17, 19}, Irrational (riemannZeta ↑s).re
+'OddZetaMixed.h158_eventually_primitive_det_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_eventually_primitive_polynomial_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_seven_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.exists_irrational_riemannZeta_seven_to_nineteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== source_replay:OddZetaMixed ===
+--- compiler attempt -M8192 ---
+
+=== source_replay:OddZetaMixed.CompactCertificateAuditCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.CompactCertificateAudit.logProbes_checked (i : Fin 8) :
+  RationalLogBounds.checkRounded (logProbes i).q (logProbes i).k 12 (10 ^ 12) (logProbes i).lo (logProbes i).hi = true
+OddZetaMixed.CompactCertificateAudit.atanProbes_checked (i : Fin 12) :
+  RationalArctanBounds.check (atanProbes i).q 10 (atanProbes i).lo (atanProbes i).hi = true
+'OddZetaMixed.CompactCertificateAudit.logProbes_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.CompactCertificateAudit.logProbes_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.CompactCertificateAudit.atanProbes_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.CompactCertificateAudit.atanProbes_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.CompactCertificateAudit.negative_weight_reverses_endpoints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.CompactCertificateAudit.pair_root_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.CompactPhase.Certificates.first_cell_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158CompactPhase_first_cell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.CompactPhase.logEnclosures' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.CompactPhase.atanEnclosures' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.FormalBlockSelectionCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.FormalBlockSelection.formal_block_minor_allocation_floor.{u_1} {C : Type u_1} [DecidableEq C] [Fintype C]
+  {p r J : ℕ} [Fact (Nat.Prime p)] (A : C → Matrix (Fin J) (Fin J) SevenPolynomial) (w : C → ℤ)
+  (hentry : ∀ (c : C) (u v : Fin J), FormalAtLeast p (-w c + ↑↑u + ↑↑v) (A c u v)) (f g : Fin r → C × Fin J)
+  (hf : Function.Injective f) (hg : Function.Injective g) :
+  FormalAtLeast p (allocationFloor w f) ((blockMatrix A).submatrix f g).det
+OddZetaMixed.FormalBlockSelection.h158_assembledFin_minor_allocation_floor {p r : ℕ} [Fact (Nat.Prime p)] (n : ℕ)
+  (hn : 0 < n) (hp : 0 < p) (hsq : 57 * n < p ^ 2) (f g : Fin r → Fin (p * (4 * n))) (hf : Function.Injective f)
+  (hg : Function.Injective g) :
+  FormalAtLeast p (allocationFloor (fun c => h158ClassCost p n ↑c) (⇑(h158ClusterColumnEquiv n p).symm ∘ f))
+    ((h158AssembledMomentsFin n p hn hp fun c => -↑↑c).submatrix f g).det
+OddZetaMixed.FormalBlockSelection.h158_assembledFin_minor_floor_of_allocation_bound {p r : ℕ} [Fact (Nat.Prime p)]
+  (n : ℕ) (hn : 0 < n) (hp : 0 < p) (hsq : 57 * n < p ^ 2) (L : ℤ)
+  (halloc :
+    ∀ (k : Fin p → ℕ),
+      ∑ c, k c = r → (∀ (c : Fin p), k c ≤ 4 * n) → L ≤ ∑ c, (-↑(k c) * h158ClassCost p n ↑c + ↑(k c) * (↑(k c) - 1)))
+  (f g : Fin r → Fin (p * (4 * n))) (hf : Function.Injective f) (hg : Function.Injective g) :
+  FormalAtLeast p L ((h158AssembledMomentsFin n p hn hp fun c => -↑↑c).submatrix f g).det
+OddZetaMixed.FormalBlockSelection.h158_det_unfolded_allocation_floor (n p : ℕ) (hn : 0 < n) (hp : Nat.Prime p)
+  (hsq : 158 * n + 2 < p ^ 2) :
+  FormalAtLeast p (h158MinAllocationFloor n p hn ⋯ - ↑(h158RowFee n p)) (h158SevenMatrix n).det
+OddZetaMixed.FormalBlockSelection.h158_primitive_cost_unfolded_allocation (n p : ℕ) (hn : 0 < n) (hp : Nat.Prime p)
+  (hsq : 158 * n + 2 < p ^ 2) (hdet : (h158SevenMatrix n).det ≠ 0) :
+  -padicValRat p (h158PrimitiveScalar n) ≤ ↑(h158RowFee n p) - h158MinAllocationFloor n p hn ⋯
+'OddZetaMixed.FormalBlockSelection.twice_sum_nat_set_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FormalBlockSelection.classJetSum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FormalBlockSelection.classCount_comp_perm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FormalBlockSelection.classCount_eq_of_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FormalBlockSelection.block_minor_eq_zero_of_count_mismatch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.FormalBlockSelection.allocationFloor_comp_perm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FormalBlockSelection.matching_entry_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FormalBlockSelection.formal_block_minor_allocation_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.FormalBlockSelection.classCount_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FormalBlockSelection.classCount_le_jet_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FormalBlockSelection.h158_assembled_minor_allocation_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.FormalBlockSelection.h158_assembledFin_minor_allocation_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.FormalBlockSelection.h158_assembledFin_minor_eq_zero_of_count_mismatch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.FormalBlockSelection.h158_assembledFin_minor_floor_of_allocation_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.FormalBlockSelection.h158_selections_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FormalBlockSelection.h158MinAllocationFloor_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FormalBlockSelection.h158_assembledFin_minor_min_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.FormalBlockSelection.h158_det_unfolded_allocation_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.FormalBlockSelection.h158_primitive_cost_unfolded_allocation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Axiom audit passed: 959 declarations, 866 theorem declarations in OddZetaMixed; only propext, Classical.choice, Quot.sound allowed.
+
+=== source_replay:OddZetaMixed.H158AssembledClustersCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.h158_scaled_assembled_factorization (n p : ℕ) (hn : 0 < n) (hp : 0 < p) (anchor : Fin p → ℤ) :
+  h158RowDiagonal n p * h158SevenMatrix n * h158RowDiagonal n p =
+    h158AssembledEvaluation n p anchor * h158AssembledMoments n p hn hp anchor *
+      (h158AssembledEvaluation n p anchor).transpose
+OddZetaMixed.h158_scaled_assembled_fin_factorization (n p : ℕ) (hn : 0 < n) (hp : 0 < p) (anchor : Fin p → ℤ) :
+  h158RowDiagonal n p * h158SevenMatrix n * h158RowDiagonal n p =
+    h158AssembledEvaluationFin n p anchor * h158AssembledMomentsFin n p hn hp anchor *
+      (h158AssembledEvaluationFin n p anchor).transpose
+OddZetaMixed.h158AssembledEvaluation_coeff_nonneg (n p : ℕ) (hp : Nat.Prime p) (hsq : 158 * n + 2 < p ^ 2)
+  (anchor : Fin p → ℤ) (i : Fin (2 * n)) (u : H158ClusterColumn n p) (m : Fin 7 →₀ ℕ) :
+  0 ≤ padicValRat p ((h158AssembledEvaluation n p anchor i u).coeff m)
+OddZetaMixed.h158AssembledEvaluationFin_coeff_nonneg (n p : ℕ) (hp : Nat.Prime p) (hsq : 158 * n + 2 < p ^ 2)
+  (anchor : Fin p → ℤ) (i : Fin (2 * n)) (u : Fin (p * (4 * n))) (m : Fin 7 →₀ ℕ) :
+  0 ≤ padicValRat p ((h158AssembledEvaluationFin n p anchor i u).coeff m)
+OddZetaMixed.h158_scaled_det_eq_assembled_rectangular_sum (n p : ℕ) (hn : 0 < n) (hp : 0 < p) (anchor : Fin p → ℤ) :
+  MvPolynomial.C (↑p ^ h158RowFee n p) * (h158SevenMatrix n).det =
+    ∑ f with Function.Injective f,
+      (∏ i, h158AssembledEvaluationFin n p anchor i (f i)) *
+        ((h158AssembledMomentsFin n p hn hp anchor * (h158AssembledEvaluationFin n p anchor).transpose).submatrix f
+            id).det
+'OddZetaMixed.h158AssembledMoments_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AssembledMoments_diagonal_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AssembledMoments_off_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_scaled_assembled_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AssembledEvaluation_coeff_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Assembled_fin_product_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_scaled_assembled_fin_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AssembledEvaluationFin_coeff_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_assembled_fin_determinant_fee' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_scaled_det_eq_assembled_rectangular_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed: 777 declarations, 699 theorem declarations in OddZetaMixed; only propext, Classical.choice, Quot.sound allowed.
+
+=== source_replay:OddZetaMixed.H158ClusterAnchorValuationCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.LocalJetValuation.h158_residueCluster_power_floor_at_integer_anchor {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ)
+  (hn : 0 < n) (hp : 0 < p) (hsq : 57 * n < p ^ 2) (c : Fin p) (anchor : ℤ) (ha : ↑p ∣ anchor + ↑↑c) (m : ℕ) :
+  FormalAtLeast p
+    (padicValRat p (h158Normalization n) + h158NumeratorCount p n ↑c - h158DenominatorCount p n ↑c + ↑m - 4)
+    ((h158ClusterJetMap n hn (h158ResidueClass p hp) c) ((taylor (-↑anchor)) (X ^ m)))
+OddZetaMixed.LocalJetValuation.h158_residueClusterMoment_floor_at_integer_anchor {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ)
+  (hn : 0 < n) (hp : 0 < p) (hsq : 57 * n < p ^ 2) (c : Fin p) (anchor : ℤ) (ha : ↑p ∣ anchor + ↑↑c)
+  (u v : Fin (4 * n)) :
+  FormalAtLeast p
+    (padicValRat p (h158Normalization n) + h158NumeratorCount p n ↑c - h158DenominatorCount p n ↑c - 4 + ↑↑u + ↑↑v)
+    (h158ClusterMoment n hn (h158ResidueClass p hp) c (↑anchor) u v)
+'OddZetaMixed.LocalJetValuation.residue_anchor_congruence' depends on axioms: [propext]
+'OddZetaMixed.LocalJetValuation.h158_residueCluster_power_floor_at_integer_anchor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.LocalJetValuation.h158_residueClusterMoment_floor_at_integer_anchor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Axiom audit passed: 109 declarations, 101 theorem declarations in OddZetaMixed.LocalJetValuation; only propext, Classical.choice, Quot.sound allowed.
+
+=== source_replay:OddZetaMixed.H158FactorialNormalizationCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.h158Normalization_log_eq (n : ℕ) (hn : 0 < n) :
+  Real.log ↑(h158Normalization n) = h158NormalizationLogMain n + h158NormalizationLogError n
+OddZetaMixed.h158NormalizationLogError_bounds (n : ℕ) (hn : 0 < n) :
+  -10 ≤ h158NormalizationLogError n ∧ h158NormalizationLogError n ≤ 16
+OddZetaMixed.h158Normalization_log_uniform (n : ℕ) (hn : 1 ≤ n) :
+  ∃ error,
+    |error| ≤ 26 ∧
+      Real.log ↑(h158Normalization n) =
+        92 * ↑n * Real.log ↑n + ↑n * (h158PhaseConstant - 92) + 3 * Real.log ↑n + h158NormalizationLogConstant + error
+'OddZetaMixed.h158Normalization_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158FactorialLogError_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhaseConstant_eq_normalization_sums' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Normalization_log_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158NormalizationLogError_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Normalization_log_abs_sub_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Normalization_log_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.h158Normalization_real_pos; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 2 declarations, 2 theorem declarations in OddZetaMixed.h158FactorialLogError_bounds; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 2 declarations, 2 theorem declarations in OddZetaMixed.h158PhaseConstant_eq_normalization_sums; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 3 declarations, 3 theorem declarations in OddZetaMixed.h158Normalization_log_eq; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 3 declarations, 3 theorem declarations in OddZetaMixed.h158NormalizationLogError_bounds; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.h158Normalization_log_abs_sub_le; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.h158Normalization_log_uniform; only propext, Classical.choice, Quot.sound allowed.
+
+=== source_replay:OddZetaMixed.H158GateArithmeticCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158Gate_normalization_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_basis_factorial_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_pole_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_harmonic_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_harmonic_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_active_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_shell_cards' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_lower_factor_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_numerator_valuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateWeight_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_top_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Numerator_coeff_mem_subring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_evenBasis_coeff_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_taylor_multiplier_coeff_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_taylor_entry_coeff_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_localCofactor_coeff_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_localCofactor_inv_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateStrippedNumerator_coeff_mem_subring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateStrippedNumerator_zero_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_double_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_simple_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateWeight_eq_stripped' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateStrippedEntry_coeff_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateFirstJet_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_double_jets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_simple_jet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_local_reduction_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158HighCellsCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.H158HighCells.Cell.GridCheck.sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.Cell.actual_counts_at_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.Cell.actual_hybrid_minorFloor_sides' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158HighCells.Cell.profile_allocation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.exceptional_allocation_cost_le_4950' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158HighCells.Cell.locate_nonexceptional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.stripResidues_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.Cell.actual_allocation_cost_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.Cell.actual_primitive_cost_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.Data.cells_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.Data.cells_tailBounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.Data.cells_boundaryValid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.Data.selections_nonnegative_endpoints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158HighCells.Data.integralSum_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.Data.profile_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158HighCells.Data.actual_selection_primitive_cost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== source_replay:OddZetaMixed.H158HybridMarginalsCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.FoldedHybrid.JetProfile.sum_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FoldedHybrid.JetProfile.marginal_plateau' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FoldedHybrid.JetProfile.marginal_plateau_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.FoldedHybrid.marginalAllocationCost_le_floor_threshold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158Normalization_valuation_ge_neg_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Singleton_offset_ge_neg_sixteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158FoldedHybrid_marginal_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158FoldedHybrid_empty_pair_generic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Hybrid_allocation_marginal_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Hybrid_minimum_marginal_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_hybrid_marginal_determinant_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158HighHybridChoice_enabled_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_primitive_cost_high_hybrid_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_primitive_cost_high_hybrid_marginal_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158IntegralDetBoundCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.h158Functional_abs_le_absoluteIntegral (n : ℕ) (i j : Fin (2 * n)) :
+  |h158Functional n i j| ≤ h158AbsoluteIntegral n ↑i ↑j / (2 * Real.pi)
+OddZetaMixed.h158AbsoluteIntegral_le_modulusMoments (n : ℕ) (i j : Fin (2 * n)) :
+  h158AbsoluteIntegral n ↑i ↑j / (2 * Real.pi) ≤ √(h158ModulusMoment n ↑i) * √(h158ModulusMoment n ↑j)
+OddZetaMixed.h158Functional_det_abs_le_modulusMoments (n : ℕ) :
+  |Matrix.det (h158Functional n)| ≤ ↑(2 * n).factorial * ∏ i, h158ModulusMoment n ↑i
+OddZetaMixed.h158Functional_det_abs_le_diagonalAbsoluteIntegrals (n : ℕ) :
+  |Matrix.det (h158Functional n)| ≤ ↑(2 * n).factorial / (2 * Real.pi) ^ (2 * n) * ∏ i, h158AbsoluteIntegral n ↑i ↑i
+OddZetaMixed.h158Functional_det_abs_le_of_modulusMoment_bounds (n : ℕ) (B : Fin (2 * n) → ℝ)
+  (hB : ∀ (i : Fin (2 * n)), h158ModulusMoment n ↑i ≤ B i) :
+  |Matrix.det (h158Functional n)| ≤ ↑(2 * n).factorial * ∏ i, B i
+'OddZetaMixed.h158Functional_abs_le_absoluteIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_det_abs_le_factorized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Functional_det_abs_le_of_absoluteIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Functional_det_abs_le_of_rawIntegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158VerticalIntegrand_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158ModulusDensity_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158ModulusAmplitude_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AbsoluteIntegral_le_modulusMoments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Functional_det_abs_le_modulusMoments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Functional_det_abs_le_diagonalAbsoluteIntegrals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158Functional_det_abs_le_of_modulusMoment_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158ModulusMoment_le_integralMajorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed: 474 declarations, 417 theorem declarations in OddZetaMixed; only propext, Classical.choice, Quot.sound allowed.
+
+=== source_replay:OddZetaMixed.H158MiddleCellsCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.H158MiddleCells.stepProfile_lattice_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.function_lattice_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.floorProfile_eq_unshifted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.floorProfile_fromFloors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.floorStripCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.Cell.original_lattice_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.folded_unshifted_threshold_le_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158MiddleCells.Cell.folded_unshifted_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.Cell.primitive_cost_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.GridCertificate.check_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.savedCell000_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.savedCell000_selection_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.savedProfile_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.savedProfile_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.savedProfile_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158MiddleCellsFastCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.H158MiddleCells.GridCertificate.fastCheck_cell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158MiddleCells.savedCell000_fast_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== source_replay:OddZetaMixed.H158ProtectedCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158_protected_in_halfline' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_denominator_eval_ne_zero_at_protected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_contDiffAt_polynomial_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158EntryReal_contDiffAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158EntryReal_protected_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158EntryReal_iteratedDeriv_protected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158EntryReal_fourthDerivative_protected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158EntryReal_dividedFourthDerivative_protected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158EntryReal_fourthDerivative_protected_index' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158EntryReal_protected_prefix_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.summable_h158EntryReal_fourthDerivative_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158Functional_eq_nonnegative_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.hasSum_h158EntryReal_fourthDerivative_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== source_replay:OddZetaMixed.H158RectangleResiduesCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.h158Rectangle_residue_identity (n q : ℕ) (i j : Fin (2 * n)) (hq : 1 ≤ q) :
+  h158RectBoundary (h158ContourAbscissa n) (↑q + 1 / 2) (↑q) (h158ContourIntegrand n ↑i ↑j) =
+    2 * ↑Real.pi * I * ∑ c ∈ h158RectanglePoleSet n q, iteratedDeriv 4 (h158EntryComplex n ↑i ↑j) c / 24
+OddZetaMixed.h158ClockwiseRectangle_residue_identity (n q : ℕ) (i j : Fin (2 * n)) (hq : 1 ≤ q) :
+  h158ClockwiseRectangleIntegral n (↑i) (↑j) q =
+    -(2 * ↑Real.pi * I) *
+      ∑ v ∈ Finset.range (q + 4 * n + 1), iteratedDeriv 4 (h158EntryComplex n ↑i ↑j) (↑v - 4 * ↑n) / 24
+OddZetaMixed.h158VerticalIntegral_eq_functional (n : ℕ) (i j : Fin (2 * n)) :
+  h158VerticalIntegral n ↑i ↑j = -(2 * ↑Real.pi * I) * ↑(h158Functional n i j)
+OddZetaMixed.h158NormalizedVerticalIntegral_eq_functional (n : ℕ) (i j : Fin (2 * n)) :
+  h158NormalizedVerticalIntegral n ↑i ↑j = ↑(h158Functional n i j)
+'OddZetaMixed.h158RectBoundary_eq_zero_of_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158RectBoundary_simplePole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158RectBoundary_higherPole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PolePrincipal_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158ContourIntegrand_full_principal_part' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_fill_finite_analytic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Rectangle_analytic_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158RectBoundary_principal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Rectangle_residue_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158ClockwiseRectangle_residue_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158RectangleResidueSum_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158VerticalIntegral_eq_functional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158NormalizedVerticalIntegral_eq_functional' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed: 435 declarations, 383 theorem declarations in OddZetaMixed; only propext, Classical.choice, Quot.sound allowed.
+
+=== source_replay:OddZetaMixed.H158VerticalIntegralCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158VerticalIntegrand_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158VerticalIntegrand_intervalIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158VerticalIntegrand_norm_le_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158VerticalIntegrand_norm_le_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158VerticalIntegrand_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158VerticalTruncation_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158VerticalTruncation_nat_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158VerticalTail_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158VerticalIntegral_sub_truncation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158VerticalIntegral_truncation_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158ClockwiseRectangleIntegral_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158NormalizedVerticalTruncation_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158NormalizedClockwiseRectangleIntegral_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== source_replay:OddZetaMixed.LocalJetValuationCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.LocalJetValuation.truncated_division {p : ℕ} [Fact (Nat.Prime p)] (N A C : ℚ[X]) (r : ℕ) (a d slope : ℤ)
+  (hC0 : C.coeff 0 ≠ 0) (hd : padicValRat p (C.coeff 0) = d) (hC : ∀ q < r, AtLeast p (d - slope * ↑q) (C.coeff q))
+  (hN : ∀ q < r, AtLeast p (a - slope * ↑q) (N.coeff q)) (he : ∀ q < r, N.coeff q = (A * C).coeff q) (q : ℕ) :
+  q < r → AtLeast p (a - d - slope * ↑q) (A.coeff q)
+OddZetaMixed.LocalJetValuation.h158_base_laurent_floor_from_counts {p : ℕ} [Fact (Nat.Prime p)] (n k : ℕ) (hn : 0 < n)
+  (hk : k ∈ h158PoleSet n) (hsq : 52 * n < p ^ 2) (l : Fin (h158PoleOrder n k)) :
+  AtLeast p
+    (padicValRat p (h158Normalization n) + h158NumeratorCount p n k - h158CofactorCount p n k - ↑(h158PoleOrder n k) +
+        ↑↑l +
+      1)
+    (h158PrincipalCoefficients n ⟨0, ⋯⟩ ⟨0, ⋯⟩ k l)
+OddZetaMixed.LocalJetValuation.h158_base_laurent_floor_from_class_counts {p : ℕ} [Fact (Nat.Prime p)] (n k : ℕ)
+  (hn : 0 < n) (hk : k ∈ h158PoleSet n) (hsq : 52 * n < p ^ 2) (l : Fin (h158PoleOrder n k)) :
+  AtLeast p (padicValRat p (h158Normalization n) + h158NumeratorCount p n k - h158DenominatorCount p n k + ↑↑l + 1)
+    (h158PrincipalCoefficients n ⟨0, ⋯⟩ ⟨0, ⋯⟩ k l)
+'OddZetaMixed.LocalJetValuation.truncated_division' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.LocalJetValuation.h158_base_laurent_floor_from_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.LocalJetValuation.h158_base_laurent_floor_from_class_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+OddZetaMixed.LocalJetValuation.h158_jetValue_anchor_power_floor {p : ℕ} [Fact (Nat.Prime p)] (n k : ℕ) (hn : 0 < n)
+  (hk : k ∈ h158PoleSet n) (hsq : 52 * n < p ^ 2) (anchor : ℤ) (ha : ↑p ∣ anchor + ↑k) (m : ℕ)
+  (l : Fin (h158PoleOrder n k)) :
+  AtLeast p (padicValRat p (h158Normalization n) + h158NumeratorCount p n k - h158DenominatorCount p n k + ↑m + ↑↑l + 1)
+    (h158JetValue n hn k l ((taylor (-↑anchor)) (X ^ m)))
+OddZetaMixed.LocalJetValuation.h158_residueClusterMoment_floor {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n)
+  (hp : 0 < p) (hsq : 57 * n < p ^ 2) (c : Fin p) (u v : Fin (4 * n)) :
+  FormalAtLeast p
+    (padicValRat p (h158Normalization n) + h158NumeratorCount p n ↑c - h158DenominatorCount p n ↑c - 4 + ↑↑u + ↑↑v)
+    (h158ClusterMoment n hn (h158ResidueClass p hp) c (-↑↑c) u v)
+'OddZetaMixed.LocalJetValuation.h158_residueClusterMoment_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Axiom audit passed: 106 declarations, 98 theorem declarations in OddZetaMixed.LocalJetValuation; only propext, Classical.choice, Quot.sound allowed.
+
+=== source_replay:OddZetaMixed.LocalReductionCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158GateIntegralRing_den_valuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateIntegralRing_den_not_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateIntegralRing_mem_iff_den_not_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateIntegralRing_den_cast_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateReduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateReduction_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateReduction_ne_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateReduction_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateIntegralRing_mem_of_common_denominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateIntegralRing_mem_of_exists_common_denominator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158GateReduction_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateReduction_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateIntegralRing_cast_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateIntegralRing_cast_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateIntegralRing_cast_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateIntegralRing_cast_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateIntegralRing_cast_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateIntegralRing_eval_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateIntegralRing_det_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158GateIntegralRing_cast_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_evenBasisProduct_eval_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_evenBasisProduct_eval_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_evenBasis_eval_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_evenBasis_eval_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_evenBasis_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_centeredMultiplier_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_centeredMultiplier_eval_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_centeredMultiplier_eval_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed: 425 declarations, 391 theorem declarations in OddZetaMixed; only propext, Classical.choice, Quot.sound allowed.
+
+=== source_replay:OddZetaMixed.RationalLogBoundsCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.RationalLogBounds.atanh_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.RationalLogBounds.argument_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.RationalLogBounds.logTwo_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.RationalLogBounds.sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.RationalLogBounds.of_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.RationalLogBounds.roundedAtanh_outer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.RationalLogBounds.rounded_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.RationalLogBounds.of_checkRounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.RationalLogBounds.logTwo_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.RationalLogBounds.logThird_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.RationalLogBounds.log154_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.RationalLogBounds.phaseLike_batch_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== transitive_axiom_audit ===
+--- compiler attempt -M8192 ---
+Axiom audit passed: 80854 declarations, 51731 theorem declarations in OddZetaMixed; only propext, Classical.choice, Quot.sound allowed.
+OddZetaMixed.h158ArithmeticCertifiedRate :
+  OddZetaMixed.UpperQuadraticRateOn {n | (OddZetaMixed.h158SevenMatrix n).det ≠ 0} OddZetaMixed.h158PrimitiveCost 1012
+OddZetaMixed.h158_eventually_primitive_det_small :
+  ∀ᶠ (n : ℕ) in Filter.atTop,
+    |Matrix.det (OddZetaMixed.h158Functional n) / ↑(OddZetaMixed.h158PrimitiveScalar n)| ≤ Real.exp (-(1 / 2) * ↑n ^ 2)
+OddZetaMixed.h158_eventually_primitive_polynomial_small :
+  ∀ᶠ (n : ℕ) in Filter.atTop,
+    |MvPolynomial.eval₂ (Int.castRingHom ℝ) OddZetaMixed.sevenZetaValues (OddZetaMixed.h158PrimitivePolynomial n)| ≤
+      Real.exp (-(1 / 2) * ↑n ^ 2)
+OddZetaMixed.exists_irrational_riemannZeta_seven_to_nineteen :
+  ∃ s ∈ {7, 9, 11, 13, 15, 17, 19}, Irrational (riemannZeta ↑s).re
+'OddZetaMixed.h158ArithmeticCertifiedRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_eventually_primitive_polynomial_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.exists_irrational_riemannZeta_seven_to_nineteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+OddZetaMixed.h158_seven_irrational_of_rates (A B : ℝ) (hgap : A + B < 0)
+  (harith :
+    OddZetaMixed.UpperQuadraticRateOn {n | (OddZetaMixed.h158SevenMatrix n).det ≠ 0} OddZetaMixed.h158PrimitiveCost A)
+  (hanalytic : OddZetaMixed.UpperQuadraticExpRateOn Set.univ (fun n => Matrix.det (OddZetaMixed.h158Functional n)) B)
+  (hgate : OddZetaMixed.H158RationalGate) : ∃ i, Irrational (OddZetaMixed.sevenZetaValues i)
+OddZetaMixed.h158ModulusWeight_uniform_envelope_abs (n : ℕ) (hn : 1 ≤ n) (s : ℝ) :
+  OddZetaMixed.h158ModulusWeight n (↑n * s) ≤
+    OddZetaMixed.h158DensityConstant * ↑n ^ 40 * (1 + |s|) ^ 6 * Real.exp (↑n * OddZetaMixed.h158Phase |s|)
+OddZetaMixed.h158AdaptiveMoment_le_of_compact (n i : ℕ) (hn : 1 ≤ n) (hi : i < 2 * n) (a : Fin 4 → ℚ)
+  (ha : ∀ (j : Fin 4), 0 ≤ ↑(a j) ∧ ↑(a j) ≤ 20) (M : ℝ)
+  (hcompact :
+    ∀ (s : ℝ),
+      0 ≤ s →
+        s ≤ 96 →
+          (∀ (j : Fin 4), 0 < OddZetaMixed.h158AdaptivePairModulus 75 (↑(a j)) s) →
+            OddZetaMixed.h158PhasePotential (fun j => ↑(a j)) (OddZetaMixed.h158PhaseCeilingTheta n i) s ≤ M) :
+  OddZetaMixed.h158BasisModulusMoment n
+      ((OddZetaMixed.h158AdaptiveMonic i (OddZetaMixed.h158AdaptiveDelta n) a).comp
+        (Polynomial.C ((↑n)⁻¹ ^ 2) * Polynomial.X ^ 2)) ≤
+    OddZetaMixed.h158AdaptiveMomentConstant * ↑n ^ 41 * Real.exp (↑n * M)
+OddZetaMixed.h158AnalyticBound_of_compact_phase_ceiling
+  (hcompact :
+    ∀ (n : ℕ),
+      1 ≤ n →
+        ∀ (i : Fin (2 * n)),
+          ∃ a,
+            (∀ (j : Fin 4), 0 ≤ ↑(a j) ∧ ↑(a j) ≤ 20) ∧
+              ∀ (s : ℝ),
+                0 ≤ s →
+                  s ≤ 96 →
+                    (∀ (j : Fin 4), 0 < OddZetaMixed.h158AdaptivePairModulus 75 (↑(a j)) s) →
+                      OddZetaMixed.h158PhasePotential (fun j => ↑(a j)) (OddZetaMixed.h158PhaseCeilingTheta n ↑i) s ≤
+                        OddZetaMixed.h158PhaseCeiling (OddZetaMixed.h158PhaseCeilingTheta n ↑i)) :
+  OddZetaMixed.H158AnalyticBound
+OddZetaMixed.h158AnalyticCertifiedRate :
+  OddZetaMixed.UpperQuadraticExpRateOn Set.univ (fun n => Matrix.det (OddZetaMixed.h158Functional n))
+    (-OddZetaMixed.analyticExpression + 2)
+'OddZetaMixed.h158AnalyticCertifiedRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaMixed.h158PrimitiveCost_rate_of_three_bands (low middle high : ℕ → ℕ → ℝ) (A B C : ℝ)
+  (hlow0 : ∀ (n : ℕ), 0 < n → ∀ (p : ℕ), 0 ≤ low n p) (hmid0 : ∀ (n : ℕ), 0 < n → ∀ (p : ℕ), 0 ≤ middle n p)
+  (hhigh0 : ∀ (n : ℕ), 0 < n → ∀ (p : ℕ), 0 ≤ high n p)
+  (hlow :
+    ∀ (n : ℕ),
+      0 < n →
+        (OddZetaMixed.h158SevenMatrix n).det ≠ 0 →
+          ∀ (p : ℕ),
+            Nat.Prime p →
+              p ≤ 4 * n →
+                158 * n + 2 < p ^ 2 → ¬p ∣ n → -↑(padicValRat p (OddZetaMixed.h158PrimitiveScalar n)) ≤ low n p)
+  (hmid :
+    ∀ (n : ℕ),
+      0 < n →
+        (OddZetaMixed.h158SevenMatrix n).det ≠ 0 →
+          ∀ (p : ℕ),
+            Nat.Prime p →
+              4 * n < p →
+                p ≤ 26 * n →
+                  158 * n + 2 < p ^ 2 → ¬p ∣ n → -↑(padicValRat p (OddZetaMixed.h158PrimitiveScalar n)) ≤ middle n p)
+  (hhigh :
+    ∀ᶠ (n : ℕ) in Filter.atTop,
+      (OddZetaMixed.h158SevenMatrix n).det ≠ 0 →
+        ∀ (p : ℕ),
+          Nat.Prime p →
+            26 * n < p →
+              p ≤ 57 * n →
+                158 * n + 2 < p ^ 2 → ¬p ∣ n → -↑(padicValRat p (OddZetaMixed.h158PrimitiveScalar n)) ≤ high n p)
+  (hAlim : Filter.Tendsto (fun n => OddZetaMixed.h158ProfilePrimeSum n (low n) / ↑n ^ 2) Filter.atTop (nhds A))
+  (hBlim : Filter.Tendsto (fun n => OddZetaMixed.h158ProfilePrimeSum n (middle n) / ↑n ^ 2) Filter.atTop (nhds B))
+  (hClim : Filter.Tendsto (fun n => OddZetaMixed.h158ProfilePrimeSum n (high n) / ↑n ^ 2) Filter.atTop (nhds C)) :
+  OddZetaMixed.UpperQuadraticRateOn {n | (OddZetaMixed.h158SevenMatrix n).det ≠ 0} OddZetaMixed.h158PrimitiveCost
+    (A + B + C)
+OddZetaMixed.H158MiddleCells.Certificate.primitive_cost_le_majorant (cert : OddZetaMixed.H158MiddleCells.Certificate)
+  (h : cert.check) (hv : ∀ c ∈ cert.cells, c.toProfile.check) {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n)
+  (hlo : 4 * n < p) (hhi : p ≤ 26 * n) (hsq : 158 * n + 2 < p ^ 2) (hdet : (OddZetaMixed.h158SevenMatrix n).det ≠ 0) :
+  -↑(padicValRat p (OddZetaMixed.h158PrimitiveScalar n)) ≤ cert.majorant n p
+OddZetaMixed.sevenZeta_irrational_iff_standard :
+  (∃ i, Irrational (OddZetaMixed.sevenZetaValues i)) ↔
+    ∃ s ∈ OddZetaMixed.sevenOddWeights, Irrational (riemannZeta ↑s).re
+OddZetaMixed.h158PrimitiveCost_rate_of_generic_profile (R : ℕ → ℕ → ℝ) (A : ℝ)
+  (hR : ∀ᶠ (n : ℕ) in Filter.atTop, ∀ (p : ℕ), Nat.Prime p → p ≤ 57 * n → 0 ≤ R n p)
+  (hlocal :
+    ∀ᶠ (n : ℕ) in Filter.atTop,
+      (OddZetaMixed.h158SevenMatrix n).det ≠ 0 →
+        ∀ (p : ℕ),
+          Nat.Prime p →
+            p ≤ 57 * n → 158 * n + 2 < p ^ 2 → ¬p ∣ n → -↑(padicValRat p (OddZetaMixed.h158PrimitiveScalar n)) ≤ R n p)
+  (hprofile :
+    OddZetaMixed.UpperQuadraticRateOn {n | (OddZetaMixed.h158SevenMatrix n).det ≠ 0}
+      (fun n => OddZetaMixed.h158ProfilePrimeSum n (R n)) A) :
+  OddZetaMixed.UpperQuadraticRateOn {n | (OddZetaMixed.h158SevenMatrix n).det ≠ 0} OddZetaMixed.h158PrimitiveCost A
+OddZetaMixed.h158PrimitiveCost_rate_of_affine_profile.{u_1} {ι : Type u_1} (s : Finset ι)
+  (c : ι → OddZetaMixed.H158AffinePrimeCell) (cut small C : ℝ) (hcut : 0 < cut) (hcut57 : cut ≤ 57) (hsmall : 0 ≤ small)
+  (hC : 0 ≤ C) (hc : ∀ i ∈ s, (c i).check)
+  (hlocal :
+    ∀ᶠ (n : ℕ) in Filter.atTop,
+      (OddZetaMixed.h158SevenMatrix n).det ≠ 0 →
+        ∀ (p : ℕ),
+          Nat.Prime p →
+            p ≤ 57 * n →
+              158 * n + 2 < p ^ 2 →
+                ¬p ∣ n →
+                  -↑(padicValRat p (OddZetaMixed.h158PrimitiveScalar n)) ≤
+                    OddZetaMixed.h158AffineProfile s c cut small C n p) :
+  OddZetaMixed.UpperQuadraticRateOn {n | (OddZetaMixed.h158SevenMatrix n).det ≠ 0} OddZetaMixed.h158PrimitiveCost
+    (small * cut + ↑(∑ i ∈ s, (c i).integral))
+OddZetaMixed.h158_eventually_avoid_rational_walls (walls : Finset ℚ) :
+  ∀ᶠ (n : ℕ) in Filter.atTop, ∀ (p : ℕ), Nat.Prime p → 158 * n + 2 < p ^ 2 → ¬p ∣ n → ∀ q ∈ walls, ↑p / ↑n ≠ q
+OddZetaMixed.h158Kernel_degree (n : ℕ) : (OddZetaMixed.h158Kernel n).intDegree = -92 * ↑n - 15
+OddZetaMixed.momentMatrix_degree (n : ℕ) (a : Matrix (Fin (2 * n)) (Fin (2 * n)) ℚ)
+  (b : Fin 7 → Matrix (Fin (2 * n)) (Fin (2 * n)) ℚ) :
+  MvPolynomial.totalDegree (OddZetaMixed.momentMatrix n a b).det ≤ 2 * n
+OddZetaMixed.infinite_prime_gate (Q : ℕ) (hQ : 0 < Q) : {n | Nat.Prime (55 * n + 1) ∧ ¬55 * n + 1 ∣ Q}.Infinite
+OddZetaMixed.SignedMinors.minor_valuation_lower.{u_1} {R : Type u_1} [CommRing R] (v : AddValuation R (WithTop ℤ))
+  {k : ℕ} (M : Matrix (Fin k) (Fin k) R) (mu d : ℤ) (hd : 0 ≤ d) {a b : Fin k → ℕ} (ha : StrictMono a)
+  (hb : StrictMono b) (hentry : ∀ (i j : Fin k), ↑(mu + d * ↑(a i) + d * ↑(b j)) ≤ v (M i j)) :
+  ↑(↑k * mu + d * ↑k * (↑k - 1)) ≤ v M.det
+OddZetaMixed.global_arithmetic_rate {good : Set ℕ} {lo mid hi rem S : ℕ → ℝ}
+  (hlo : OddZetaMixed.UpperQuadraticRateOn good lo ↑OddZetaMixed.lowBudget)
+  (hmid : OddZetaMixed.UpperQuadraticRateOn good mid ↑OddZetaMixed.middleBudget)
+  (hhi : OddZetaMixed.UpperQuadraticRateOn good hi ↑OddZetaMixed.highBudget)
+  (hrem : OddZetaMixed.UpperQuadraticRateOn good rem 0)
+  (hid : ∀ᶠ (n : ℕ) in Filter.atTop, n ∈ good → S n = lo n + mid n + hi n + rem n) :
+  OddZetaMixed.UpperQuadraticRateOn good S ↑OddZetaMixed.totalBudget
+OddZetaMixed.same_sequence_negative_rate {good : Set ℕ} {S L logI : ℕ → ℝ} (C : ℝ)
+  (harith : OddZetaMixed.UpperQuadraticRateOn good S ↑OddZetaMixed.totalBudget)
+  (hanalytic : OddZetaMixed.UpperQuadraticRateOn good L (-OddZetaMixed.analyticExpression))
+  (hid : ∀ᶠ (n : ℕ) in Filter.atTop, n ∈ good → logI n = S n + L n + C * ↑n) :
+  ∀ᶠ (n : ℕ) in Filter.atTop, n ∈ good → logI n ≤ -19 * ↑n ^ 2
+OddZetaMixed.integer_obstruction_of_infinite_good_log (I : ℕ → ℤ) (good : Set ℕ) (hgood : good.Infinite)
+  (hnonzero : ∀ n ∈ good, I n ≠ 0) {c : ℝ} (hc : 0 < c) (C : ℝ)
+  (hbound : ∀ᶠ (n : ℕ) in Filter.atTop, n ∈ good → Real.log |↑(I n)| ≤ -c * ↑n ^ 2 + C * ↑n) : False
+OddZetaMixed.no_integer_sequence_with_global_budget (Q : ℕ) (hQ : 0 < Q) (I : ℕ → ℤ) (S L : ℕ → ℝ) (C : ℝ)
+  (hne : ∀ (n : ℕ), Nat.Prime (55 * n + 1) → ¬55 * n + 1 ∣ Q → I n ≠ 0)
+  (harith :
+    OddZetaMixed.UpperQuadraticRateOn {n | Nat.Prime (55 * n + 1) ∧ ¬55 * n + 1 ∣ Q} S ↑OddZetaMixed.totalBudget)
+  (hanalytic :
+    OddZetaMixed.UpperQuadraticRateOn {n | Nat.Prime (55 * n + 1) ∧ ¬55 * n + 1 ∣ Q} L
+      (-OddZetaMixed.analyticExpression))
+  (hid :
+    ∀ᶠ (n : ℕ) in Filter.atTop, Nat.Prime (55 * n + 1) ∧ ¬55 * n + 1 ∣ Q → Real.log |↑(I n)| = S n + L n + C * ↑n) :
+  False
+OddZetaMixed.evenBasis_integer_valued (i : ℕ) (x : ℤ) : ∃ z, Polynomial.eval (↑x) (OddZetaMixed.evenBasis i) = ↑z
+OddZetaMixed.rank_two_entry_degree_bound (n : ℕ) (i j : Fin (2 * n)) :
+  (OddZetaMixed.matrixEntryKernel n ↑i ↑j).intDegree ≤ -84 * ↑n - 19
+OddZetaMixed.protected_fifth_power_dvd (n k : ℕ) (hk : 1 ≤ k) (hkn : k ≤ 48 * n) :
+  (Polynomial.X + Polynomial.C ↑k) ^ 5 ∣ OddZetaMixed.h158Numerator n
+OddZetaMixed.RectangularExpansion.det_mul_valuation_lower.{u_1} {R : Type u_1} [CommRing R] {r m : ℕ}
+  (v : AddValuation R (WithTop ℤ)) (A : Matrix (Fin r) (Fin m) R) (B : Matrix (Fin m) (Fin r) R) (L : ℤ)
+  (hA : ∀ (i : Fin r) (j : Fin m), 0 ≤ v (A i j))
+  (hB : ∀ (f : Fin r → Fin m), Function.Injective f → ↑L ≤ v (B.submatrix f id).det) : ↑L ≤ v (A * B).det
+OddZetaMixed.RectangularExpansion.det_mul_mul_transpose_valuation_lower.{u_1} {R : Type u_1} [CommRing R] {r m : ℕ}
+  (v : AddValuation R (WithTop ℤ)) (V : Matrix (Fin r) (Fin m) R) (W : Matrix (Fin m) (Fin m) R) (L : ℤ)
+  (hV : ∀ (i : Fin r) (j : Fin m), 0 ≤ v (V i j))
+  (hW : ∀ (f g : Fin r → Fin m), Function.Injective f → Function.Injective g → ↑L ≤ v (W.submatrix f g).det) :
+  ↑L ≤ v (V * W * V.transpose).det
+OddZetaMixed.gate_squares_injective (n : ℕ) [Fact (Nat.Prime (55 * n + 1))] :
+  Function.Injective (OddZetaMixed.gateSquare n)
+OddZetaMixed.gateEvenEvaluation_det_ne_zero (n : ℕ) [Fact (Nat.Prime (55 * n + 1))] :
+  (OddZetaMixed.gateEvenEvaluation n).det ≠ 0
+OddZetaMixed.weighted_gate_det_ne_zero (n : ℕ) [Fact (Nat.Prime (55 * n + 1))] (w : Fin (2 * n) → ZMod (55 * n + 1))
+  (hw : ∀ (i : Fin (2 * n)), w i ≠ 0) :
+  (OddZetaMixed.gateEvenEvaluation n * Matrix.diagonal w * (OddZetaMixed.gateEvenEvaluation n).transpose).det ≠ 0
+OddZetaMixed.h158_partial_fractions (n : ℕ) (i j : Fin (2 * n)) :
+  ∃ b,
+    OddZetaMixed.matrixEntryKernel n ↑i ↑j =
+      ∑ k ∈ OddZetaMixed.h158PoleSet n, ∑ l, OddZetaMixed.h158PrincipalTerm k (↑l) (b k l)
+OddZetaMixed.h158_principal_coefficients_unique (n : ℕ) (a b : (k : ℕ) → Fin (OddZetaMixed.h158PoleOrder n k) → ℚ)
+  (h :
+    ∑ k ∈ OddZetaMixed.h158PoleSet n, ∑ l, OddZetaMixed.h158PrincipalTerm k (↑l) (a k l) =
+      ∑ k ∈ OddZetaMixed.h158PoleSet n, ∑ l, OddZetaMixed.h158PrincipalTerm k (↑l) (b k l))
+  (k : ℕ) : k ∈ OddZetaMixed.h158PoleSet n → a k = b k
+OddZetaMixed.h158_principal_coefficients_reflection (n : ℕ) (i j : Fin (2 * n)) (k : ℕ)
+  (hk : k ∈ OddZetaMixed.h158PoleSet n) (l : Fin (OddZetaMixed.h158PoleOrder n k)) :
+  OddZetaMixed.h158PrincipalCoefficients n i j k l =
+    (-1) ^ ↑l * OddZetaMixed.h158PrincipalCoefficients n i j (OddZetaMixed.h158ReflectedPole n k) (Fin.cast ⋯ l)
+OddZetaMixed.h158_residue_sum_zero (n : ℕ) (i j : Fin (2 * n)) :
+  (∑ k ∈ OddZetaMixed.h158PoleSet n, ∑ l, if ↑l = 0 then OddZetaMixed.h158PrincipalCoefficients n i j k l else 0) = 0
+OddZetaMixed.hasSum_h158EntryReal_fourthDerivative (n : ℕ) (i j : Fin (2 * n)) :
+  HasSum (fun v => iteratedDeriv 4 (OddZetaMixed.h158EntryReal n ↑i ↑j) (↑v - 48 * ↑n) / 24)
+    (∑ k ∈ OddZetaMixed.h158PoleSet n,
+      ∑ l,
+        ↑(OddZetaMixed.h158PrincipalCoefficients n i j k l) * ↑((↑l + 4).choose 4) *
+          (OddZetaMixed.zetaNat (↑l + 5) - ↑(OddZetaMixed.harmonicCutoff (↑l + 5) (k - 48 * n - 1))))
+OddZetaMixed.h158Functional_eq_seven (n : ℕ) (i j : Fin (2 * n)) :
+  OddZetaMixed.h158Functional n i j =
+    ↑(OddZetaMixed.h158MomentConstant n i j) +
+      ∑ s, ↑(OddZetaMixed.h158ZetaCoefficient n i j (2 + 2 * ↑s)) * OddZetaMixed.sevenZetaValues s
+OddZetaMixed.h158SevenMatrix_det_eval (n : ℕ) :
+  MvPolynomial.eval₂ (algebraMap ℚ ℝ) OddZetaMixed.sevenZetaValues (OddZetaMixed.h158SevenMatrix n).det =
+    Matrix.det (OddZetaMixed.h158Functional n)
+OddZetaMixed.sevenZetaValues_ofReal (j : Fin 7) : ↑(OddZetaMixed.sevenZetaValues j) = riemannZeta ↑(7 + 2 * ↑j)
+OddZetaMixed.exists_primitive_normalization_with_gauss_cost.{u_1} {σ : Type u_1} (F : MvPolynomial σ ℚ) (hF : F ≠ 0) :
+  ∃ c,
+    c ≠ 0 ∧
+      ∃ P,
+        P ≠ 0 ∧
+          OddZetaMixed.integerPolynomialContent P = 1 ∧
+            F = MvPolynomial.C c * (MvPolynomial.map (Int.castRingHom ℚ)) P ∧
+              P.totalDegree = F.totalDegree ∧
+                (∀ (p : ℕ), Nat.Prime p → OddZetaMixed.rationalPolynomialGaussValuation p F hF = padicValRat p c) ∧
+                  -Real.log |↑c| =
+                    ∑ p ∈ (c.num.natAbs * c.den).primeFactors,
+                      -↑(OddZetaMixed.rationalPolynomialGaussValuation p F hF) * Real.log ↑p
+OddZetaMixed.h158_exists_primitive_data (n : ℕ) (hH : (OddZetaMixed.h158SevenMatrix n).det ≠ 0) :
+  ∃ c,
+    c ≠ 0 ∧
+      ∃ P,
+        P ≠ 0 ∧
+          OddZetaMixed.integerPolynomialContent P = 1 ∧
+            (OddZetaMixed.h158SevenMatrix n).det = MvPolynomial.C c * (MvPolynomial.map (Int.castRingHom ℚ)) P ∧
+              P.totalDegree ≤ 2 * n ∧
+                -Real.log |↑c| =
+                  ∑ p ∈ (c.num.natAbs * c.den).primeFactors,
+                    -↑(OddZetaMixed.rationalPolynomialGaussValuation p (OddZetaMixed.h158SevenMatrix n).det hH) *
+                      Real.log ↑p
+OddZetaMixed.rowScaling_fee_exact (n p : ℕ) (hp : 0 < p) (hodd : Odd p) :
+  have M := 4 * n / p;
+  2 * ∑ i ∈ Finset.range (2 * n), ↑(2 * i / p) = 4 * ↑n * ↑M - ↑p * ↑M * (↑M + 1) / 2 - ↑((M + 1) / 2)
+OddZetaMixed.h158Primitive_normalization (n : ℕ) :
+  (OddZetaMixed.h158SevenMatrix n).det =
+    MvPolynomial.C (OddZetaMixed.h158PrimitiveScalar n) *
+      (MvPolynomial.map (Int.castRingHom ℚ)) (OddZetaMixed.h158PrimitivePolynomial n)
+OddZetaMixed.h158_actual_rational_specialization_clearing (z : Fin 7 → ℚ)
+  (hz : ∀ (s : Fin 7), ↑(z s) = OddZetaMixed.sevenZetaValues s) :
+  ∃ Q,
+    0 < Q ∧
+      ∀ (n : ℕ),
+        ∃ a,
+          ↑Q ^ (2 * n) * (Matrix.det (OddZetaMixed.h158Functional n) / ↑(OddZetaMixed.h158PrimitiveScalar n)) = ↑a ∧
+            (a ≠ 0 ↔ Matrix.det (OddZetaMixed.h158Functional n) ≠ 0)
+OddZetaMixed.UpperQuadraticExpRateOn.log_abs {good : Set ℕ} {f : ℕ → ℝ} {A : ℝ}
+  (hf : OddZetaMixed.UpperQuadraticExpRateOn good f A) (hne : ∀ᶠ (n : ℕ) in Filter.atTop, n ∈ good → f n ≠ 0) :
+  OddZetaMixed.UpperQuadraticRateOn good (fun n => Real.log |f n|) A
+OddZetaMixed.H158ArithmeticBound : Prop
+OddZetaMixed.H158AnalyticBound : Prop
+OddZetaMixed.H158RationalGate : Prop
+OddZetaMixed.h158_seven_irrational_of_three_inputs (harith : OddZetaMixed.H158ArithmeticBound)
+  (hanalytic : OddZetaMixed.H158AnalyticBound) (hgate : OddZetaMixed.H158RationalGate) :
+  ∃ i, Irrational (OddZetaMixed.sevenZetaValues i)
+OddZetaMixed.h158PrincipalCoefficients_top_eq (n k : ℕ) (i j : Fin (2 * n)) (hk : k ∈ OddZetaMixed.h158PoleSet n) :
+  OddZetaMixed.h158PrincipalCoefficients n i j k (OddZetaMixed.h158TopPoleIndex n k hk) =
+    Polynomial.eval (-↑k)
+        (Polynomial.C (OddZetaMixed.h158Normalization n) * OddZetaMixed.h158Numerator n *
+          OddZetaMixed.centeredMultiplier n ↑i ↑j) /
+      Polynomial.eval (-↑k) (OddZetaMixed.h158PoleComplement n k (OddZetaMixed.h158PoleOrder n k - 1))
+OddZetaMixed.h158PoleComplement_top_padicValRat (n k p : ℕ) (hk : k ∈ OddZetaMixed.h158PoleSet n) (hp : Nat.Prime p)
+  (hlarge : 52 * n < p) :
+  padicValRat p (Polynomial.eval (-↑k) (OddZetaMixed.h158PoleComplement n k (OddZetaMixed.h158PoleOrder n k - 1))) = 0
+def OddZetaMixed.H158ArithmeticBound : Prop :=
+OddZetaMixed.UpperQuadraticRateOn {n | (OddZetaMixed.h158SevenMatrix n).det ≠ 0} OddZetaMixed.h158PrimitiveCost
+  ↑OddZetaMixed.totalBudget
+def OddZetaMixed.H158AnalyticBound : Prop :=
+OddZetaMixed.UpperQuadraticExpRateOn Set.univ (fun n => Matrix.det (OddZetaMixed.h158Functional n))
+  (-OddZetaMixed.analyticExpression)
+def OddZetaMixed.H158RationalGate : Prop :=
+∀ (z : Fin 7 → ℚ) (Q : ℕ),
+  0 < Q →
+    (∀ (i : Fin 7), ∃ a, ↑Q * z i = ↑a) →
+      ∀ (n : ℕ),
+        Nat.Prime (55 * n + 1) → ¬55 * n + 1 ∣ Q → (MvPolynomial.eval z) (OddZetaMixed.h158SevenMatrix n).det ≠ 0
+OddZetaMixed.h158LocalPrincipal_congruence (n : ℕ) (i j : Fin (2 * n)) (k : ℕ) (hk : k ∈ OddZetaMixed.h158PoleSet n) :
+  Polynomial.X ^ OddZetaMixed.h158PoleOrder n k ∣
+    OddZetaMixed.h158LocalNumerator n i j k -
+      OddZetaMixed.h158LocalPrincipal n i j k * OddZetaMixed.h158LocalCofactor n k
+OddZetaMixed.h158Gate_principal_coeff_nonneg (n : ℕ) (hp : Nat.Prime (55 * n + 1)) (i j : Fin (2 * n)) (k : ℕ)
+  (hk : k ∈ OddZetaMixed.h158PoleSet n) (l : Fin (OddZetaMixed.h158PoleOrder n k)) :
+  0 ≤ padicValRat (55 * n + 1) (OddZetaMixed.h158PrincipalCoefficients n i j k l)
+OddZetaMixed.h158Gate_constant_remainder_integral (n : ℕ) (hp : Nat.Prime (55 * n + 1)) (i j : Fin (2 * n)) :
+  0 ≤ padicValRat (55 * n + 1) (OddZetaMixed.h158MomentConstant n i j - OddZetaMixed.h158GateSingularConstant n i j)
+OddZetaMixed.h158GateWeight_unit (n k : ℕ) (hp : Nat.Prime (55 * n + 1)) (hlo : 103 * n + 2 ≤ k)
+  (hhi : k ≤ 105 * n + 1) :
+  OddZetaMixed.h158GateWeight n k ≠ 0 ∧ padicValRat (55 * n + 1) (OddZetaMixed.h158GateWeight n k) = 0
+OddZetaMixed.h158Gate_double_jets (n : ℕ) (hp : Nat.Prime (55 * n + 1)) (i j : Fin (2 * n)) (k : ℕ)
+  (hlo : 103 * n + 2 ≤ k) (hhi : k ≤ 104 * n + 1) :
+  (OddZetaMixed.h158LocalPrincipal n i j k).coeff 0 =
+      ↑(55 * n + 1) ^ 4 *
+        (OddZetaMixed.h158GateWeight n k * Polynomial.eval (-↑k) (OddZetaMixed.centeredMultiplier n ↑i ↑j)) ∧
+    (OddZetaMixed.h158LocalPrincipal n i j k).coeff 1 =
+      -4 * ↑(55 * n + 1) ^ 3 *
+          (OddZetaMixed.h158GateWeight n k * Polynomial.eval (-↑k) (OddZetaMixed.centeredMultiplier n ↑i ↑j)) +
+        ↑(55 * n + 1) ^ 4 * OddZetaMixed.h158GateFirstJet n i j k
+OddZetaMixed.h158Gate_local_reduction_exists (n : ℕ) (hp : Nat.Prime (55 * n + 1)) (i j : Fin (2 * n)) (k : ℕ)
+  (hlo : 103 * n + 2 ≤ k) (hhi : k ≤ 105 * n + 1) :
+  ∃ v,
+    0 ≤ padicValRat (55 * n + 1) v ∧
+      ↑(55 * n + 1) ^ 2 * OddZetaMixed.h158GateLocalSingular n i j k =
+        (if k ≤ 104 * n + 1 then
+            -OddZetaMixed.h158GateWeight n k * Polynomial.eval (-↑k) (OddZetaMixed.centeredMultiplier n ↑i ↑j)
+          else OddZetaMixed.h158GateWeight n k * Polynomial.eval (-↑k) (OddZetaMixed.centeredMultiplier n ↑i ↑j)) +
+          ↑(55 * n + 1) * v
+OddZetaMixed.h158GateReduction_ne_zero_iff (p : ℕ) [Fact (Nat.Prime p)] (q : ↥(OddZetaMixed.h158GateIntegralRing p)) :
+  (OddZetaMixed.h158GateReduction p) q ≠ 0 ↔ ↑q ≠ 0 ∧ padicValRat p ↑q = 0
+OddZetaMixed.h158Gate_full_entry_reduction_exists (n : ℕ) (hp : Nat.Prime (55 * n + 1)) (i j : Fin (2 * n))
+  (z : Fin 7 → ℚ) (hz : ∀ (s : Fin 7), 0 ≤ padicValRat (55 * n + 1) (z s)) :
+  ∃ v,
+    0 ≤ padicValRat (55 * n + 1) v ∧
+      ↑(55 * n + 1) ^ 2 * (MvPolynomial.eval z) (OddZetaMixed.h158SevenMatrix n i j) =
+        OddZetaMixed.h158GateLeadingEntry n i j + ↑(55 * n + 1) * v
+OddZetaMixed.h158GateLeadingEntry_cast_matrix (n : ℕ) [Fact (Nat.Prime (55 * n + 1))] :
+  (fun i j => ↑(OddZetaMixed.h158GateLeadingEntry n i j)) =
+    OddZetaMixed.gateEvenEvaluation n * Matrix.diagonal (OddZetaMixed.h158GateReducedWeights n) *
+      (OddZetaMixed.gateEvenEvaluation n).transpose
+OddZetaMixed.h158Gate_rational_specialization_ne_zero (n : ℕ) (hp : Nat.Prime (55 * n + 1)) (z : Fin 7 → ℚ)
+  (hz : ∀ (s : Fin 7), 0 ≤ padicValRat (55 * n + 1) (z s)) :
+  (MvPolynomial.eval z) (OddZetaMixed.h158SevenMatrix n).det ≠ 0
+OddZetaMixed.h158_rational_gate : OddZetaMixed.H158RationalGate
+OddZetaMixed.h158Gate_rational_determinant_valuation (n : ℕ) (hp : Nat.Prime (55 * n + 1)) (z : Fin 7 → ℚ)
+  (hz : ∀ (s : Fin 7), 0 ≤ padicValRat (55 * n + 1) (z s)) :
+  padicValRat (55 * n + 1) ((MvPolynomial.eval z) (OddZetaMixed.h158SevenMatrix n).det) = -4 * ↑n
+OddZetaMixed.h158_seven_irrational_of_rate_bounds (harith : OddZetaMixed.H158ArithmeticBound)
+  (hanalytic : OddZetaMixed.H158AnalyticBound) : ∃ i, Irrational (OddZetaMixed.sevenZetaValues i)
+OddZetaMixed.h158Functional_eq_nonnegative_sum (n : ℕ) (i j : Fin (2 * n)) :
+  OddZetaMixed.h158Functional n i j = ∑' (v : ℕ), iteratedDeriv 4 (OddZetaMixed.h158EntryReal n ↑i ↑j) ↑v / 24
+OddZetaMixed.h158EntryComplex_cutoff_shift (n : ℕ) (i j : Fin (2 * n)) :
+  ∑' (v : ℕ), iteratedDeriv 4 (OddZetaMixed.h158EntryComplex n ↑i ↑j) (↑v - 48 * ↑n) / 24 =
+    ∑' (v : ℕ), iteratedDeriv 4 (OddZetaMixed.h158EntryComplex n ↑i ↑j) ↑v / 24
+OddZetaMixed.h158ContourKernel_eq (z : ℂ) (hz : Complex.sin (↑Real.pi * z) ≠ 0) :
+  OddZetaMixed.h158ContourKernel z =
+    ↑Real.pi ^ 5 * (Complex.cos (↑Real.pi * z) ^ 3 + 2 * Complex.cos (↑Real.pi * z)) /
+      (3 * Complex.sin (↑Real.pi * z) ^ 5)
+OddZetaMixed.h158ContourIntegrand_integer_residue (n : ℕ) (i j : Fin (2 * n)) (m : ℤ)
+  (hm : OddZetaMixed.h158ContourAbscissa n < ↑m) :
+  ∃ ε,
+    0 < ε ∧
+      ∀ (r : ℝ),
+        0 < r →
+          r < ε →
+            (∮ (z : ℂ) in C(↑m, r), OddZetaMixed.h158ContourIntegrand n (↑i) (↑j) z) / (2 * ↑Real.pi * Complex.I) =
+              iteratedDeriv 4 (OddZetaMixed.h158EntryComplex n ↑i ↑j) ↑m / 24
+OddZetaMixed.hasSum_h158Contour_residue_series (n : ℕ) (i j : Fin (2 * n)) :
+  HasSum (fun v => iteratedDeriv 4 (OddZetaMixed.h158EntryComplex n ↑i ↑j) (↑v - 4 * ↑n) / 24)
+    ↑(OddZetaMixed.h158Functional n i j)
+'OddZetaMixed.h158_rational_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_rational_determinant_valuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_seven_irrational_of_rate_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaMixed.h158EntryComplex_norm_le_decay (n : ℕ) (i j : Fin (2 * n)) (z : ℂ)
+  (hz : OddZetaMixed.h158ContourDecayRadius n ≤ ‖z‖) :
+  ‖OddZetaMixed.h158EntryComplex n (↑i) (↑j) z‖ ≤ OddZetaMixed.h158ContourDecayConstant n / ‖z‖ ^ (84 * n + 19)
+OddZetaMixed.h158ClosingEdges_tendsto_zero (n : ℕ) (i j : Fin (2 * n)) :
+  Filter.Tendsto
+    (fun q =>
+      OddZetaMixed.h158HorizontalClosingIntegral n (↑i) (↑j) q ↑q -
+          OddZetaMixed.h158RightClosingIntegral n (↑i) (↑j) q -
+        OddZetaMixed.h158HorizontalClosingIntegral n (↑i) (↑j) q (-↑q))
+    Filter.atTop (nhds 0)
+OddZetaMixed.h158SevenMatrix_det_coeff_den_prime_support (n p : ℕ) (hp : Nat.Prime p) (m : Fin 7 →₀ ℕ)
+  (hdiv : p ∣ ((OddZetaMixed.h158SevenMatrix n).det.coeff m).den) : p ≤ 57 * n
+OddZetaMixed.h158PrimitiveScalar_den_prime_support (n p : ℕ) (hp : Nat.Prime p)
+  (hdiv : p ∣ (OddZetaMixed.h158PrimitiveScalar n).den) : p ≤ 57 * n
+OddZetaMixed.h158PrimitiveCost_le_finite_gauss_sum (n : ℕ) (hdet : (OddZetaMixed.h158SevenMatrix n).det ≠ 0) :
+  OddZetaMixed.h158PrimitiveCost n ≤
+    ∑ p ∈ Finset.range (57 * n + 1) with Nat.Prime p,
+      -↑(OddZetaMixed.rationalPolynomialGaussValuation p (OddZetaMixed.h158SevenMatrix n).det hdet) * Real.log ↑p
+'OddZetaMixed.h158ClosingEdges_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PrimitiveCost_le_finite_gauss_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaMixed.h158Gate_formal_gauss_valuation (n : ℕ) (hp : Nat.Prime (55 * n + 1))
+  (hH : (OddZetaMixed.h158SevenMatrix n).det ≠ 0) :
+  OddZetaMixed.rationalPolynomialGaussValuation (55 * n + 1) (OddZetaMixed.h158SevenMatrix n).det hH = -4 * ↑n
+OddZetaMixed.h158Gate_primitive_scalar_valuation (n : ℕ) (hp : Nat.Prime (55 * n + 1)) :
+  padicValRat (55 * n + 1) (OddZetaMixed.h158PrimitiveScalar n) = -4 * ↑n
+'OddZetaMixed.h158Gate_formal_gauss_valuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Gate_primitive_scalar_valuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaMixed.h158LocalPrincipal_eq_base_mul_coeff (n : ℕ) (hn : 0 < n) (i j : Fin (2 * n)) (k : ℕ)
+  (hk : k ∈ OddZetaMixed.h158PoleSet n) (q : ℕ) (hq : q < OddZetaMixed.h158PoleOrder n k) :
+  (OddZetaMixed.h158LocalPrincipal n i j k).coeff q =
+    (OddZetaMixed.h158BasePrincipal n hn k * (Polynomial.taylor (-↑k)) (OddZetaMixed.centeredMultiplier n ↑i ↑j)).coeff
+      q
+OddZetaMixed.h158SevenMatrix_eq_jetFunctional (n : ℕ) (hn : 0 < n) (i j : Fin (2 * n)) :
+  OddZetaMixed.h158SevenMatrix n i j = OddZetaMixed.h158JetFunctional n hn (OddZetaMixed.centeredMultiplier n ↑i ↑j)
+OddZetaMixed.h158SevenMatrix_taylor_factorization (n : ℕ) (hn : 0 < n) (a : ℚ) :
+  OddZetaMixed.h158SevenMatrix n =
+    OddZetaMixed.h158TaylorEvaluation n a * OddZetaMixed.h158TaylorMoment n hn a *
+      (OddZetaMixed.h158TaylorEvaluation n a).transpose
+OddZetaMixed.h158SevenMatrix_eq_residue_factorization (n p : ℕ) (hn : 0 < n) (hp : 0 < p) (anchor : Fin p → ℚ) :
+  OddZetaMixed.h158SevenMatrix n =
+    ∑ c,
+      OddZetaMixed.h158TaylorEvaluation n (anchor c) *
+          OddZetaMixed.h158ClusterMoment n hn (OddZetaMixed.h158ResidueClass p hp) c (anchor c) *
+        (OddZetaMixed.h158TaylorEvaluation n (anchor c)).transpose
+OddZetaMixed.h158ScaledTaylorEvaluation_coeff_nonneg (n p : ℕ) (hp : Nat.Prime p) (hsq : 158 * n + 2 < p ^ 2) (a : ℤ)
+  (i : Fin (2 * n)) (q : Fin (4 * n)) (m : Fin 7 →₀ ℕ) :
+  0 ≤ padicValRat p ((OddZetaMixed.h158ScaledTaylorEvaluation n p (↑a) i q).coeff m)
+OddZetaMixed.h158_scaled_cluster_factorization.{u_1} {κ : Type u_1} [Fintype κ] [DecidableEq κ] (n p : ℕ) (hn : 0 < n)
+  (classify : ℕ → κ) (anchor : κ → ℚ) :
+  OddZetaMixed.h158RowDiagonal n p * OddZetaMixed.h158SevenMatrix n * OddZetaMixed.h158RowDiagonal n p =
+    ∑ c,
+      OddZetaMixed.h158ScaledTaylorEvaluation n p (anchor c) *
+          OddZetaMixed.h158ClusterMoment n hn classify c (anchor c) *
+        (OddZetaMixed.h158ScaledTaylorEvaluation n p (anchor c)).transpose
+OddZetaMixed.h158_scaled_determinant (n p : ℕ) :
+  (OddZetaMixed.h158RowDiagonal n p * OddZetaMixed.h158SevenMatrix n * OddZetaMixed.h158RowDiagonal n p).det =
+    MvPolynomial.C (↑p ^ OddZetaMixed.h158RowFee n p) * (OddZetaMixed.h158SevenMatrix n).det
+OddZetaMixed.h158RowFee_exact (n p : ℕ) (hp : 0 < p) (hodd : Odd p) :
+  ↑(OddZetaMixed.h158RowFee n p) =
+    4 * ↑n * ↑(4 * n / p) - ↑p * ↑(4 * n / p) * (↑(4 * n / p) + 1) / 2 - ↑((4 * n / p + 1) / 2)
+OddZetaMixed.h158VerticalIntegrand_integrable (n : ℕ) (i j : Fin (2 * n)) :
+  MeasureTheory.Integrable (OddZetaMixed.h158VerticalIntegrand n ↑i ↑j) MeasureTheory.volume
+OddZetaMixed.h158VerticalIntegral_truncation_error (n : ℕ) (i j : Fin (2 * n)) (q : ℝ)
+  (hq : OddZetaMixed.h158ContourDecayRadius n ≤ q) :
+  ‖OddZetaMixed.h158VerticalIntegral n ↑i ↑j - OddZetaMixed.h158VerticalTruncation n (↑i) (↑j) q‖ ≤
+    2 * OddZetaMixed.h158ContourIntegrandDecayConstant n / (↑(84 * n + 18) * q ^ (84 * n + 18))
+OddZetaMixed.h158NormalizedClockwiseRectangleIntegral_tendsto (n : ℕ) (i j : Fin (2 * n)) :
+  Filter.Tendsto (fun q => -OddZetaMixed.h158ClockwiseRectangleIntegral n (↑i) (↑j) q / (2 * ↑Real.pi * Complex.I))
+    Filter.atTop (nhds (OddZetaMixed.h158NormalizedVerticalIntegral n ↑i ↑j))
+OddZetaMixed.weighted_prime_quadratic_rate.{u_1} {ι : Type u_1} (s : Finset ι) (f : ι → ℝ → ℝ) (a b : ι → ℝ)
+  (hf : ∀ i ∈ s, ContinuousOn (f i) (Set.Icc (a i) (b i))) (ha : ∀ i ∈ s, 0 < a i) (hab : ∀ i ∈ s, a i ≤ b i) :
+  Filter.Tendsto
+    (fun n => (∑ i ∈ s, ↑n * OddZetaPNT.primeWeightedSum (fun t => f i (t / ↑n)) (a i * ↑n) (b i * ↑n)) / ↑n ^ 2)
+    Filter.atTop (nhds (∑ i ∈ s, ∫ (x : ℝ) in a i..b i, f i x))
+OddZetaMixed.h158_prime_content_three_bands_rate :
+  Filter.Tendsto
+    (fun n => (OddZetaPNT.h158Content54 n + OddZetaPNT.h158Content55 n + OddZetaPNT.h158Content56 n) / ↑n ^ 2)
+    Filter.atTop (nhds (15 / 4))
+OddZetaMixed.LocalJetValuation.truncated_division {p : ℕ} [Fact (Nat.Prime p)] (N A C : Polynomial ℚ) (r : ℕ)
+  (a d slope : ℤ) (hC0 : C.coeff 0 ≠ 0) (hd : padicValRat p (C.coeff 0) = d)
+  (hC : ∀ q < r, OddZetaMixed.LocalJetValuation.AtLeast p (d - slope * ↑q) (C.coeff q))
+  (hN : ∀ q < r, OddZetaMixed.LocalJetValuation.AtLeast p (a - slope * ↑q) (N.coeff q))
+  (he : ∀ q < r, N.coeff q = (A * C).coeff q) (q : ℕ) :
+  q < r → OddZetaMixed.LocalJetValuation.AtLeast p (a - d - slope * ↑q) (A.coeff q)
+OddZetaMixed.LocalJetValuation.h158_base_laurent_floor_from_class_counts {p : ℕ} [Fact (Nat.Prime p)] (n k : ℕ)
+  (hn : 0 < n) (hk : k ∈ OddZetaMixed.h158PoleSet n) (hsq : 52 * n < p ^ 2) (l : Fin (OddZetaMixed.h158PoleOrder n k)) :
+  OddZetaMixed.LocalJetValuation.AtLeast p
+    (padicValRat p (OddZetaMixed.h158Normalization n) + OddZetaMixed.LocalJetValuation.h158NumeratorCount p n k -
+          OddZetaMixed.LocalJetValuation.h158DenominatorCount p n k +
+        ↑↑l +
+      1)
+    (OddZetaMixed.h158PrincipalCoefficients n ⟨0, ⋯⟩ ⟨0, ⋯⟩ k l)
+OddZetaMixed.LocalJetValuation.h158_residueClusterMoment_floor {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n)
+  (hp : 0 < p) (hsq : 57 * n < p ^ 2) (c : Fin p) (u v : Fin (4 * n)) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p
+    (padicValRat p (OddZetaMixed.h158Normalization n) + OddZetaMixed.LocalJetValuation.h158NumeratorCount p n ↑c -
+            OddZetaMixed.LocalJetValuation.h158DenominatorCount p n ↑c -
+          4 +
+        ↑↑u +
+      ↑↑v)
+    (OddZetaMixed.h158ClusterMoment n hn (OddZetaMixed.h158ResidueClass p hp) c (-↑↑c) u v)
+OddZetaMixed.LocalJetValuation.h158_residue_minor_signed_cost {p r : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n)
+  (hp : 0 < p) (hsq : 57 * n < p ^ 2) (c : Fin p) (a b : Fin r → Fin (4 * n)) (ha : StrictMono fun i => ↑(a i))
+  (hb : StrictMono fun i => ↑(b i)) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p
+    (-∑ i ∈ Finset.range r, (OddZetaMixed.LocalJetValuation.h158ClassCost p n ↑c - 2 * ↑i))
+    ((OddZetaMixed.h158ClusterMoment n hn (OddZetaMixed.h158ResidueClass p hp) c (-↑↑c)).submatrix a b).det
+OddZetaMixed.LocalJetValuation.formal_det_mul_mul_transpose_floor {p r m : ℕ} [Fact (Nat.Prime p)]
+  (V : Matrix (Fin r) (Fin m) OddZetaMixed.SevenPolynomial) (W : Matrix (Fin m) (Fin m) OddZetaMixed.SevenPolynomial)
+  (L : ℤ) (hV : ∀ (i : Fin r) (j : Fin m), OddZetaMixed.LocalJetValuation.FormalAtLeast p 0 (V i j))
+  (hW :
+    ∀ (f g : Fin r → Fin m),
+      Function.Injective f →
+        Function.Injective g → OddZetaMixed.LocalJetValuation.FormalAtLeast p L (W.submatrix f g).det) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p L (V * W * V.transpose).det
+OddZetaMixed.LocalJetValuation.formal_unscale {p : ℕ} [Fact (Nat.Prime p)] (c : ℚ) (hc : c ≠ 0)
+  (P : OddZetaMixed.SevenPolynomial) (L : ℤ)
+  (h : OddZetaMixed.LocalJetValuation.FormalAtLeast p L (MvPolynomial.C c * P)) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p (L - padicValRat p c) P
+OddZetaMixed.h158_scaled_assembled_fin_factorization (n p : ℕ) (hn : 0 < n) (hp : 0 < p) (anchor : Fin p → ℤ) :
+  OddZetaMixed.h158RowDiagonal n p * OddZetaMixed.h158SevenMatrix n * OddZetaMixed.h158RowDiagonal n p =
+    OddZetaMixed.h158AssembledEvaluationFin n p anchor * OddZetaMixed.h158AssembledMomentsFin n p hn hp anchor *
+      (OddZetaMixed.h158AssembledEvaluationFin n p anchor).transpose
+OddZetaMixed.h158_primitive_cost_of_assembled_minor_floor (n p : ℕ) (hn : 0 < n) (hp : Nat.Prime p)
+  (hsq : 158 * n + 2 < p ^ 2) (anchor : Fin p → ℤ) (L : ℤ) (hdet : (OddZetaMixed.h158SevenMatrix n).det ≠ 0)
+  (hminor :
+    ∀ (f g : Fin (2 * n) → Fin (p * (4 * n))),
+      Function.Injective f →
+        Function.Injective g →
+          OddZetaMixed.LocalJetValuation.FormalAtLeast p L
+            ((OddZetaMixed.h158AssembledMomentsFin n p hn ⋯ anchor).submatrix f g).det) :
+  -padicValRat p (OddZetaMixed.h158PrimitiveScalar n) ≤ ↑(OddZetaMixed.h158RowFee n p) - L
+OddZetaMixed.h158_pair_fold_identity (n p : ℕ) (a : ℚ)
+  (W₁ W₂ : Matrix (Fin (4 * n)) (Fin (4 * n)) OddZetaMixed.SevenPolynomial) :
+  OddZetaMixed.h158ScaledTaylorEvaluation n p a * W₁ * (OddZetaMixed.h158ScaledTaylorEvaluation n p a).transpose +
+      OddZetaMixed.h158ScaledTaylorEvaluation n p (-(158 * ↑n + 2) - a) * W₂ *
+        (OddZetaMixed.h158ScaledTaylorEvaluation n p (-(158 * ↑n + 2) - a)).transpose =
+    OddZetaMixed.h158ScaledTaylorEvaluation n p a *
+        (W₁ + OddZetaMixed.h158JetSign n * W₂ * OddZetaMixed.h158JetSign n) *
+      (OddZetaMixed.h158ScaledTaylorEvaluation n p a).transpose
+OddZetaMixed.h158CenteredBasis_central_odd_coeff_zero (n : ℕ) (i : Fin (2 * n)) (q : ℕ) (hq : Odd q) :
+  ((Polynomial.taylor (-(79 * ↑n + 1))) (OddZetaMixed.h158CenteredBasis n i)).coeff q = 0
+OddZetaMixed.h158ClockwiseRectangle_residue_identity (n q : ℕ) (i j : Fin (2 * n)) (hq : 1 ≤ q) :
+  OddZetaMixed.h158ClockwiseRectangleIntegral n (↑i) (↑j) q =
+    -(2 * ↑Real.pi * Complex.I) *
+      ∑ v ∈ Finset.range (q + 4 * n + 1), iteratedDeriv 4 (OddZetaMixed.h158EntryComplex n ↑i ↑j) (↑v - 4 * ↑n) / 24
+OddZetaMixed.h158NormalizedVerticalIntegral_eq_functional (n : ℕ) (i j : Fin (2 * n)) :
+  OddZetaMixed.h158NormalizedVerticalIntegral n ↑i ↑j = ↑(OddZetaMixed.h158Functional n i j)
+OddZetaMixed.rank_two_factorial_subquadratic (ε : ℝ) (hε : 0 < ε) :
+  ∀ᶠ (n : ℕ) in Filter.atTop, ↑(2 * n).factorial ≤ Real.exp (ε * ↑n ^ 2)
+OddZetaMixed.UpperQuadraticExpRateOn.of_factorial_majorant {good : Set ℕ} {f g : ℕ → ℝ} {A : ℝ}
+  (hg : OddZetaMixed.UpperQuadraticExpRateOn good g A)
+  (hbound : ∀ᶠ (n : ℕ) in Filter.atTop, n ∈ good → |f n| ≤ ↑(2 * n).factorial * |g n|) :
+  OddZetaMixed.UpperQuadraticExpRateOn good f A
+OddZetaMixed.LocalJetValuation.h158_residueClusterMoment_floor_at_integer_anchor {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ)
+  (hn : 0 < n) (hp : 0 < p) (hsq : 57 * n < p ^ 2) (c : Fin p) (anchor : ℤ) (ha : ↑p ∣ anchor + ↑↑c)
+  (u v : Fin (4 * n)) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p
+    (padicValRat p (OddZetaMixed.h158Normalization n) + OddZetaMixed.LocalJetValuation.h158NumeratorCount p n ↑c -
+            OddZetaMixed.LocalJetValuation.h158DenominatorCount p n ↑c -
+          4 +
+        ↑↑u +
+      ↑↑v)
+    (OddZetaMixed.h158ClusterMoment n hn (OddZetaMixed.h158ResidueClass p hp) c (↑anchor) u v)
+OddZetaMixed.FormalBlockSelection.formal_block_minor_allocation_floor.{u_1} {C : Type u_1} [DecidableEq C] [Fintype C]
+  {p r J : ℕ} [Fact (Nat.Prime p)] (A : C → Matrix (Fin J) (Fin J) OddZetaMixed.SevenPolynomial) (w : C → ℤ)
+  (hentry : ∀ (c : C) (u v : Fin J), OddZetaMixed.LocalJetValuation.FormalAtLeast p (-w c + ↑↑u + ↑↑v) (A c u v))
+  (f g : Fin r → C × Fin J) (hf : Function.Injective f) (hg : Function.Injective g) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p (OddZetaMixed.FormalBlockSelection.allocationFloor w f)
+    ((OddZetaMixed.FormalBlockSelection.blockMatrix A).submatrix f g).det
+OddZetaMixed.FormalBlockSelection.h158_det_unfolded_allocation_floor (n p : ℕ) (hn : 0 < n) (hp : Nat.Prime p)
+  (hsq : 158 * n + 2 < p ^ 2) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p
+    (OddZetaMixed.FormalBlockSelection.h158MinAllocationFloor n p hn ⋯ - ↑(OddZetaMixed.h158RowFee n p))
+    (OddZetaMixed.h158SevenMatrix n).det
+OddZetaMixed.FormalBlockSelection.h158_primitive_cost_unfolded_allocation (n p : ℕ) (hn : 0 < n) (hp : Nat.Prime p)
+  (hsq : 158 * n + 2 < p ^ 2) (hdet : (OddZetaMixed.h158SevenMatrix n).det ≠ 0) :
+  -padicValRat p (OddZetaMixed.h158PrimitiveScalar n) ≤
+    ↑(OddZetaMixed.h158RowFee n p) - OddZetaMixed.FormalBlockSelection.h158MinAllocationFloor n p hn ⋯
+OddZetaMixed.h158Functional_det_abs_le_modulusMoments (n : ℕ) :
+  |Matrix.det (OddZetaMixed.h158Functional n)| ≤ ↑(2 * n).factorial * ∏ i, OddZetaMixed.h158ModulusMoment n ↑i
+OddZetaMixed.h158Functional_det_abs_le_diagonalAbsoluteIntegrals (n : ℕ) :
+  |Matrix.det (OddZetaMixed.h158Functional n)| ≤
+    ↑(2 * n).factorial / (2 * Real.pi) ^ (2 * n) * ∏ i, OddZetaMixed.h158AbsoluteIntegral n ↑i ↑i
+OddZetaMixed.h158_paired_residue_block_floor {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n) (hp : 0 < p)
+  (hsq : 57 * n < p ^ 2) (c d : Fin p) (a : ℤ) (ha : ↑p ∣ a + ↑↑c) (hb : ↑p ∣ -(158 * ↑n + 2) - a + ↑↑d)
+  (u v : Fin (4 * n)) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p
+    (-max (OddZetaMixed.LocalJetValuation.h158ClassCost p n ↑c) (OddZetaMixed.LocalJetValuation.h158ClassCost p n ↑d) +
+        ↑↑u +
+      ↑↑v)
+    ((OddZetaMixed.h158ClusterMoment n hn (OddZetaMixed.h158ResidueClass p hp) c ↑a +
+        OddZetaMixed.h158JetSign n *
+            OddZetaMixed.h158ClusterMoment n hn (OddZetaMixed.h158ResidueClass p hp) d (-(158 * ↑n + 2) - ↑a) *
+          OddZetaMixed.h158JetSign n)
+      u v)
+OddZetaMixed.h158_central_block_compression (n p : ℕ)
+  (W : Matrix (Fin (4 * n)) (Fin (4 * n)) OddZetaMixed.SevenPolynomial) :
+  have V := OddZetaMixed.h158ScaledTaylorEvaluation n p (-(79 * ↑n + 1));
+  V * W * V.transpose =
+    V.submatrix id (OddZetaMixed.h158EvenJet n) *
+        W.submatrix (OddZetaMixed.h158EvenJet n) (OddZetaMixed.h158EvenJet n) *
+      (V.submatrix id (OddZetaMixed.h158EvenJet n)).transpose
+OddZetaMixed.h158_central_even_block_floor {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n) (hp : 0 < p)
+  (hsq : 57 * n < p ^ 2) (c : Fin p) (hc : ↑p ∣ -(79 * ↑n + 1) + ↑↑c) (u v : Fin (2 * n)) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p
+    (-OddZetaMixed.LocalJetValuation.h158ClassCost p n ↑c + 2 * ↑↑u + 2 * ↑↑v)
+    (OddZetaMixed.h158ClusterMoment n hn (OddZetaMixed.h158ResidueClass p hp) c (-(79 * ↑n + 1))
+      (OddZetaMixed.h158EvenJet n u) (OddZetaMixed.h158EvenJet n v))
+OddZetaMixed.h158_scaled_reflection_orbit_factorization {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n) (hp : 0 < p)
+  (hp2 : p ≠ 2) :
+  OddZetaMixed.h158RowDiagonal n p * OddZetaMixed.h158SevenMatrix n * OddZetaMixed.h158RowDiagonal n p =
+    ∑ c with c < OddZetaMixed.h158ReflectionClass n p hp c,
+        OddZetaMixed.h158ScaledTaylorEvaluation n p (-↑↑c) * OddZetaMixed.h158PairMoment n p hn hp c *
+          (OddZetaMixed.h158ScaledTaylorEvaluation n p (-↑↑c)).transpose +
+      OddZetaMixed.h158CentralEvenEvaluation n p * OddZetaMixed.h158CentralEvenMoment n p hn hp *
+        (OddZetaMixed.h158CentralEvenEvaluation n p).transpose
+OddZetaMixed.h158_scaled_folded_fin_factorization {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n) (hp : 0 < p)
+  (hp2 : p ≠ 2) :
+  OddZetaMixed.h158RowDiagonal n p * OddZetaMixed.h158SevenMatrix n * OddZetaMixed.h158RowDiagonal n p =
+    OddZetaMixed.h158FoldedEvaluationFin n p hp * OddZetaMixed.h158FoldedMomentFin n p hn hp *
+      (OddZetaMixed.h158FoldedEvaluationFin n p hp).transpose
+OddZetaMixed.h158_folded_minor_allocation_floor {p r : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n) (hp : 0 < p)
+  (hsq : 57 * n < p ^ 2) (f g : Fin r → OddZetaMixed.H158FoldedColumn n p hp) (hf : Function.Injective f)
+  (hg : Function.Injective g) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p
+    (OddZetaMixed.WeightedBlockSelection.weightedAllocationFloor (OddZetaMixed.h158FoldedWeight n p hp)
+      (OddZetaMixed.h158FoldedSpacing n p hp) f)
+    ((OddZetaMixed.h158FoldedAssembledMoment n p hn hp).submatrix f g).det
+OddZetaMixed.h158_primitive_cost_folded_threshold {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n) (hp : 0 < p)
+  (hp2 : p ≠ 2) (hsq : 158 * n + 2 < p ^ 2) (tau : ℚ) (hdet : (OddZetaMixed.h158SevenMatrix n).det ≠ 0) :
+  -padicValRat p (OddZetaMixed.h158PrimitiveScalar n) ≤ OddZetaMixed.h158FoldedThresholdCost n p hp tau
+OddZetaMixed.h158PrimitiveCost_le_explicit_budget (n : ℕ) (hn : 0 < n) (tau : ℕ → ℚ)
+  (hdet : (OddZetaMixed.h158SevenMatrix n).det ≠ 0) :
+  OddZetaMixed.h158PrimitiveCost n ≤ OddZetaMixed.h158ExplicitArithmeticBudget n tau
+OddZetaMixed.H158SmallPrimeBudget.smallPrimeCost_upperQuadraticRate :
+  OddZetaMixed.UpperQuadraticRateOn {n | (OddZetaMixed.h158SevenMatrix n).det ≠ 0}
+    OddZetaMixed.H158SmallPrimeBudget.smallPrimeCost 0
+OddZetaMixed.LocalJetValuation.h158_numerator_count_floor (p n c : ℕ) (hp : 0 < p) :
+  OddZetaMixed.LocalJetValuation.h158NumeratorCount p n c =
+    (if ↑p ∣ 79 * ↑n + 1 - ↑c then 1 else 0) +
+      ∑ a ∈ Finset.range 5,
+        (OddZetaMixed.LocalJetValuation.residueIntervalFloor p 0 ((48 + a) * n) ↑c +
+          OddZetaMixed.LocalJetValuation.residueIntervalFloor p (158 * ↑n + 1 - ↑((48 + a) * n)) ((48 + a) * n) ↑c)
+OddZetaMixed.LocalJetValuation.h158_denominator_count_floor (p n c : ℕ) (hp : 0 < p) :
+  OddZetaMixed.LocalJetValuation.h158DenominatorCount p n c =
+    ∑ b ∈ Finset.range 16,
+      OddZetaMixed.LocalJetValuation.residueIntervalFloor p (↑((53 + b) * n)) ((52 - 2 * b) * n + 1) ↑c
+OddZetaMixed.LocalJetValuation.h158_normalized_class_count_lower (p n c : ℕ) (hn : 0 < n) (hp : Nat.Prime p)
+  (hsq : 158 * n + 2 < p ^ 2) :
+  -16 ≤
+    padicValRat p (OddZetaMixed.h158Normalization n) + OddZetaMixed.LocalJetValuation.h158NumeratorCount p n c -
+      OddZetaMixed.LocalJetValuation.h158DenominatorCount p n c
+OddZetaMixed.h158ClassCost_reflection (n p : ℕ) (hp : 0 < p) (c : Fin p) :
+  OddZetaMixed.LocalJetValuation.h158ClassCost p n ↑(OddZetaMixed.h158ReflectionClass n p hp c) =
+    OddZetaMixed.LocalJetValuation.h158ClassCost p n ↑c
+OddZetaMixed.h158ClassCost_le_twenty (p n c : ℕ) (hn : 0 < n) (hp : Nat.Prime p) (hsq : 158 * n + 2 < p ^ 2) :
+  OddZetaMixed.LocalJetValuation.h158ClassCost p n c ≤ 20
+OddZetaMixed.H158IntegerValuedJets.h158_entry_floor_twenty_unconditional {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ)
+  (i j : Fin (2 * n)) (hsq : 158 * n + 2 < p ^ 2) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p (-20) (OddZetaMixed.h158SevenMatrix n i j)
+OddZetaMixed.H158IntegerValuedJets.h158_primitiveCost_le_forty {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ)
+  (hsq : 158 * n + 2 < p ^ 2) (hdet : (OddZetaMixed.h158SevenMatrix n).det ≠ 0) :
+  -padicValRat p (OddZetaMixed.h158PrimitiveScalar n) ≤ 40 * ↑n
+OddZetaMixed.h158ScaledMonicEven_normalization (n : ℕ) (hn : 0 < n) (Q : Fin (2 * n) → Polynomial ℚ)
+  (hmonic : ∀ (i : Fin (2 * n)), (Q i).Monic) (hdeg : ∀ (i : Fin (2 * n)), (Q i).natDegree = ↑i) :
+  Matrix.det (OddZetaMixed.h158Functional n) =
+    (∏ i, ↑(OddZetaMixed.evenBasis ↑i).leadingCoeff ^ 2 * ↑n ^ (4 * ↑i)) *
+      (OddZetaMixed.h158BasisFunctional n hn fun i => (Q i).comp (Polynomial.C ((↑n)⁻¹ ^ 2) * Polynomial.X ^ 2)).det
+OddZetaMixed.h158AdaptiveMonic_det (n : ℕ) (hn : 0 < n) (a : Fin (2 * n) → Fin 4 → ℚ) :
+  (OddZetaMixed.h158BasisFunctional n hn fun i =>
+        OddZetaMixed.h158ScaledMonicEven n (↑i) (OddZetaMixed.h158AdaptiveMonic (↑i) (75 + 1 / (2 * ↑n)) (a i))).det =
+    Matrix.det (OddZetaMixed.h158Functional n)
+OddZetaMixed.h158AdaptiveMonic_det_abs_le_modulusMoments (n : ℕ) (hn : 0 < n) (a : Fin (2 * n) → Fin 4 → ℚ) :
+  |Matrix.det (OddZetaMixed.h158Functional n)| ≤
+    (↑(2 * n).factorial * ∏ i, ↑(OddZetaMixed.evenBasis ↑i).leadingCoeff ^ 2 * ↑n ^ (4 * ↑i)) *
+      ∏ i,
+        OddZetaMixed.h158BasisModulusMoment n
+          ((OddZetaMixed.h158AdaptiveMonic (↑i) (75 + 1 / (2 * ↑n)) (a i)).comp
+            (Polynomial.C ((↑n)⁻¹ ^ 2) * Polynomial.X ^ 2))
+OddZetaMixed.h158ScaledAdaptiveContour_norm_sq_le (n i : ℕ) (hn : 0 < n) (a : Fin 4 → ℚ) (y : ℝ) :
+  ‖OddZetaMixed.h158BasisContourValue n
+          (OddZetaMixed.h158ScaledMonicEven n i (OddZetaMixed.h158AdaptiveMonic i (OddZetaMixed.h158AdaptiveDelta n) a))
+          y‖ ^
+      2 ≤
+    ↑(OddZetaMixed.evenBasis i).leadingCoeff ^ 2 * ↑n ^ (4 * i) *
+      (Real.exp (8 * ↑(i / 8) / (75 * ↑n)) * OddZetaMixed.h158AdaptiveBlockNormSq (i / 8) 75 a (y / ↑n) *
+        (↑(OddZetaMixed.h158AdaptiveDelta n) ^ 2 + (y / ↑n) ^ 2) ^ (2 * (i % 8)))
+OddZetaMixed.h158PairMoment_singleton_minor_plateau {p r : ℕ} [Fact (Nat.Prime p)] (n k k' : ℕ) (hn : 0 < n)
+  (hp : 0 < p) (hk : k ∈ OddZetaMixed.h158PoleSet n) (hk' : k' ∈ OddZetaMixed.h158PoleSet n)
+  (hsingle : OddZetaMixed.LocalJetValuation.H158PoleSingleton p n k)
+  (hsingle' : OddZetaMixed.LocalJetValuation.H158PoleSingleton p n k') (hsq : 52 * n < p ^ 2)
+  (hcut : k - 48 * n - 1 < p) (hcut' : k' - 48 * n - 1 < p) (c : Fin p) (hkc : OddZetaMixed.h158ResidueClass p hp k = c)
+  (hk'c : OddZetaMixed.h158ResidueClass p hp k' = OddZetaMixed.h158ReflectionClass n p hp c) (u v : Fin r → Fin (4 * n))
+  (hu : Function.Injective u) (hv : Function.Injective v) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p
+    (↑r *
+      (padicValRat p (OddZetaMixed.h158Normalization n) +
+        max 0
+          (min (OddZetaMixed.LocalJetValuation.h158NumeratorCount p n k - ↑(OddZetaMixed.h158PoleOrder n k))
+              (OddZetaMixed.LocalJetValuation.h158NumeratorCount p n k' - ↑(OddZetaMixed.h158PoleOrder n k')) +
+            ↑r)))
+    ((OddZetaMixed.h158PairMoment n p hn hp c).submatrix u v).det
+OddZetaMixed.h158CentralEvenMoment_singleton_minor_plateau {p r : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n)
+  (hp : 0 < p) (hsingle : OddZetaMixed.LocalJetValuation.H158PoleSingleton p n (79 * n + 1)) (hsq : 52 * n < p ^ 2)
+  (hcut : 79 * n + 1 - 48 * n - 1 < p) (u v : Fin r → Fin (2 * n)) (hu : Function.Injective u)
+  (hv : Function.Injective v) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p
+    (↑r *
+      (padicValRat p (OddZetaMixed.h158Normalization n) +
+        max 0
+          (OddZetaMixed.LocalJetValuation.h158NumeratorCount p n (79 * n + 1) -
+                ↑(OddZetaMixed.h158PoleOrder n (79 * n + 1)) +
+              2 * ↑r -
+            1)))
+    ((OddZetaMixed.h158CentralEvenMoment n p hn hp).submatrix u v).det
+OddZetaMixed.h158_folded_hybrid_det_minimum_floor {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n) (hp : 0 < p)
+  (hp2 : p ≠ 2) (hsq : 158 * n + 2 < p ^ 2) (choice : OddZetaMixed.H158FoldedHybridChoice n p hp) :
+  OddZetaMixed.LocalJetValuation.FormalAtLeast p
+    (OddZetaMixed.h158FoldedHybridMinimum n p hp choice - ↑(OddZetaMixed.h158RowFee n p))
+    (OddZetaMixed.h158SevenMatrix n).det
+OddZetaMixed.H158ExceptionalPrimes.exceptionalPrimeCost_upperQuadraticRate :
+  OddZetaMixed.UpperQuadraticRateOn {n | (OddZetaMixed.h158SevenMatrix n).det ≠ 0}
+    OddZetaMixed.H158ExceptionalPrimes.exceptionalPrimeCost 0
+OddZetaMixed.h158BasisNormalization_log_rate :
+  Filter.Tendsto (fun n => Real.log (OddZetaMixed.h158BasisNormalization n) / ↑n ^ 2) Filter.atTop
+    (nhds (12 - 8 * Real.log 4))
+OddZetaMixed.h158BasisNormalization_eventually_exp_bounds (ε : ℝ) (hε : 0 < ε) :
+  ∀ᶠ (n : ℕ) in Filter.atTop,
+    Real.exp ((12 - 8 * Real.log 4 - ε) * ↑n ^ 2) ≤ OddZetaMixed.h158BasisNormalization n ∧
+      OddZetaMixed.h158BasisNormalization n ≤ Real.exp ((12 - 8 * Real.log 4 + ε) * ↑n ^ 2)
+OddZetaMixed.h158ClassCost_eq_unshifted_add_error (n p c : ℕ) (hp : 0 < p) :
+  OddZetaMixed.LocalJetValuation.h158ClassCost p n c =
+    OddZetaMixed.h158UnshiftedClassCost n p c + OddZetaMixed.h158EndpointError n p c
+OddZetaMixed.h158ClassCost_unshifted_l1 (n p : ℕ) (hp : 0 < p) :
+  ∑ c, |OddZetaMixed.LocalJetValuation.h158ClassCost p n ↑c - OddZetaMixed.h158UnshiftedClassCost n p ↑c| ≤ 27
+OddZetaMixed.h158_unshifted_threshold_error_le (n p : ℕ) (hp : 0 < p) (e : Fin p → ℤ) (r J : ℕ) (tau : ℚ) :
+  |OddZetaMixed.WeightedSlotThreshold.rationalThresholdBudget
+          (fun c => OddZetaMixed.LocalJetValuation.h158ClassCost p n ↑c) e r J tau -
+        OddZetaMixed.WeightedSlotThreshold.rationalThresholdBudget (fun c => OddZetaMixed.h158UnshiftedClassCost n p ↑c)
+          e r J tau| ≤
+    27 * ↑J
+OddZetaMixed.h158_primitive_cost_truncated_folded_threshold {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n)
+  (hp : 0 < p) (hp2 : p ≠ 2) (hsq : 158 * n + 2 < p ^ 2) (J : ℕ) (tau : ℚ) (htau : 20 - 2 * ↑J ≤ tau)
+  (hdet : (OddZetaMixed.h158SevenMatrix n).det ≠ 0) :
+  -padicValRat p (OddZetaMixed.h158PrimitiveScalar n) ≤
+    ↑(OddZetaMixed.h158RowFee n p) +
+      ⌊OddZetaMixed.WeightedSlotThreshold.rationalThresholdBudget (OddZetaMixed.h158FoldedWeight n p hp)
+          (OddZetaMixed.h158FoldedSpacing n p hp) (2 * n) J tau⌋
+OddZetaMixed.h158FoldedWeight_unshifted_l1 {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hp : 0 < p) (hp2 : p ≠ 2) :
+  ∑ c, |OddZetaMixed.h158FoldedWeight n p hp c - OddZetaMixed.h158FoldedUnshiftedWeight n p hp c| ≤ 27
+OddZetaMixed.h158_primitive_cost_unshifted_threshold {p : ℕ} [Fact (Nat.Prime p)] (n : ℕ) (hn : 0 < n) (hp : 0 < p)
+  (hp2 : p ≠ 2) (hsq : 158 * n + 2 < p ^ 2) (J : ℕ) (tau : ℚ) (htau : 20 - 2 * ↑J ≤ tau)
+  (hdet : (OddZetaMixed.h158SevenMatrix n).det ≠ 0) :
+  -↑(padicValRat p (OddZetaMixed.h158PrimitiveScalar n)) ≤
+    ↑(OddZetaMixed.h158RowFee n p) +
+        OddZetaMixed.WeightedSlotThreshold.rationalThresholdBudget (OddZetaMixed.h158FoldedUnshiftedWeight n p hp)
+          (OddZetaMixed.h158FoldedSpacing n p hp) (2 * n) J tau +
+      27 * ↑J
+
+=== positive_regressions ===
+--- compiler attempt -M8192 ---
+
+=== regression_EndpointRemainderCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.residueEndpoint_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.residueIntervalFloor_succ_start' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158ClassCost_eq_unshifted_add_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158EndpointError_abs_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158ClassCost_unshifted_l1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.thresholdBudget_weight_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_unshifted_threshold_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158FoldedWeight_unshifted_l1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_folded_unshifted_threshold_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_primitive_cost_unshifted_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.thresholdBudget_truncate_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158FoldedWeight_le_twenty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_primitive_cost_truncated_folded_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed: 20 declarations, 16 theorem declarations in OddZetaMixed.EndpointRemainderCheck; only propext, Classical.choice, Quot.sound allowed.
+
+=== regression_H158AnalyticSlackBridgeCheck ===
+--- compiler attempt -M8192 ---
+theorem OddZetaMixed.h158AnalyticCertifiedRate : UpperQuadraticExpRateOn Set.univ
+  (fun n => Matrix.det (h158Functional n)) (-analyticExpression + 2) :=
+Eq.mp
+  (congrArg (UpperQuadraticExpRateOn Set.univ fun n => Matrix.det (h158Functional n))
+    (congrArg (HAdd.hAdd (-analyticExpression)) (mul_one 2)))
+  (h158AnalyticRate_of_compact_phase_ceiling_slack 1 h158CompactPhase_row_ceiling_add_one)
+'OddZetaMixed.h158AnalyticCertifiedRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaMixed.h158CompactPhase_row_ceiling_add_one (n : ℕ) (hn : 1 ≤ n) (i : Fin (2 * n)) :
+  ∃ a,
+    (∀ (j : Fin 4), 0 ≤ ↑(a j) ∧ ↑(a j) ≤ 20) ∧
+      ∀ (s : ℝ),
+        0 ≤ s →
+          s ≤ 96 →
+            (∀ (j : Fin 4), 0 < h158AdaptivePairModulus 75 (↑(a j)) s) →
+              h158PhasePotential (fun j => ↑(a j)) (h158PhaseCeilingTheta n ↑i) s ≤
+                h158PhaseCeiling (h158PhaseCeilingTheta n ↑i) + 1
+'OddZetaMixed.CompactPhase.potential_endpoint_cell_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.CompactPhase.SlackBatch00.covered_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.CompactPhase.SlackBatch01.covered_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.CompactPhase.SlackBatch02.covered_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158CompactPhase_of_endpoints_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158CompactPhase_selected_le_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158CompactPhase_row_ceiling_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhasePotential_ae_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveMoment_le_of_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AnalyticRate_of_compact_phase_ceiling_slack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.H158AnalyticSlackBridgeCheck.0.OddZetaMixed.composition_check' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== regression_H158ApplicationAdversarialCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.h158_seven_irrational_of_rates (A B : ℝ) (hgap : A + B < 0)
+  (harith : UpperQuadraticRateOn {n | (h158SevenMatrix n).det ≠ 0} h158PrimitiveCost A)
+  (hanalytic : UpperQuadraticExpRateOn Set.univ (fun n => Matrix.det (h158Functional n)) B) (hgate : H158RationalGate) :
+  ∃ i, Irrational (sevenZetaValues i)
+OddZetaMixed.h158_actual_rational_specialization_clearing (z : Fin 7 → ℚ)
+  (hz : ∀ (s : Fin 7), ↑(z s) = sevenZetaValues s) :
+  ∃ Q,
+    0 < Q ∧
+      ∀ (n : ℕ),
+        ∃ a,
+          ↑Q ^ (2 * n) * (Matrix.det (h158Functional n) / ↑(h158PrimitiveScalar n)) = ↑a ∧
+            (a ≠ 0 ↔ Matrix.det (h158Functional n) ≠ 0)
+OddZetaMixed.sevenZeta_irrational_iff_standard :
+  (∃ i, Irrational (sevenZetaValues i)) ↔ ∃ s ∈ sevenOddWeights, Irrational (riemannZeta ↑s).re
+'OddZetaMixed.h158_seven_irrational_of_rates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.rational_specialization_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_actual_rational_specialization_clearing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_rational_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.no_integer_sequence_with_rate_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.sevenZetaValues_ofReal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.sevenZeta_irrational_iff_standard' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== regression_H158BasisChangeSidecarCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158UnitBasisChange_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158UnitBasisChange_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158UnitBasisChange_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158UnitBasisChange_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158BasisMatrix_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158BasisMatrix_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158BasisFunctional_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158BasisFunctional_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158ScaledMonicEven_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveMonic_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158ScaledMonicEven_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== regression_H158CompactPhaseCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158CompactPhase_first_cell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.CompactPhase.phase_enclosed_cell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.CompactPhase.potential_cell_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed: 1268 declarations, 1042 theorem declarations in OddZetaMixed.CompactPhase; only propext, Classical.choice, Quot.sound allowed.
+
+=== regression_H158CompactPhaseSlackCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158CompactPhase_selected_le_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158CompactPhase_selected_le_add_one_offRoots' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158CompactPhase_row_ceiling_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed: 172 declarations, 105 theorem declarations in OddZetaMixed.CompactPhase.SlackBatch00; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 188 declarations, 114 theorem declarations in OddZetaMixed.CompactPhase.SlackBatch01; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 188 declarations, 114 theorem declarations in OddZetaMixed.CompactPhase.SlackBatch02; only propext, Classical.choice, Quot.sound allowed.
+
+=== regression_H158CompactRateAuditCheck ===
+--- compiler attempt -M8192 ---
+Import audit passed: no retired original-ceiling pilot modules.
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.h158AnalyticCertifiedRate; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 2 declarations, 2 theorem declarations in OddZetaMixed.h158CompactPhase_row_ceiling_add_one; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.h158PhasePotential_ae_envelope; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 2 declarations, 2 theorem declarations in OddZetaMixed.h158AnalyticRate_of_compact_phase_ceiling_slack; only propext, Classical.choice, Quot.sound allowed.
+
+=== regression_H158DensityAdversarialCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.H158DensityAdversarialCheck.density_eq_normalized_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158DensityAdversarialCheck.density_scaled_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158DensityAdversarialCheck.density_scaled_root_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158DensityAdversarialCheck.weight_zero_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158DensityAdversarialCheck.raw_phase_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158DensityAdversarialCheck.moment_scaling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158DensityAdversarialCheck.moment_bound_via_ae_api' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158ModulusWeight_uniform_envelope_abs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveDensity_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhasePotential_ae_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveMoment_le_of_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== regression_H158FoldedAssemblyCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158_scaled_folded_fin_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158FoldedMoment_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_folded_minor_allocation_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158_folded_det_floor_of_allocation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== regression_H158MomentProductRateCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.h158AdaptiveMoment_product_le (n : ℕ) (a : Fin (2 * n) → Fin 4 → ℚ) (C : ℝ) (hC : 0 < C)
+  (M : Fin (2 * n) → ℝ)
+  (hmoment :
+    ∀ (i : Fin (2 * n)),
+      h158BasisModulusMoment n
+          ((h158AdaptiveMonic (↑i) (h158AdaptiveDelta n) (a i)).comp (Polynomial.C ((↑n)⁻¹ ^ 2) * X ^ 2)) ≤
+        C * ↑n ^ 41 * Real.exp (↑n * M i))
+  (hsum : ∑ i, M i ≤ -8123483 * ↑n / 8000) :
+  ∏ i,
+      h158BasisModulusMoment n
+        ((h158AdaptiveMonic (↑i) (h158AdaptiveDelta n) (a i)).comp (Polynomial.C ((↑n)⁻¹ ^ 2) * X ^ 2)) ≤
+    (C * ↑n ^ 41) ^ (2 * n) * Real.exp (-(8123483 / 8000) * ↑n ^ 2)
+OddZetaMixed.h158AdaptiveMoment_det_abs_le (n : ℕ) (hn : 1 ≤ n) (a : Fin (2 * n) → Fin 4 → ℚ) (C : ℝ) (hC : 0 < C)
+  (M : Fin (2 * n) → ℝ)
+  (hmoment :
+    ∀ (i : Fin (2 * n)),
+      h158BasisModulusMoment n
+          ((h158AdaptiveMonic (↑i) (h158AdaptiveDelta n) (a i)).comp (Polynomial.C ((↑n)⁻¹ ^ 2) * X ^ 2)) ≤
+        C * ↑n ^ 41 * Real.exp (↑n * M i))
+  (hsum : ∑ i, M i ≤ -8123483 * ↑n / 8000) :
+  |Matrix.det (h158Functional n)| ≤
+    ↑(2 * n).factorial * h158BasisNormalization n * (C * ↑n ^ 41) ^ (2 * n) * Real.exp (-(8123483 / 8000) * ↑n ^ 2)
+OddZetaMixed.h158Moment_prefactor_subquadratic (C : ℝ) (hC : 0 < C) (ε : ℝ) (hε : 0 < ε) :
+  ∀ᶠ (n : ℕ) in atTop, (C * ↑n ^ 41) ^ (2 * n) ≤ Real.exp (ε * ↑n ^ 2)
+OddZetaMixed.h158AnalyticBound_of_adaptive_moment_bounds (a : (n : ℕ) → Fin (2 * n) → Fin 4 → ℚ)
+  (M : (n : ℕ) → Fin (2 * n) → ℝ) (C : ℝ) (hC : 0 < C)
+  (hmoment :
+    ∀ (n : ℕ),
+      1 ≤ n →
+        ∀ (i : Fin (2 * n)),
+          h158BasisModulusMoment n
+              ((h158AdaptiveMonic (↑i) (h158AdaptiveDelta n) (a n i)).comp (Polynomial.C ((↑n)⁻¹ ^ 2) * X ^ 2)) ≤
+            C * ↑n ^ 41 * Real.exp (↑n * M n i))
+  (hsum : ∀ (n : ℕ), 1 ≤ n → ∑ i, M n i ≤ -8123483 * ↑n / 8000) : H158AnalyticBound
+OddZetaMixed.h158AnalyticBound_of_compact_phase_ceiling
+  (hcompact :
+    ∀ (n : ℕ),
+      1 ≤ n →
+        ∀ (i : Fin (2 * n)),
+          ∃ a,
+            (∀ (j : Fin 4), 0 ≤ ↑(a j) ∧ ↑(a j) ≤ 20) ∧
+              ∀ (s : ℝ),
+                0 ≤ s →
+                  s ≤ 96 →
+                    (∀ (j : Fin 4), 0 < h158AdaptivePairModulus 75 (↑(a j)) s) →
+                      h158PhasePotential (fun j => ↑(a j)) (h158PhaseCeilingTheta n ↑i) s ≤
+                        h158PhaseCeiling (h158PhaseCeilingTheta n ↑i)) :
+  H158AnalyticBound
+OddZetaMixed.h158AdaptiveMoment_product_le_slack (n : ℕ) (a : Fin (2 * n) → Fin 4 → ℚ) (C : ℝ) (hC : 0 < C)
+  (M : Fin (2 * n) → ℝ) (slack : ℝ)
+  (hmoment :
+    ∀ (i : Fin (2 * n)),
+      h158BasisModulusMoment n
+          ((h158AdaptiveMonic (↑i) (h158AdaptiveDelta n) (a i)).comp (Polynomial.C ((↑n)⁻¹ ^ 2) * X ^ 2)) ≤
+        C * ↑n ^ 41 * Real.exp (↑n * M i))
+  (hsum : ∑ i, M i ≤ -8123483 * ↑n / 8000 + 2 * ↑n * slack) :
+  ∏ i,
+      h158BasisModulusMoment n
+        ((h158AdaptiveMonic (↑i) (h158AdaptiveDelta n) (a i)).comp (Polynomial.C ((↑n)⁻¹ ^ 2) * X ^ 2)) ≤
+    (C * ↑n ^ 41) ^ (2 * n) * Real.exp ((-(8123483 / 8000) + 2 * slack) * ↑n ^ 2)
+OddZetaMixed.h158AdaptiveMoment_det_abs_le_slack (n : ℕ) (hn : 1 ≤ n) (a : Fin (2 * n) → Fin 4 → ℚ) (C : ℝ) (hC : 0 < C)
+  (M : Fin (2 * n) → ℝ) (slack : ℝ)
+  (hmoment :
+    ∀ (i : Fin (2 * n)),
+      h158BasisModulusMoment n
+          ((h158AdaptiveMonic (↑i) (h158AdaptiveDelta n) (a i)).comp (Polynomial.C ((↑n)⁻¹ ^ 2) * X ^ 2)) ≤
+        C * ↑n ^ 41 * Real.exp (↑n * M i))
+  (hsum : ∑ i, M i ≤ -8123483 * ↑n / 8000 + 2 * ↑n * slack) :
+  |Matrix.det (h158Functional n)| ≤
+    ↑(2 * n).factorial * h158BasisNormalization n * (C * ↑n ^ 41) ^ (2 * n) *
+      Real.exp ((-(8123483 / 8000) + 2 * slack) * ↑n ^ 2)
+OddZetaMixed.h158PhaseCeiling_degree_sum_fin_le_slack (n : ℕ) (hn : 0 < n) (slack : ℝ) :
+  ∑ i, (h158PhaseCeiling (h158PhaseCeilingTheta n ↑i) + slack) ≤ -8123483 * ↑n / 8000 + 2 * ↑n * slack
+OddZetaMixed.h158AnalyticRate_of_adaptive_moment_bounds_slack (a : (n : ℕ) → Fin (2 * n) → Fin 4 → ℚ)
+  (M : (n : ℕ) → Fin (2 * n) → ℝ) (C : ℝ) (hC : 0 < C) (slack : ℝ)
+  (hmoment :
+    ∀ (n : ℕ),
+      1 ≤ n →
+        ∀ (i : Fin (2 * n)),
+          h158BasisModulusMoment n
+              ((h158AdaptiveMonic (↑i) (h158AdaptiveDelta n) (a n i)).comp (Polynomial.C ((↑n)⁻¹ ^ 2) * X ^ 2)) ≤
+            C * ↑n ^ 41 * Real.exp (↑n * M n i))
+  (hsum : ∀ (n : ℕ), 1 ≤ n → ∑ i, M n i ≤ -8123483 * ↑n / 8000 + 2 * ↑n * slack) :
+  UpperQuadraticExpRateOn Set.univ (fun n => Matrix.det (h158Functional n)) (-analyticExpression + 2 * slack)
+OddZetaMixed.h158AnalyticRate_of_compact_phase_ceiling_slack (slack : ℝ)
+  (hcompact :
+    ∀ (n : ℕ),
+      1 ≤ n →
+        ∀ (i : Fin (2 * n)),
+          ∃ a,
+            (∀ (j : Fin 4), 0 ≤ ↑(a j) ∧ ↑(a j) ≤ 20) ∧
+              ∀ (s : ℝ),
+                0 ≤ s →
+                  s ≤ 96 →
+                    (∀ (j : Fin 4), 0 < h158AdaptivePairModulus 75 (↑(a j)) s) →
+                      h158PhasePotential (fun j => ↑(a j)) (h158PhaseCeilingTheta n ↑i) s ≤
+                        h158PhaseCeiling (h158PhaseCeilingTheta n ↑i) + slack) :
+  UpperQuadraticExpRateOn Set.univ (fun n => Matrix.det (h158Functional n)) (-analyticExpression + 2 * slack)
+'OddZetaMixed.h158AdaptiveMoment_product_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveMoment_det_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158Moment_prefactor_subquadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AnalyticBound_of_moment_product_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AnalyticBound_of_adaptive_moment_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AnalyticBound_of_compact_phase_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveMoment_product_le_slack' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AdaptiveMoment_det_abs_le_slack' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AnalyticRate_of_moment_product_majorant_slack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158AnalyticRate_of_adaptive_moment_bounds_slack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.h158PhaseCeiling_degree_sum_fin_le_slack' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158AnalyticRate_of_compact_phase_ceiling_slack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.polynomialExponential_scaled_integral_bound_of_ae_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.polynomialExponential_scaled_kernel_phase_bound_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== regression_H158PhaseTailCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.h158PhasePotential_hasDerivAt (a : Fin 4 → ℝ) {theta s : ℝ} (ha : ∀ (j : Fin 4), 0 ≤ a j ∧ a j ≤ 20)
+  (hs : 96 ≤ s) : HasDerivAt (h158PhasePotential a theta) (h158PhasePotentialDerivative a theta s) s
+OddZetaMixed.h158PhasePotential_deriv_tail_le (a : Fin 4 → ℝ) {theta s : ℝ} (ha : ∀ (j : Fin 4), 0 ≤ a j ∧ a j ≤ 20)
+  (htheta0 : 0 ≤ theta) (htheta2 : theta ≤ 2) (hs : 96 ≤ s) : deriv (h158PhasePotential a theta) s ≤ -(4 / 5)
+OddZetaMixed.h158PhaseRoots_deriv_tail_le (b : Fin 8) {theta s : ℝ} (htheta0 : 0 ≤ theta) (htheta2 : theta ≤ 2)
+  (hs : 96 ≤ s) : deriv (h158PhasePotential (fun j => ↑(h158PhaseRoots b j)) theta) s ≤ -(4 / 5)
+'OddZetaMixed.h158Phase_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhasePotential_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhasePotential_deriv_tail_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.h158PhaseRoots_deriv_tail_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.h158PhaseRoots_deriv_tail_le; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.h158PhasePotential_deriv_tail_le; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 2 declarations, 2 theorem declarations in OddZetaMixed.h158PhasePotential_hasDerivAt; only propext, Classical.choice, Quot.sound allowed.
+
+=== regression_H158PrimeProfileRateCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158PrimitiveCost_rate_of_piecewise_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== regression_H158RationalWallsCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.h158_eventually_open_cell' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== regression_H158SmallPrimeScratch ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.H158SmallPrimeBudget.matrixEntry_coefficient_den_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158SmallPrimeBudget.determinant_small_prime_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158SmallPrimeBudget.primitiveCost_small_prime_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158SmallPrimeBudget.smallPrimeCost_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.H158SmallPrimeBudget.smallPrimeMajorant_subquadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.H158SmallPrimeBudget.smallPrimeCost_upperQuadraticRate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== regression_H158UnconditionalAcceptanceCheck ===
+--- compiler attempt -M8192 ---
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.h158ArithmeticCertifiedRate; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.h158AnalyticCertifiedRate; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.h158_seven_irrational; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.h158_eventually_primitive_det_small; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.h158_eventually_primitive_polynomial_small; only propext, Classical.choice, Quot.sound allowed.
+Axiom audit passed: 1 declarations, 1 theorem declarations in OddZetaMixed.exists_irrational_riemannZeta_seven_to_nineteen; only propext, Classical.choice, Quot.sound allowed.
+OddZetaMixed.exists_irrational_riemannZeta_seven_to_nineteen :
+  ∃ s ∈ {7, 9, 11, 13, 15, 17, 19}, Irrational (riemannZeta ↑s).re
+
+=== regression_HalfIntegerGammaEstimateCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.halfIntegerGammaMain (x y : ℝ) : ℝ
+OddZetaMixed.halfIntegerGammaPhase (a s : ℝ) : ℝ
+OddZetaMixed.log_gamma_half_add_nat_norm_eq_main_add_error (m : ℕ) (hm : 1 ≤ m) (y : ℝ) (hy : 0 ≤ y) :
+  Real.log ‖Gamma (↑m + 1 / 2 + ↑y * I)‖ =
+    halfIntegerGammaMain (↑m) y + logQuadraticMidpointError m y +
+      (Real.pi * y - Real.log (Real.cosh (Real.pi * y)) - Real.log 2) / 2
+OddZetaMixed.log_gamma_half_add_nat_norm_estimate (m : ℕ) (hm : 1 ≤ m) (y : ℝ) :
+  |Real.log ‖Gamma (↑m + 1 / 2 + ↑y * I)‖ - halfIntegerGammaMain (↑m) y| ≤ 2 + Real.log ↑m
+OddZetaMixed.log_gamma_three_half_add_nat_norm_estimate (m : ℕ) (hm : 1 ≤ m) (y : ℝ) :
+  |Real.log ‖Gamma (↑m + 3 / 2 + ↑y * I)‖ - (halfIntegerGammaMain (↑m) y + Real.log ‖↑m + ↑y * I‖)| ≤ 3 + Real.log ↑m
+OddZetaMixed.gamma_norm_real_add_imaginary_neg (x y : ℝ) : ‖Gamma (↑x + ↑(-y) * I)‖ = ‖Gamma (↑x + ↑y * I)‖
+OddZetaMixed.halfIntegerGammaMain_mul (a n s : ℝ) (ha : 0 < a) (hn : 0 < n) :
+  halfIntegerGammaMain (a * n) (n * s) = n * (a * Real.log n + halfIntegerGammaPhase a s) + Real.log (2 * Real.pi) / 2
+OddZetaMixed.log_norm_real_add_imaginary_mul (a n s : ℝ) (ha : 0 < a) (hn : 0 < n) :
+  Real.log ‖↑(a * n) + ↑(n * s) * I‖ = Real.log n + Real.log ‖↑a + ↑s * I‖
+OddZetaMixed.log_gamma_half_mul_norm_estimate (a n : ℕ) (ha : 1 ≤ a) (hn : 1 ≤ n) (s : ℝ) :
+  |Real.log ‖Gamma (↑a * ↑n + 1 / 2 + ↑n * ↑s * I)‖ -
+        (↑n * (↑a * Real.log ↑n + halfIntegerGammaPhase (↑a) s) + Real.log (2 * Real.pi) / 2)| ≤
+    2 + Real.log ↑a + Real.log ↑n
+OddZetaMixed.log_gamma_three_half_mul_norm_estimate (a n : ℕ) (ha : 1 ≤ a) (hn : 1 ≤ n) (s : ℝ) :
+  |Real.log ‖Gamma (↑a * ↑n + 3 / 2 + ↑n * ↑s * I)‖ -
+        (↑n * (↑a * Real.log ↑n + halfIntegerGammaPhase (↑a) s) + Real.log (2 * Real.pi) / 2 + Real.log ↑n +
+          Real.log ‖↑a + ↑s * I‖)| ≤
+    3 + Real.log ↑a + Real.log ↑n
+'OddZetaMixed.log_gamma_half_add_nat_norm_estimate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.log_gamma_three_half_add_nat_norm_estimate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.log_gamma_half_mul_norm_estimate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.log_gamma_three_half_mul_norm_estimate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.gamma_norm_real_add_imaginary_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== regression_LogQuadraticMidpointCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.logQuadratic_intervalIntegrable (y a b : ℝ) : IntervalIntegrable (logQuadratic y) volume a b
+OddZetaMixed.logQuadraticMidpointError_abs_le (m : ℕ) (hm : 1 ≤ m) (y : ℝ) :
+  |logQuadraticMidpointError m y| ≤ 1 + Real.log ↑m
+OddZetaMixed.integral_logQuadratic (y b : ℝ) :
+  ∫ (x : ℝ) in 0..b, logQuadratic y x = b * logQuadratic y b - b + y * Real.arctan (b / y)
+OddZetaMixed.integral_logQuadratic_zero (b : ℝ) : ∫ (x : ℝ) in 0..b, logQuadratic 0 x = b * Real.log b - b
+OddZetaMixed.integral_logQuadratic_eq_phase (y b : ℝ) (hy : 0 ≤ y) (hb : 0 < b) :
+  ∫ (x : ℝ) in 0..b, logQuadratic y x = b * logQuadratic y b - b - y * Real.arctan (y / b) + Real.pi * y / 2
+OddZetaMixed.log_midpoint_sum_abs_le (m : ℕ) (hm : 1 ≤ m) :
+  |∑ j ∈ range m, Real.log (↑j + 1 / 2) - (↑m * Real.log ↑m - ↑m)| ≤ 1 + Real.log ↑m
+OddZetaMixed.logQuadratic_log_prod_integral_abs_le (m : ℕ) (hm : 1 ≤ m) (y : ℝ) :
+  |Real.log (∏ j ∈ range m, ((↑j + 1 / 2) ^ 2 + y ^ 2)) / 2 - ∫ (x : ℝ) in 0..↑m, logQuadratic y x| ≤ 1 + Real.log ↑m
+OddZetaMixed.logQuadratic_log_prod_abs_le (m : ℕ) (hm : 1 ≤ m) (y : ℝ) :
+  |Real.log (∏ j ∈ range m, ((↑j + 1 / 2) ^ 2 + y ^ 2)) / 2 -
+        (↑m * Real.log (↑m ^ 2 + y ^ 2) / 2 - ↑m + y * Real.arctan (↑m / y))| ≤
+    1 + Real.log ↑m
+OddZetaMixed.logQuadratic_log_prod_phase_abs_le (m : ℕ) (hm : 1 ≤ m) (y : ℝ) (hy : 0 ≤ y) :
+  |Real.log (∏ j ∈ range m, ((↑j + 1 / 2) ^ 2 + y ^ 2)) / 2 -
+        (↑m * Real.log (↑m ^ 2 + y ^ 2) / 2 - ↑m - y * Real.arctan (y / ↑m) + Real.pi * y / 2)| ≤
+    1 + Real.log ↑m
+OddZetaMixed.logQuadraticMidpointError_one_zero : logQuadraticMidpointError 1 0 = 1 - Real.log 2
+'OddZetaMixed.logQuadratic_intervalIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.logQuadraticMidpointError_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.integral_logQuadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.integral_logQuadratic_eq_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.logQuadratic_log_prod_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.logQuadratic_log_prod_phase_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.log_midpoint_sum_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.logQuadraticMidpointError_one_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== regression_PolynomialExponentialEnvelopeCheck ===
+--- compiler attempt -M8192 ---
+OddZetaMixed.polynomialExponentialEnvelope (s : ℝ) : ℝ
+OddZetaMixed.polynomialExponentialEnvelopeConstant : ℝ
+OddZetaMixed.polynomialExponentialEnvelope_integrable : Integrable polynomialExponentialEnvelope volume
+OddZetaMixed.polynomialExponentialEnvelopeConstant_pos : 0 < polynomialExponentialEnvelopeConstant
+OddZetaMixed.polynomialExponentialEnvelope_lintegral_lt_top :
+  ∫⁻ (s : ℝ), ENNReal.ofReal (polynomialExponentialEnvelope s) < ⊤
+OddZetaMixed.polynomialExponentialEnvelopeConstant_ofReal :
+  ENNReal.ofReal polynomialExponentialEnvelopeConstant = ∫⁻ (s : ℝ), ENNReal.ofReal (polynomialExponentialEnvelope s)
+OddZetaMixed.polynomialExponential_phase_domination (n M : ℝ) (hn : 1 ≤ n) (Ψ : ℝ → ℝ)
+  (hcompact : ∀ (s : ℝ), |s| ≤ 96 → Ψ s ≤ M) (htail : ∀ (s : ℝ), 96 < |s| → Ψ s ≤ M - 4 / 5 * (|s| - 96)) (s : ℝ) :
+  (1 + |s|) ^ 34 * Real.exp (n * Ψ s) ≤ Real.exp (n * M) * polynomialExponentialEnvelope s
+OddZetaMixed.polynomialExponential_integral_bound_of_le (K : ℝ → ℝ) (hK : AEStronglyMeasurable K volume) (A : ℝ)
+  (hK0 : ∀ (s : ℝ), 0 ≤ K s) (hbound : ∀ (s : ℝ), K s ≤ A * polynomialExponentialEnvelope s) :
+  Integrable K volume ∧ ∫ (s : ℝ), K s ≤ A * polynomialExponentialEnvelopeConstant
+OddZetaMixed.polynomialExponential_phase_integral_bound (n M : ℝ) (hn : 1 ≤ n) (Ψ : ℝ → ℝ) (hΨ : Measurable Ψ)
+  (hcompact : ∀ (s : ℝ), |s| ≤ 96 → Ψ s ≤ M) (htail : ∀ (s : ℝ), 96 < |s| → Ψ s ≤ M - 4 / 5 * (|s| - 96)) :
+  Integrable (fun s => (1 + |s|) ^ 34 * Real.exp (n * Ψ s)) volume ∧
+    ∫ (s : ℝ), (1 + |s|) ^ 34 * Real.exp (n * Ψ s) ≤ polynomialExponentialEnvelopeConstant * Real.exp (n * M)
+OddZetaMixed.polynomialExponential_scaled_integral_bound_of_le (n A : ℝ) (hn : 0 < n) (K : ℝ → ℝ) (hK : Measurable K)
+  (hK0 : ∀ (y : ℝ), 0 ≤ K y) (hbound : ∀ (s : ℝ), K (n * s) ≤ A * polynomialExponentialEnvelope s) :
+  Integrable K volume ∧ ∫ (y : ℝ), K y ≤ n * A * polynomialExponentialEnvelopeConstant
+OddZetaMixed.polynomialExponential_scaled_kernel_phase_bound (n A M : ℝ) (hn : 1 ≤ n) (hA : 0 ≤ A) (K Ψ : ℝ → ℝ)
+  (hK : Measurable K) (hK0 : ∀ (y : ℝ), 0 ≤ K y) (hcompact : ∀ (s : ℝ), |s| ≤ 96 → Ψ s ≤ M)
+  (htail : ∀ (s : ℝ), 96 < |s| → Ψ s ≤ M - 4 / 5 * (|s| - 96))
+  (hbound : ∀ (s : ℝ), K (n * s) ≤ A * ((1 + |s|) ^ 34 * Real.exp (n * Ψ s))) :
+  Integrable K volume ∧ ∫ (y : ℝ), K y ≤ n * A * polynomialExponentialEnvelopeConstant * Real.exp (n * M)
+OddZetaMixed.polynomialExponential_phase_domination_ae (n M : ℝ) (hn : 1 ≤ n) (Ψ : ℝ → ℝ)
+  (hcompact : ∀ᵐ (s : ℝ), |s| ≤ 96 → Ψ s ≤ M) (htail : ∀ᵐ (s : ℝ), 96 < |s| → Ψ s ≤ M - 4 / 5 * (|s| - 96)) :
+  ∀ᵐ (s : ℝ), (1 + |s|) ^ 34 * Real.exp (n * Ψ s) ≤ Real.exp (n * M) * polynomialExponentialEnvelope s
+OddZetaMixed.polynomialExponential_integral_bound_of_ae_le (K : ℝ → ℝ) (hK : AEStronglyMeasurable K volume) (A : ℝ)
+  (hK0 : ∀ᵐ (s : ℝ), 0 ≤ K s) (hbound : ∀ᵐ (s : ℝ), K s ≤ A * polynomialExponentialEnvelope s) :
+  Integrable K volume ∧ ∫ (s : ℝ), K s ≤ A * polynomialExponentialEnvelopeConstant
+OddZetaMixed.polynomialExponential_phase_integral_bound_ae (n M : ℝ) (hn : 1 ≤ n) (Ψ : ℝ → ℝ) (hΨ : Measurable Ψ)
+  (hcompact : ∀ᵐ (s : ℝ), |s| ≤ 96 → Ψ s ≤ M) (htail : ∀ᵐ (s : ℝ), 96 < |s| → Ψ s ≤ M - 4 / 5 * (|s| - 96)) :
+  Integrable (fun s => (1 + |s|) ^ 34 * Real.exp (n * Ψ s)) volume ∧
+    ∫ (s : ℝ), (1 + |s|) ^ 34 * Real.exp (n * Ψ s) ≤ polynomialExponentialEnvelopeConstant * Real.exp (n * M)
+OddZetaMixed.polynomialExponential_scaled_integral_bound_of_ae_le (n A : ℝ) (hn : 0 < n) (K : ℝ → ℝ) (hK : Measurable K)
+  (hK0 : ∀ (y : ℝ), 0 ≤ K y) (hbound : ∀ᵐ (s : ℝ), K (n * s) ≤ A * polynomialExponentialEnvelope s) :
+  Integrable K volume ∧ ∫ (y : ℝ), K y ≤ n * A * polynomialExponentialEnvelopeConstant
+OddZetaMixed.polynomialExponential_scaled_kernel_phase_bound_ae (n A M : ℝ) (hn : 1 ≤ n) (hA : 0 ≤ A) (K Ψ : ℝ → ℝ)
+  (hK : Measurable K) (hK0 : ∀ (y : ℝ), 0 ≤ K y) (hcompact : ∀ᵐ (s : ℝ), |s| ≤ 96 → Ψ s ≤ M)
+  (htail : ∀ᵐ (s : ℝ), 96 < |s| → Ψ s ≤ M - 4 / 5 * (|s| - 96))
+  (hbound : ∀ᵐ (s : ℝ), K (n * s) ≤ A * ((1 + |s|) ^ 34 * Real.exp (n * Ψ s))) :
+  Integrable K volume ∧ ∫ (y : ℝ), K y ≤ n * A * polynomialExponentialEnvelopeConstant * Real.exp (n * M)
+'OddZetaMixed.polynomialExponentialEnvelope_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.polynomialExponentialEnvelopeConstant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.polynomialExponentialEnvelope_lintegral_lt_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.polynomialExponential_phase_integral_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.polynomialExponential_scaled_kernel_phase_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.polynomialExponential_integral_bound_of_ae_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.polynomialExponential_phase_integral_bound_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.polynomialExponential_scaled_integral_bound_of_ae_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.polynomialExponential_scaled_kernel_phase_bound_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== regression_RationalArctanBoundsCheck ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.RationalArctanBounds.of_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed: 21 declarations, 13 theorem declarations in OddZetaMixed.RationalArctanBounds; only propext, Classical.choice, Quot.sound allowed.
+
+=== regression_SingletonValuationScratch ===
+--- compiler attempt -M8192 ---
+'OddZetaMixed.LocalJetValuation.h158_singleton_cofactor_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.LocalJetValuation.h158_base_coefficient_normalization_floor_of_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.LocalJetValuation.h158_poleCoordinate_floor_no_harmonic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.LocalJetValuation.h158_singleton_poleMap_plateau' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.LocalJetValuation.h158_singleton_residueClusterMoment_plateau' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OddZetaMixed.LocalJetValuation.formal_minor_plateau_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddZetaMixed.LocalJetValuation.h158_singleton_minor_plateau' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== reject_project_axiom ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_project_axiom.lean:7:0: error: Unexpected axiom AuditProbe.hidden in AuditProbe.endpoint
+
+=== reject_unfinished_proof ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_unfinished_proof.lean:4:8: warning: declaration uses `sorry`
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_unfinished_proof.lean:6:0: error: Unexpected axiom sorryAx in AuditProbe.endpoint
+
+=== reject_native_trust ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_native_trust.lean:6:0: error: Unexpected axiom AuditProbe.endpoint._native.native_decide.ax_1_1 in AuditProbe.endpoint
+
+=== reject_false_gap ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_false_gap.lean:3:76: error: unsolved goals
+⊢ False
+
+=== reject_log_zero_negative ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_log_zero_negative.lean:3:38: error: unsolved goals
+⊢ False
+
+=== reject_omitted_ceiling_fee ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_omitted_ceiling_fee.lean:4:47: error: unsolved goals
+⊢ False
+
+=== reject_missing_h158_inputs ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_missing_h158_inputs.lean:5:2: error: Type mismatch
+  OddZetaMixed.h158_seven_irrational_of_three_inputs
+has type
+  OddZetaMixed.H158ArithmeticBound →
+    OddZetaMixed.H158AnalyticBound → OddZetaMixed.H158RationalGate → ∃ i, Irrational (OddZetaMixed.sevenZetaValues i)
+but is expected to have type
+  ∃ i, Irrational (OddZetaMixed.sevenZetaValues i)
+
+=== reject_missing_global_rates ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_missing_global_rates.lean:5:2: error: Type mismatch
+  OddZetaMixed.h158_seven_irrational_of_rate_bounds
+has type
+  OddZetaMixed.H158ArithmeticBound → OddZetaMixed.H158AnalyticBound → ∃ i, Irrational (OddZetaMixed.sevenZetaValues i)
+but is expected to have type
+  ∃ i, Irrational (OddZetaMixed.sevenZetaValues i)
+
+=== reject_fixed_index_as_global_rate ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_fixed_index_as_global_rate.lean:4:2: error: Type mismatch
+  OddZetaMixed.h158ClosingEdges_tendsto_zero
+has type
+  ∀ (n : ℕ) (i j : Fin (2 * n)),
+    Filter.Tendsto
+      (fun q =>
+        OddZetaMixed.h158HorizontalClosingIntegral n (↑i) (↑j) q ↑q -
+            OddZetaMixed.h158RightClosingIntegral n (↑i) (↑j) q -
+          OddZetaMixed.h158HorizontalClosingIntegral n (↑i) (↑j) q (-↑q))
+      Filter.atTop (nhds 0)
+but is expected to have type
+  OddZetaMixed.H158AnalyticBound
+
+=== reject_support_as_global_budget ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_support_as_global_budget.lean:4:2: error: Type mismatch
+  OddZetaMixed.h158PrimitiveCost_le_prime_cutoff
+has type
+  ∀ (n : ℕ),
+    OddZetaMixed.h158PrimitiveCost n ≤
+      ∑ p ∈ Finset.range (57 * n + 1) with Nat.Prime p,
+        -↑(padicValRat p (OddZetaMixed.h158PrimitiveScalar n)) * Real.log ↑p
+but is expected to have type
+  OddZetaMixed.H158ArithmeticBound
+
+=== reject_prime_rates_as_divisibility ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_prime_rates_as_divisibility.lean:4:2: error: Type mismatch
+  OddZetaMixed.h158_prime_content_three_bands_rate
+has type
+  Filter.Tendsto
+    (fun n => (OddZetaPNT.h158Content54 n + OddZetaPNT.h158Content55 n + OddZetaPNT.h158Content56 n) / ↑n ^ 2)
+    Filter.atTop (nhds (15 / 4))
+but is expected to have type
+  OddZetaMixed.H158ArithmeticBound
+
+=== reject_integrability_as_analytic_rate ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_integrability_as_analytic_rate.lean:4:2: error: Type mismatch
+  OddZetaMixed.h158VerticalIntegrand_integrable
+has type
+  ∀ (n : ℕ) (i j : Fin (2 * n)),
+    MeasureTheory.Integrable (OddZetaMixed.h158VerticalIntegrand n ↑i ↑j) MeasureTheory.volume
+but is expected to have type
+  OddZetaMixed.H158AnalyticBound
+
+=== reject_transitive_admission_leak ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_transitive_admission_leak.lean:4:8: warning: declaration uses `sorry`
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_transitive_admission_leak.lean:7:0: warning: Definition `leaked` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_transitive_admission_leak.lean:9:0: error: Unexpected axiom sorryAx in AuditProbe.leaked
+
+=== reject_unfolded_allocation_as_budget ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_unfolded_allocation_as_budget.lean:4:2: error: Type mismatch
+  OddZetaMixed.FormalBlockSelection.h158_primitive_cost_unfolded_allocation
+has type
+  ∀ (n p : ℕ) (hn : 0 < n) (hp : Nat.Prime p),
+    158 * n + 2 < p ^ 2 →
+      (OddZetaMixed.h158SevenMatrix n).det ≠ 0 →
+        -padicValRat p (OddZetaMixed.h158PrimitiveScalar n) ≤
+          ↑(OddZetaMixed.h158RowFee n p) - OddZetaMixed.FormalBlockSelection.h158MinAllocationFloor n p hn ⋯
+but is expected to have type
+  OddZetaMixed.H158ArithmeticBound
+
+=== reject_modulus_majorant_as_rate ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_modulus_majorant_as_rate.lean:4:2: error: Type mismatch
+  OddZetaMixed.h158Functional_det_abs_le_modulusMoments
+has type
+  ∀ (n : ℕ),
+    |Matrix.det (OddZetaMixed.h158Functional n)| ≤ ↑(2 * n).factorial * ∏ i, OddZetaMixed.h158ModulusMoment n ↑i
+but is expected to have type
+  OddZetaMixed.H158AnalyticBound
+
+=== reject_finite_explicit_budget_as_rate ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_finite_explicit_budget_as_rate.lean:4:2: error: Type mismatch
+  OddZetaMixed.h158PrimitiveCost_le_explicit_budget
+has type
+  ∀ (n : ℕ),
+    0 < n →
+      ∀ (tau : ℕ → ℚ),
+        (OddZetaMixed.h158SevenMatrix n).det ≠ 0 →
+          OddZetaMixed.h158PrimitiveCost n ≤ OddZetaMixed.h158ExplicitArithmeticBudget n tau
+but is expected to have type
+  OddZetaMixed.H158ArithmeticBound
+
+=== reject_small_prime_rate_as_global ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_small_prime_rate_as_global.lean:4:2: error: Type mismatch
+  OddZetaMixed.H158SmallPrimeBudget.smallPrimeCost_upperQuadraticRate
+has type
+  OddZetaMixed.UpperQuadraticRateOn {n | (OddZetaMixed.h158SevenMatrix n).det ≠ 0}
+    OddZetaMixed.H158SmallPrimeBudget.smallPrimeCost 0
+but is expected to have type
+  OddZetaMixed.H158ArithmeticBound
+
+=== reject_basis_rate_as_complete_analytic ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_basis_rate_as_complete_analytic.lean:4:2: error: Type mismatch
+  OddZetaMixed.h158BasisNormalization_log_rate
+has type
+  Filter.Tendsto (fun n => Real.log (OddZetaMixed.h158BasisNormalization n) / ↑n ^ 2) Filter.atTop
+    (nhds (12 - 8 * Real.log 4))
+but is expected to have type
+  OddZetaMixed.H158AnalyticBound
+
+=== reject_endpoint_error_as_global ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_endpoint_error_as_global.lean:4:8: error: typeclass instance problem is stuck
+  Fact (Nat.Prime ?m.2)
+
+Note: Lean will not try to resolve this typeclass instance problem because the type argument to `Fact` contains metavariables. This argument must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+
+=== reject_unchecked_slot_truncation ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_unchecked_slot_truncation.lean:5:32: error: unsolved goals
+⊢ False
+
+=== reject_mixed_as_single_zeta7 ===
+--- compiler attempt -M8192 ---
+/var/folders/r6/lly_4h4x1tn8v3v6f0m_px5h0000gn/T/odd-zeta-lean-cgarv2pa/reject_mixed_as_single_zeta7.lean:5:2: error: Type mismatch
+  OddZetaMixed.exists_irrational_riemannZeta_seven_to_nineteen
+has type
+  ∃ s ∈ {7, 9, 11, 13, 15, 17, 19}, Irrational (riemannZeta ↑s).re
+but is expected to have type
+  Irrational (riemannZeta 7).re

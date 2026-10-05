@@ -1,0 +1,437 @@
+{
+  "schema": 1,
+  "upstream": {
+    "pnt": {
+      "directory": "PrimeNumberTheoremAnd-current",
+      "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd",
+      "commit": "c39a751132c88b6e8080b74c74023fd95b3d8be0"
+    },
+    "architect": {
+      "directory": "LeanArchitect-current",
+      "url": "https://github.com/hanwenzhu/LeanArchitect",
+      "commit": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97"
+    }
+  },
+  "mathlib": "dc4b8d60d5edb3c493c3662126b1b7ccae7d67cf",
+  "compiler": "leanprover/lean4:v4.34.0-rc2",
+  "compatibility_patch": {
+    "module": "PrimeNumberTheoremAnd.Wiener",
+    "before": "    gconvert k2 using 5 with ε hε δ hδ x h",
+    "after": "    intro ε hε\n    obtain ⟨δ, hδ, h⟩ := k2 ε hε\n    refine ⟨δ, hδ, fun x => ?_⟩\n    specialize h (x := x)",
+    "notice": "/- Local source selection: an unused alternative decay branch was removed.\n   The selection is recorded in provenance.json and reproducible by vendor.cjs. -/\n/- Compatibility change: one gconvert invocation expanded into intro/obtain/refine\n   for Lean v4.34.0-rc2. See provenance.json for the exact pinned source and patch. -/\n"
+  },
+  "theta_prefix_boundary": "theorem chebyshev_asymptotic' :",
+  "modules": [
+    {
+      "module": "Architect.Basic",
+      "path": "src/Architect/Basic.lean",
+      "project": "architect",
+      "imports": [
+        "Lean",
+        "Batteries.Lean.NameMapAttribute"
+      ],
+      "transform": "identity",
+      "original_sha256": "92ed89acca564cdfb0cb696a3c2e3b62a7ccca82cb6fca85d0f994ffd2b2cb60",
+      "sha256": "92ed89acca564cdfb0cb696a3c2e3b62a7ccca82cb6fca85d0f994ffd2b2cb60"
+    },
+    {
+      "module": "Architect.Command",
+      "path": "src/Architect/Command.lean",
+      "project": "architect",
+      "imports": [
+        "Lean"
+      ],
+      "transform": "identity",
+      "original_sha256": "8497d574c12414908829e8b25a96e0ce52c643bd48da66b678d1623db395696a",
+      "sha256": "8497d574c12414908829e8b25a96e0ce52c643bd48da66b678d1623db395696a"
+    },
+    {
+      "module": "Architect.Content",
+      "path": "src/Architect/Content.lean",
+      "project": "architect",
+      "imports": [
+        "Architect.Basic",
+        "Architect.Command"
+      ],
+      "transform": "identity",
+      "original_sha256": "73de49bb499fc140dce470251e3f657368b788dca1659317e902f476ebb9556b",
+      "sha256": "73de49bb499fc140dce470251e3f657368b788dca1659317e902f476ebb9556b"
+    },
+    {
+      "module": "Architect.Attribute",
+      "path": "src/Architect/Attribute.lean",
+      "project": "architect",
+      "imports": [
+        "Architect.Content"
+      ],
+      "transform": "identity",
+      "original_sha256": "1bce2337ed4de0e6e735819e89b4d35ad81c7e996e6cade79e8a9ef781dba314",
+      "sha256": "1bce2337ed4de0e6e735819e89b4d35ad81c7e996e6cade79e8a9ef781dba314"
+    },
+    {
+      "module": "Architect.CollectUsed",
+      "path": "src/Architect/CollectUsed.lean",
+      "project": "architect",
+      "imports": [
+        "Architect.Basic"
+      ],
+      "transform": "identity",
+      "original_sha256": "921633f79fef58cf0d8540477785c4d9213608642685c21733dd3c61855d154d",
+      "sha256": "921633f79fef58cf0d8540477785c4d9213608642685c21733dd3c61855d154d"
+    },
+    {
+      "module": "Architect.Tactic",
+      "path": "src/Architect/Tactic.lean",
+      "project": "architect",
+      "imports": [
+        "Lean",
+        "Batteries.Lean.NameMapAttribute",
+        "Architect.Basic"
+      ],
+      "transform": "recorded-unused-tactic-selection",
+      "original_sha256": "cd152524b774c063cb382171e00c3b7913c5757063f560b10f9009e79f37f08d",
+      "sha256": "385229c0e2e89a3680e34b7270c520ff4bace94fc46e4b2892fc091c4368b450"
+    },
+    {
+      "module": "Architect.Output",
+      "path": "src/Architect/Output.lean",
+      "project": "architect",
+      "imports": [
+        "Architect.CollectUsed",
+        "Architect.Content",
+        "Architect.Tactic"
+      ],
+      "transform": "identity",
+      "original_sha256": "ef52349573a02ff0714638fb47dfaf335c8c8a8c8b98192d3fc4d190ef4923d3",
+      "sha256": "ef52349573a02ff0714638fb47dfaf335c8c8a8c8b98192d3fc4d190ef4923d3"
+    },
+    {
+      "module": "Architect.Load",
+      "path": "src/Architect/Load.lean",
+      "project": "architect",
+      "imports": [
+        "Architect.Output"
+      ],
+      "transform": "identity",
+      "original_sha256": "6ae5e51b0f041d4cba8da31e0d8ff96ffa8ae89bf6dc33d84d7c0349dc92bd34",
+      "sha256": "6ae5e51b0f041d4cba8da31e0d8ff96ffa8ae89bf6dc33d84d7c0349dc92bd34"
+    },
+    {
+      "module": "Architect",
+      "path": "src/Architect.lean",
+      "project": "architect",
+      "imports": [
+        "Architect.Attribute",
+        "Architect.Basic",
+        "Architect.CollectUsed",
+        "Architect.Command",
+        "Architect.Content",
+        "Architect.Load",
+        "Architect.Output",
+        "Architect.Tactic"
+      ],
+      "transform": "identity",
+      "original_sha256": "68748939e82259728644095b343599593f38abe65c971c14f910445a44f4ecf6",
+      "sha256": "68748939e82259728644095b343599593f38abe65c971c14f910445a44f4ecf6"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic",
+      "path": "src/PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+      "project": "pnt",
+      "imports": [
+        "Mathlib.Algebra.Order.Floor.Defs",
+        "Mathlib.Algebra.Order.Floor.Ring",
+        "Mathlib.Algebra.Order.Floor.Semiring",
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Continuity"
+      ],
+      "transform": "identity",
+      "original_sha256": "7e3e2b8f84e6c170051a6474272455bed2432e6fddac5660072318b9b4eda7ec",
+      "sha256": "7e3e2b8f84e6c170051a6474272455bed2432e6fddac5660072318b9b4eda7ec"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Sobolev",
+      "path": "src/PrimeNumberTheoremAnd/Sobolev.lean",
+      "project": "pnt",
+      "imports": [
+        "Mathlib.Analysis.Calculus.Deriv.Support",
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Deriv",
+        "Mathlib.Order.Filter.ZeroAndBoundedAtFilter"
+      ],
+      "transform": "identity",
+      "original_sha256": "fe06e13fad5b47dbd324307ba246110515c4cb50f4c41d6cb15764fd53b1b8ef",
+      "sha256": "fe06e13fad5b47dbd324307ba246110515c4cb50f4c41d6cb15764fd53b1b8ef"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Fourier",
+      "path": "src/PrimeNumberTheoremAnd/Fourier.lean",
+      "project": "pnt",
+      "imports": [
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Deriv",
+        "Mathlib.MeasureTheory.Integral.IntegralEqImproper",
+        "Mathlib.Topology.ContinuousMap.Bounded.Basic",
+        "Mathlib.Order.Filter.ZeroAndBoundedAtFilter",
+        "Mathlib.Analysis.Fourier.FourierTransformDeriv",
+        "PrimeNumberTheoremAnd.Sobolev"
+      ],
+      "transform": "identity",
+      "original_sha256": "44d2c28b251be0296f897e43a75a055f346a6199849b54ab204240fe4099e6c2",
+      "sha256": "44d2c28b251be0296f897e43a75a055f346a6199849b54ab204240fe4099e6c2"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Defs",
+      "path": "src/PrimeNumberTheoremAnd/Defs.lean",
+      "project": "pnt",
+      "imports": [
+        "Architect",
+        "PrimeNumberTheoremAnd.Fourier",
+        "Mathlib.NumberTheory.Chebyshev"
+      ],
+      "transform": "identity",
+      "original_sha256": "64137811210c81187151a3d48ef170195cf36d58ea07a67ee61d1dc3212c82d0",
+      "sha256": "64137811210c81187151a3d48ef170195cf36d58ea07a67ee61d1dc3212c82d0"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Asymptotics",
+      "path": "src/PrimeNumberTheoremAnd/Mathlib/Analysis/Asymptotics/Asymptotics.lean",
+      "project": "pnt",
+      "imports": [
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Topology.Order.Compact"
+      ],
+      "transform": "identity",
+      "original_sha256": "c1cdb6bb509c6178bf17868c57e5b53721b87fb2774ef8562bc5945ffe5b11ae",
+      "sha256": "c1cdb6bb509c6178bf17868c57e5b53721b87fb2774ef8562bc5945ffe5b11ae"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support",
+      "path": "src/PrimeNumberTheoremAnd/Mathlib/Algebra/Notation/Support.lean",
+      "project": "pnt",
+      "imports": [
+        "Mathlib.Algebra.Notation.Support"
+      ],
+      "transform": "identity",
+      "original_sha256": "e688bf925c2130b291c536d3b93b72c20e41ae95d530c90915921d75a6f52504",
+      "sha256": "e688bf925c2130b291c536d3b93b72c20e41ae95d530c90915921d75a6f52504"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.SmoothExistence",
+      "path": "src/PrimeNumberTheoremAnd/SmoothExistence.lean",
+      "project": "pnt",
+      "imports": [
+        "Architect",
+        "Batteries.Tactic.Lemma",
+        "Mathlib.Geometry.Manifold.PartitionOfUnity",
+        "Mathlib.Tactic.Bound",
+        "PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support"
+      ],
+      "transform": "identity",
+      "original_sha256": "e689045a2d7f92c71c68fda6aa69a89d4a8692187475ba432ed010f453110ea0",
+      "sha256": "e689045a2d7f92c71c68fda6aa69a89d4a8692187475ba432ed010f453110ea0"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Wiener",
+      "path": "src/PrimeNumberTheoremAnd/Wiener.lean",
+      "project": "pnt",
+      "imports": [
+        "Architect",
+        "Mathlib.Analysis.Fourier.RiemannLebesgueLemma",
+        "Mathlib.Analysis.Normed.Group.Tannery",
+        "Mathlib.Analysis.SumIntegralComparisons",
+        "Mathlib.NumberTheory.Chebyshev",
+        "Mathlib.NumberTheory.LSeries.PrimesInAP",
+        "Mathlib.NumberTheory.MulChar.Lemmas",
+        "Mathlib.Topology.EMetricSpace.BoundedVariation",
+        "PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Asymptotics",
+        "PrimeNumberTheoremAnd.Fourier",
+        "PrimeNumberTheoremAnd.SmoothExistence",
+        "Mathlib.Analysis.Convolution"
+      ],
+      "transform": "rc2-compatibility-and-recorded-branch-selection",
+      "original_sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+      "sha256": "d7567ef06f3e9212c8ef00ce5ca64b07e544809b82d1af9ffd9a4385a03f681b"
+    },
+    {
+      "module": "MainlineThetaPrefix",
+      "path": "src/MainlineThetaPrefix.lean",
+      "project": "pnt",
+      "imports": [
+        "Architect",
+        "Mathlib.NumberTheory.Harmonic.Bounds",
+        "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "PrimeNumberTheoremAnd.Defs",
+        "PrimeNumberTheoremAnd.Wiener"
+      ],
+      "transform": "exact-byte-prefix-before-theorem chebyshev_asymptotic' :",
+      "original_sha256": "7b9146a398d01aac583ce4ebfa6d62036f1a3de2d53b9dad827d34f1414d9611",
+      "sha256": "bc9cf441baa42ba75d775fd69604d8c7438fbb3fc21fd99bf6f5f2dd13bc60dd"
+    },
+    {
+      "module": "MainlinePrimeIntervals",
+      "path": "src/MainlinePrimeIntervals.lean",
+      "project": "local-audited-adapter",
+      "imports": [
+        "MainlineThetaPrefix"
+      ],
+      "transform": "identity",
+      "original_sha256": "323610329a4adac6d466c11cae1a92ce0e08f219676d56e8eaebb936d45599b0",
+      "sha256": "323610329a4adac6d466c11cae1a92ce0e08f219676d56e8eaebb936d45599b0"
+    },
+    {
+      "module": "MainlineWeightedPrimes",
+      "path": "src/MainlineWeightedPrimes.lean",
+      "project": "local-audited-adapter",
+      "imports": [
+        "MainlinePrimeIntervals",
+        "Mathlib.NumberTheory.AbelSummation",
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+        "Mathlib.Analysis.Calculus.Deriv.Polynomial",
+        "Mathlib.Topology.ContinuousMap.Weierstrass"
+      ],
+      "transform": "identity",
+      "original_sha256": "38e68179c42c68e183d59b0b42c2458fa732081405f05b99b32ab3914b6f99f0",
+      "sha256": "38e68179c42c68e183d59b0b42c2458fa732081405f05b99b32ab3914b6f99f0"
+    },
+    {
+      "module": "MainlineH158ContentRates",
+      "path": "src/MainlineH158ContentRates.lean",
+      "project": "local-audited-adapter",
+      "imports": [
+        "MainlineWeightedPrimes"
+      ],
+      "transform": "identity",
+      "original_sha256": "8ef1fa0d2b7f6f94fe99cfa7c607878deb34337a489070f9af92d8bb9d45fe6e",
+      "sha256": "8ef1fa0d2b7f6f94fe99cfa7c607878deb34337a489070f9af92d8bb9d45fe6e"
+    },
+    {
+      "module": "PNTDependency",
+      "path": "src/PNTDependency.lean",
+      "project": "local-facade",
+      "imports": [
+        "MainlineWeightedPrimes",
+        "MainlineH158ContentRates"
+      ],
+      "transform": "identity",
+      "original_sha256": "f5be5ab86704d0b570d5676a9c4a9a30146682a13437ae17cf39d08bdef9ec6a",
+      "sha256": "f5be5ab86704d0b570d5676a9c4a9a30146682a13437ae17cf39d08bdef9ec6a"
+    }
+  ],
+  "provenance_files": [
+    {
+      "path": "licenses/pnt-LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "licenses/architect-LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "licenses/PNT-CITATION.cff",
+      "sha256": "8e74799dcd66954013a52fd0f2ce7532b8b9667ecab75d87c233761ce24df30e"
+    }
+  ],
+  "configuration": {
+    "lakefile_sha256": "8559c539101b90f5f5af5b629ffb9764a247e04b534d07336a37a55d9051e28f",
+    "toolchain_sha256": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88"
+  },
+  "audit_targets": [
+    "WeakPNT",
+    "Set.Ico_subset_Ico_of_Icc_subset_Icc",
+    "th43_b",
+    "finsum_range_eq_sum_range",
+    "finsum_range_eq_sum_range'",
+    "log2_pos",
+    "Asymptotics.IsEquivalent.add_isLittleO'",
+    "Asymptotics.IsEquivalent.add_isLittleO''",
+    "WeakPNT'",
+    "WeakPNT''",
+    "isLittleO_sqrt_mul_log",
+    "tendsto_floor_add_one_div_self",
+    "isTheta_self_div_const",
+    "filter_prime_Iic_eq_Icc",
+    "Icc_zero_eq_insert",
+    "chebyshev_asymptotic",
+    "chebyshev_asymptotic_finsum",
+    "OddZetaPNT.theta_div_self_limit",
+    "OddZetaPNT.scaled_theta_div_nat_limit",
+    "OddZetaPNT.theta_interval_limit",
+    "OddZetaPNT.finite_step_theta_limit",
+    "OddZetaPNT.primeIntervalMass_eq",
+    "OddZetaPNT.primeIntervalMass_limit",
+    "OddZetaPNT.finite_step_prime_sum_limit",
+    "OddZetaPNT.finite_step_quadratic_cost_limit",
+    "OddZetaPNT.primeWeightedSum_partial_summation",
+    "OddZetaPNT.primeWeightedSum_id",
+    "OddZetaPNT.scaled_theta_uniform",
+    "OddZetaPNT.scaled_theta_intervalIntegrable",
+    "OddZetaPNT.scaled_theta_integral_limit",
+    "OddZetaPNT.primeWeightedSum_id_scaled",
+    "OddZetaPNT.primeWeightedSum_id_limit",
+    "OddZetaPNT.primeWeightedInterval_id_eq",
+    "OddZetaPNT.primeWeightedInterval_id_limit",
+    "OddZetaPNT.primeWeightedInterval_affine_eq",
+    "OddZetaPNT.primeWeightedInterval_affine_limit",
+    "OddZetaPNT.scaled_theta_weighted_integral_limit",
+    "OddZetaPNT.primeWeightedInterval_C1_partial_summation",
+    "OddZetaPNT.primeWeightedInterval_C1_limit",
+    "OddZetaPNT.primeWeightedInterval_polynomial_limit",
+    "OddZetaPNT.finite_piecewise_C1_prime_sum_limit",
+    "OddZetaPNT.primeWeightedInterval_sub_bound",
+    "OddZetaPNT.primeWeightedInterval_continuous_limit",
+    "OddZetaPNT.finite_piecewise_continuous_prime_sum_limit",
+    "OddZetaPNT.finite_piecewise_continuous_quadratic_cost_limit",
+    "OddZetaPNT.primeBandCost_profile",
+    "OddZetaPNT.primeBandCost_sub_bound",
+    "OddZetaPNT.primeBandCost_bounded_perturbation_limit",
+    "OddZetaPNT.h158Weight54_rounding",
+    "OddZetaPNT.h158Weight55_rounding",
+    "OddZetaPNT.h158Weight56_rounding",
+    "OddZetaPNT.h158_upper_endpoints_not_prime",
+    "OddZetaPNT.primeBand_filter_open_eq_closed",
+    "OddZetaPNT.primeBandCost_nat",
+    "OddZetaPNT.h158Content54_normalized",
+    "OddZetaPNT.h158Content55_normalized",
+    "OddZetaPNT.h158Content56_normalized",
+    "OddZetaPNT.h158_integral_affine",
+    "OddZetaPNT.h158Profile54_continuous",
+    "OddZetaPNT.h158Profile54_integral",
+    "OddZetaPNT.h158Profile54_prime_limit",
+    "OddZetaPNT.h158Profile55_prime_limit",
+    "OddZetaPNT.h158Profile56_prime_limit",
+    "OddZetaPNT.h158Weight54_band_rounding",
+    "OddZetaPNT.h158Weight55_band_rounding",
+    "OddZetaPNT.h158Weight56_band_rounding",
+    "OddZetaPNT.h158Content54_error",
+    "OddZetaPNT.h158Content55_error",
+    "OddZetaPNT.h158Content56_error",
+    "OddZetaPNT.h158Content54_rate",
+    "OddZetaPNT.h158Content55_rate",
+    "OddZetaPNT.h158Content56_rate"
+  ],
+  "allowed_target_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "scope": "PNT prefix, weighted prime limits, and h158 finite prime-band cost rates; not the h158 global arithmetic bound.",
+  "source_pruning": {
+    "start_marker": "@[blueprint \"prelim-decay-2\"",
+    "end_marker": "lemma decay_bounds_key",
+    "removed_sha256": "acb63dad5d59f585c7baac96e38dd8b2b2ce2482894fef051e4e273c55cca781",
+    "reason": "Exclude a self-contained branch not used by the selected targets."
+  },
+  "architect_pruning": {
+    "start_marker": "/--\n`sorry_using",
+    "end_marker": "end Architect",
+    "removed_sha256": "6bb12112f3f0cab4d2d4842be98f69e6b318c31d3cca61042a78968683539500",
+    "notice": "/- Local source selection: an unused alternative tactic was removed.\n   See provenance.json for the pinned original and exact transformation. -/\n",
+    "header_before": "/-! We implement the `blueprint_using` and `sorry_using` tactics that declares used constants. -/\n\n-- **TODO**: support `sorry_using [\"label\"]` (which should accumulate to an environment extension similar to `proofDocStringExt`).",
+    "header_after": "/-! The `blueprint_using` tactic records used constants. -/"
+  },
+  "excluded_declarations": [
+    "prelim_decay_2",
+    "prelim_decay_3",
+    "decay_alt",
+    "AbsolutelyContinuous"
+  ]
+}

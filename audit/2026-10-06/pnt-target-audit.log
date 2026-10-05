@@ -1,0 +1,245 @@
+WeakPNT : Filter.Tendsto (fun N => cumsum (⇑ArithmeticFunction.vonMangoldt) N / ↑N) Filter.atTop (nhds 1)
+'WeakPNT' depends on axioms: [propext, Classical.choice, Quot.sound]
+Set.Ico_subset_Ico_of_Icc_subset_Icc {a b c d : ℝ} (h : Set.Icc a b ⊆ Set.Icc c d) : Set.Ico a b ⊆ Set.Ico c d
+'Set.Ico_subset_Ico_of_Icc_subset_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+th43_b (x : ℝ) (hx : 2 ≤ x) :
+  ↑⌊x⌋₊.primeCounting =
+    Chebyshev.theta x / Real.log x + ∫ (t : ℝ) in Set.Icc 2 x, Chebyshev.theta t / (t * Real.log t ^ 2)
+'th43_b' depends on axioms: [propext, Classical.choice, Quot.sound]
+finsum_range_eq_sum_range.{u_1} {R : Type u_1} [AddCommMonoid R] {f : ArithmeticFunction R} (x : ℝ) :
+  ∑ᶠ (n : ℕ) (_ : ↑n < x), f n = ∑ n ∈ Finset.range ⌈x⌉₊, f n
+'finsum_range_eq_sum_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+finsum_range_eq_sum_range'.{u_1} {R : Type u_1} [AddCommMonoid R] {f : ArithmeticFunction R} (x : ℝ) :
+  ∑ᶠ (n : ℕ) (_ : ↑n ≤ x), f n = ∑ n ≤ ⌊x⌋₊, f n
+'finsum_range_eq_sum_range'' depends on axioms: [propext, Classical.choice, Quot.sound]
+log2_pos : 0 < Real.log 2
+'log2_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Asymptotics.IsEquivalent.add_isLittleO'.{u_1, u_2} {α : Type u_1} {β : Type u_2} [NormedAddCommGroup β] {u v w : α → β}
+  {l : Filter α} (huv : Asymptotics.IsEquivalent l u v) (hwu : (w - u) =o[l] v) : Asymptotics.IsEquivalent l w v
+'Asymptotics.IsEquivalent.add_isLittleO'' depends on axioms: [propext, Classical.choice, Quot.sound]
+Asymptotics.IsEquivalent.add_isLittleO''.{u_1, u_2} {α : Type u_1} {β : Type u_2} [NormedAddCommGroup β] {u v w : α → β}
+  {l : Filter α} (huv : Asymptotics.IsEquivalent l u v) (hwu : (u - w) =o[l] v) : Asymptotics.IsEquivalent l w v
+'Asymptotics.IsEquivalent.add_isLittleO''' depends on axioms: [propext, Classical.choice, Quot.sound]
+WeakPNT' : Filter.Tendsto (fun N => (∑ n ≤ N, ArithmeticFunction.vonMangoldt n) / ↑N) Filter.atTop (nhds 1)
+'WeakPNT'' depends on axioms: [propext, Classical.choice, Quot.sound]
+WeakPNT'' : Asymptotics.IsEquivalent Filter.atTop Chebyshev.psi fun x => x
+'WeakPNT''' depends on axioms: [propext, Classical.choice, Quot.sound]
+isLittleO_sqrt_mul_log : (fun x => √x * Real.log x) =o[Filter.atTop] id
+'isLittleO_sqrt_mul_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+tendsto_floor_add_one_div_self : Filter.Tendsto (fun x => (↑⌊x⌋₊ + 1) / x) Filter.atTop (nhds 1)
+'tendsto_floor_add_one_div_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+isTheta_self_div_const {c : ℝ} (hc : c ≠ 0) : (fun x => x) =Θ[Filter.atTop] fun x => x / c
+'isTheta_self_div_const' depends on axioms: [propext, Classical.choice, Quot.sound]
+filter_prime_Iic_eq_Icc (n : ℕ) : Finset.filter Nat.Prime (Finset.Iic n) = Finset.filter Nat.Prime (Finset.Icc 1 n)
+'filter_prime_Iic_eq_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Icc_zero_eq_insert (n : ℕ) : Finset.Icc 0 n = insert 0 (Finset.Icc 1 n)
+'Icc_zero_eq_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+chebyshev_asymptotic : Asymptotics.IsEquivalent Filter.atTop Chebyshev.theta id
+'chebyshev_asymptotic' depends on axioms: [propext, Classical.choice, Quot.sound]
+chebyshev_asymptotic_finsum :
+  Asymptotics.IsEquivalent Filter.atTop (fun x => ∑ᶠ (p : ℕ) (_ : p ≤ x) (_ : Nat.Prime p), Real.log ↑p) fun x => ↑x
+'chebyshev_asymptotic_finsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.theta_div_self_limit : Filter.Tendsto (fun x => Chebyshev.theta x / x) Filter.atTop (nhds 1)
+'OddZetaPNT.theta_div_self_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.scaled_theta_div_nat_limit (a : ℝ) (ha : 0 < a) :
+  Filter.Tendsto (fun n => Chebyshev.theta (a * ↑n) / ↑n) Filter.atTop (nhds a)
+'OddZetaPNT.scaled_theta_div_nat_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.theta_interval_limit (a b : ℝ) (ha : 0 < a) (hb : 0 < b) :
+  Filter.Tendsto (fun n => (Chebyshev.theta (b * ↑n) - Chebyshev.theta (a * ↑n)) / ↑n) Filter.atTop (nhds (b - a))
+'OddZetaPNT.theta_interval_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.finite_step_theta_limit.{u_1} {ι : Type u_1} (s : Finset ι) (w a b : ι → ℝ) (ha : ∀ i ∈ s, 0 < a i)
+  (hb : ∀ i ∈ s, 0 < b i) :
+  Filter.Tendsto (fun n => ∑ i ∈ s, w i * ((Chebyshev.theta (b i * ↑n) - Chebyshev.theta (a i * ↑n)) / ↑n)) Filter.atTop
+    (nhds (∑ i ∈ s, w i * (b i - a i)))
+'OddZetaPNT.finite_step_theta_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeIntervalMass_eq (n : ℕ) (a b : ℝ) (ha : 0 ≤ a) (hab : a ≤ b) :
+  OddZetaPNT.primeIntervalMass n a b = Chebyshev.theta (b * ↑n) - Chebyshev.theta (a * ↑n)
+'OddZetaPNT.primeIntervalMass_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeIntervalMass_limit (a b : ℝ) (ha : 0 < a) (hab : a ≤ b) :
+  Filter.Tendsto (fun n => OddZetaPNT.primeIntervalMass n a b / ↑n) Filter.atTop (nhds (b - a))
+'OddZetaPNT.primeIntervalMass_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.finite_step_prime_sum_limit.{u_1} {ι : Type u_1} (s : Finset ι) (w a b : ι → ℝ) (ha : ∀ i ∈ s, 0 < a i)
+  (hab : ∀ i ∈ s, a i ≤ b i) :
+  Filter.Tendsto (fun n => ∑ i ∈ s, w i * (OddZetaPNT.primeIntervalMass n (a i) (b i) / ↑n)) Filter.atTop
+    (nhds (∑ i ∈ s, w i * (b i - a i)))
+'OddZetaPNT.finite_step_prime_sum_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.finite_step_quadratic_cost_limit.{u_1} {ι : Type u_1} (s : Finset ι) (w a b : ι → ℝ) (ha : ∀ i ∈ s, 0 < a i)
+  (hab : ∀ i ∈ s, a i ≤ b i) :
+  Filter.Tendsto (fun n => (∑ i ∈ s, ↑n * w i * OddZetaPNT.primeIntervalMass n (a i) (b i)) / ↑n ^ 2) Filter.atTop
+    (nhds (∑ i ∈ s, w i * (b i - a i)))
+'OddZetaPNT.finite_step_quadratic_cost_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeWeightedSum_partial_summation (f : ℝ → ℝ) (a b : ℝ) (ha : 0 ≤ a) (hab : a ≤ b)
+  (hf : ∀ t ∈ Set.Icc a b, DifferentiableAt ℝ f t)
+  (hi : MeasureTheory.IntegrableOn (deriv f) (Set.Icc a b) MeasureTheory.volume) :
+  OddZetaPNT.primeWeightedSum f a b =
+    f b * Chebyshev.theta b - f a * Chebyshev.theta a - ∫ (t : ℝ) in a..b, deriv f t * Chebyshev.theta t
+'OddZetaPNT.primeWeightedSum_partial_summation' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeWeightedSum_id (a b : ℝ) (ha : 0 ≤ a) (hab : a ≤ b) :
+  OddZetaPNT.primeWeightedSum (fun x => x) a b =
+    b * Chebyshev.theta b - a * Chebyshev.theta a - ∫ (t : ℝ) in a..b, Chebyshev.theta t
+'OddZetaPNT.primeWeightedSum_id' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.scaled_theta_uniform (a b : ℝ) (ha : 0 < a) (hab : a ≤ b) :
+  TendstoUniformlyOn (fun n x => Chebyshev.theta (x * ↑n) / ↑n) (fun x => x) Filter.atTop (Set.Icc a b)
+'OddZetaPNT.scaled_theta_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.scaled_theta_intervalIntegrable (n : ℕ) (a b : ℝ) :
+  IntervalIntegrable (fun x => Chebyshev.theta (x * ↑n) / ↑n) MeasureTheory.volume a b
+'OddZetaPNT.scaled_theta_intervalIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.scaled_theta_integral_limit (a b : ℝ) (ha : 0 < a) (hab : a ≤ b) :
+  Filter.Tendsto (fun n => ∫ (x : ℝ) in a..b, Chebyshev.theta (x * ↑n) / ↑n) Filter.atTop (nhds ((b ^ 2 - a ^ 2) / 2))
+'OddZetaPNT.scaled_theta_integral_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeWeightedSum_id_scaled (n : ℕ) (hn : n ≠ 0) (a b : ℝ) (ha : 0 ≤ a) (hab : a ≤ b) :
+  OddZetaPNT.primeWeightedSum (fun x => x) (a * ↑n) (b * ↑n) / ↑n ^ 2 =
+    b * (Chebyshev.theta (b * ↑n) / ↑n) - a * (Chebyshev.theta (a * ↑n) / ↑n) -
+      ∫ (x : ℝ) in a..b, Chebyshev.theta (x * ↑n) / ↑n
+'OddZetaPNT.primeWeightedSum_id_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeWeightedSum_id_limit (a b : ℝ) (ha : 0 < a) (hab : a ≤ b) :
+  Filter.Tendsto (fun n => OddZetaPNT.primeWeightedSum (fun x => x) (a * ↑n) (b * ↑n) / ↑n ^ 2) Filter.atTop
+    (nhds ((b ^ 2 - a ^ 2) / 2))
+'OddZetaPNT.primeWeightedSum_id_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeWeightedInterval_id_eq (n : ℕ) (a b : ℝ) :
+  OddZetaPNT.primeWeightedInterval n (fun x => x) a b =
+    OddZetaPNT.primeWeightedSum (fun x => x) (a * ↑n) (b * ↑n) / ↑n ^ 2
+'OddZetaPNT.primeWeightedInterval_id_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeWeightedInterval_id_limit (a b : ℝ) (ha : 0 < a) (hab : a ≤ b) :
+  Filter.Tendsto (fun n => OddZetaPNT.primeWeightedInterval n (fun x => x) a b) Filter.atTop
+    (nhds ((b ^ 2 - a ^ 2) / 2))
+'OddZetaPNT.primeWeightedInterval_id_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeWeightedInterval_affine_eq (n : ℕ) (u v a b : ℝ) :
+  OddZetaPNT.primeWeightedInterval n (fun x => u * x + v) a b =
+    u * OddZetaPNT.primeWeightedInterval n (fun x => x) a b + v * (OddZetaPNT.primeIntervalMass n a b / ↑n)
+'OddZetaPNT.primeWeightedInterval_affine_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeWeightedInterval_affine_limit (u v a b : ℝ) (ha : 0 < a) (hab : a ≤ b) :
+  Filter.Tendsto (fun n => OddZetaPNT.primeWeightedInterval n (fun x => u * x + v) a b) Filter.atTop
+    (nhds (u * ((b ^ 2 - a ^ 2) / 2) + v * (b - a)))
+'OddZetaPNT.primeWeightedInterval_affine_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.scaled_theta_weighted_integral_limit (g : ℝ → ℝ) (a b : ℝ) (ha : 0 < a) (hab : a ≤ b)
+  (hg : ContinuousOn g (Set.Icc a b)) :
+  Filter.Tendsto (fun n => ∫ (x : ℝ) in a..b, g x * (Chebyshev.theta (x * ↑n) / ↑n)) Filter.atTop
+    (nhds (∫ (x : ℝ) in a..b, g x * x))
+'OddZetaPNT.scaled_theta_weighted_integral_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeWeightedInterval_C1_partial_summation (n : ℕ) (hn : n ≠ 0) (f g : ℝ → ℝ)
+  (hf : ∀ (x : ℝ), HasDerivAt f (g x) x) (hg : Continuous g) (a b : ℝ) (ha : 0 ≤ a) (hab : a ≤ b) :
+  OddZetaPNT.primeWeightedInterval n f a b =
+    f b * (Chebyshev.theta (b * ↑n) / ↑n) - f a * (Chebyshev.theta (a * ↑n) / ↑n) -
+      ∫ (x : ℝ) in a..b, g x * (Chebyshev.theta (x * ↑n) / ↑n)
+'OddZetaPNT.primeWeightedInterval_C1_partial_summation' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeWeightedInterval_C1_limit (f g : ℝ → ℝ) (hf : ∀ (x : ℝ), HasDerivAt f (g x) x) (hg : Continuous g)
+  (a b : ℝ) (ha : 0 < a) (hab : a ≤ b) :
+  Filter.Tendsto (fun n => OddZetaPNT.primeWeightedInterval n f a b) Filter.atTop (nhds (∫ (x : ℝ) in a..b, f x))
+'OddZetaPNT.primeWeightedInterval_C1_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeWeightedInterval_polynomial_limit (P : Polynomial ℝ) (a b : ℝ) (ha : 0 < a) (hab : a ≤ b) :
+  Filter.Tendsto (fun n => OddZetaPNT.primeWeightedInterval n (fun x => Polynomial.eval x P) a b) Filter.atTop
+    (nhds (∫ (x : ℝ) in a..b, Polynomial.eval x P))
+'OddZetaPNT.primeWeightedInterval_polynomial_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.finite_piecewise_C1_prime_sum_limit.{u_1} {ι : Type u_1} (s : Finset ι) (f g : ι → ℝ → ℝ) (a b : ι → ℝ)
+  (hf : ∀ i ∈ s, ∀ (x : ℝ), HasDerivAt (f i) (g i x) x) (hg : ∀ i ∈ s, Continuous (g i)) (ha : ∀ i ∈ s, 0 < a i)
+  (hab : ∀ i ∈ s, a i ≤ b i) :
+  Filter.Tendsto (fun n => ∑ i ∈ s, OddZetaPNT.primeWeightedInterval n (f i) (a i) (b i)) Filter.atTop
+    (nhds (∑ i ∈ s, ∫ (x : ℝ) in a i..b i, f i x))
+'OddZetaPNT.finite_piecewise_C1_prime_sum_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeWeightedInterval_sub_bound (n : ℕ) (f g : ℝ → ℝ) (a b δ : ℝ) (ha : 0 ≤ a) (hab : a ≤ b)
+  (hfg : ∀ x ∈ Set.Icc a b, |f x - g x| ≤ δ) :
+  |OddZetaPNT.primeWeightedInterval n f a b - OddZetaPNT.primeWeightedInterval n g a b| ≤
+    δ * (OddZetaPNT.primeIntervalMass n a b / ↑n)
+'OddZetaPNT.primeWeightedInterval_sub_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeWeightedInterval_continuous_limit (f : ℝ → ℝ) (a b : ℝ) (ha : 0 < a) (hab : a ≤ b)
+  (hf : ContinuousOn f (Set.Icc a b)) :
+  Filter.Tendsto (fun n => OddZetaPNT.primeWeightedInterval n f a b) Filter.atTop (nhds (∫ (x : ℝ) in a..b, f x))
+'OddZetaPNT.primeWeightedInterval_continuous_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.finite_piecewise_continuous_prime_sum_limit.{u_1} {ι : Type u_1} (s : Finset ι) (f : ι → ℝ → ℝ) (a b : ι → ℝ)
+  (hf : ∀ i ∈ s, ContinuousOn (f i) (Set.Icc (a i) (b i))) (ha : ∀ i ∈ s, 0 < a i) (hab : ∀ i ∈ s, a i ≤ b i) :
+  Filter.Tendsto (fun n => ∑ i ∈ s, OddZetaPNT.primeWeightedInterval n (f i) (a i) (b i)) Filter.atTop
+    (nhds (∑ i ∈ s, ∫ (x : ℝ) in a i..b i, f i x))
+'OddZetaPNT.finite_piecewise_continuous_prime_sum_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.finite_piecewise_continuous_quadratic_cost_limit.{u_1} {ι : Type u_1} (s : Finset ι) (f : ι → ℝ → ℝ)
+  (a b : ι → ℝ) (hf : ∀ i ∈ s, ContinuousOn (f i) (Set.Icc (a i) (b i))) (ha : ∀ i ∈ s, 0 < a i)
+  (hab : ∀ i ∈ s, a i ≤ b i) :
+  Filter.Tendsto
+    (fun n => (∑ i ∈ s, ↑n * OddZetaPNT.primeWeightedSum (fun t => f i (t / ↑n)) (a i * ↑n) (b i * ↑n)) / ↑n ^ 2)
+    Filter.atTop (nhds (∑ i ∈ s, ∫ (x : ℝ) in a i..b i, f i x))
+'OddZetaPNT.finite_piecewise_continuous_quadratic_cost_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeBandCost_profile (f : ℝ → ℝ) (n : ℕ) (a b : ℝ) :
+  OddZetaPNT.primeBandCost (fun n p => ↑n * f (↑p / ↑n)) n a b = OddZetaPNT.primeWeightedInterval n f a b
+'OddZetaPNT.primeBandCost_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeBandCost_sub_bound (w v : ℕ → ℕ → ℝ) (n : ℕ) (a b C : ℝ)
+  (h : ∀ p ∈ {p ∈ ⌊b * ↑n⌋₊.primesLE | a * ↑n < ↑p}, |w n p - v n p| ≤ C) :
+  |OddZetaPNT.primeBandCost w n a b - OddZetaPNT.primeBandCost v n a b| ≤
+    C * OddZetaPNT.primeIntervalMass n a b / ↑n ^ 2
+'OddZetaPNT.primeBandCost_sub_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeBandCost_bounded_perturbation_limit (w : ℕ → ℕ → ℝ) (f : ℝ → ℝ) (a b C L : ℝ) (ha : 0 < a) (hab : a ≤ b)
+  (hf : Filter.Tendsto (fun n => OddZetaPNT.primeWeightedInterval n f a b) Filter.atTop (nhds L))
+  (hw : ∀ᶠ (n : ℕ) in Filter.atTop, ∀ p ∈ {p ∈ ⌊b * ↑n⌋₊.primesLE | a * ↑n < ↑p}, |w n p - ↑n * f (↑p / ↑n)| ≤ C) :
+  Filter.Tendsto (fun n => OddZetaPNT.primeBandCost w n a b) Filter.atTop (nhds L)
+'OddZetaPNT.primeBandCost_bounded_perturbation_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Weight54_rounding (n p : ℕ) (hn : 1 ≤ n) (hp : p ≤ 55 * n) :
+  |↑(OddZetaPNT.h158Weight54 n p) - ↑n * OddZetaPNT.h158Profile54 (↑p / ↑n)| ≤ 2
+'OddZetaPNT.h158Weight54_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Weight55_rounding (n p : ℕ) (hn : 1 ≤ n) (hlo : 55 * n < p) (hhi : p ≤ 56 * n) :
+  |↑(OddZetaPNT.h158Weight55 n p) - ↑n * (2 * (↑p / ↑n) - 110)| ≤ 2
+'OddZetaPNT.h158Weight55_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Weight56_rounding (n p : ℕ) (hn : 1 ≤ n) (hlo : 56 * n < p) (hhi : p ≤ 57 * n) :
+  |↑(OddZetaPNT.h158Weight56 n p) - ↑n * (↑p / ↑n - 55)| ≤ 1
+'OddZetaPNT.h158Weight56_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158_upper_endpoints_not_prime (n : ℕ) : ¬Nat.Prime (55 * n) ∧ ¬Nat.Prime (56 * n)
+'OddZetaPNT.h158_upper_endpoints_not_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeBand_filter_open_eq_closed (A B n : ℕ) (hB : ¬Nat.Prime (B * n)) :
+  {p ∈ (B * n).primesLE | A * n < p ∧ p < B * n} = {p ∈ (B * n).primesLE | A * n < p}
+'OddZetaPNT.primeBand_filter_open_eq_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.primeBandCost_nat (w : ℕ → ℕ → ℝ) (n A B : ℕ) :
+  OddZetaPNT.primeBandCost w n ↑A ↑B = (∑ p ∈ (B * n).primesLE with A * n < p, w n p * Real.log ↑p) / ↑n ^ 2
+'OddZetaPNT.primeBandCost_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Content54_normalized (n : ℕ) :
+  OddZetaPNT.h158Content54 n / ↑n ^ 2 = OddZetaPNT.primeBandCost (fun n p => ↑(OddZetaPNT.h158Weight54 n p)) n 54 55
+'OddZetaPNT.h158Content54_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Content55_normalized (n : ℕ) :
+  OddZetaPNT.h158Content55 n / ↑n ^ 2 = OddZetaPNT.primeBandCost (fun n p => ↑(OddZetaPNT.h158Weight55 n p)) n 55 56
+'OddZetaPNT.h158Content55_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Content56_normalized (n : ℕ) :
+  OddZetaPNT.h158Content56 n / ↑n ^ 2 = OddZetaPNT.primeBandCost (fun n p => ↑(OddZetaPNT.h158Weight56 n p)) n 56 57
+'OddZetaPNT.h158Content56_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158_integral_affine (u v a b : ℝ) : ∫ (x : ℝ) in a..b, u * x + v = u * ((b ^ 2 - a ^ 2) / 2) + v * (b - a)
+'OddZetaPNT.h158_integral_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Profile54_continuous : Continuous OddZetaPNT.h158Profile54
+'OddZetaPNT.h158Profile54_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Profile54_integral : ∫ (x : ℝ) in 54..55, OddZetaPNT.h158Profile54 x = 5 / 4
+'OddZetaPNT.h158Profile54_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Profile54_prime_limit :
+  Filter.Tendsto (fun n => OddZetaPNT.primeWeightedInterval n OddZetaPNT.h158Profile54 54 55) Filter.atTop
+    (nhds (5 / 4))
+'OddZetaPNT.h158Profile54_prime_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Profile55_prime_limit :
+  Filter.Tendsto (fun n => OddZetaPNT.primeWeightedInterval n (fun x => 2 * x - 110) 55 56) Filter.atTop (nhds 1)
+'OddZetaPNT.h158Profile55_prime_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Profile56_prime_limit :
+  Filter.Tendsto (fun n => OddZetaPNT.primeWeightedInterval n (fun x => x - 55) 56 57) Filter.atTop (nhds (3 / 2))
+'OddZetaPNT.h158Profile56_prime_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Weight54_band_rounding (n : ℕ) (hn : 1 ≤ n) (p : ℕ) :
+  p ∈ {p ∈ ⌊55 * ↑n⌋₊.primesLE | 54 * ↑n < ↑p} →
+    |↑(OddZetaPNT.h158Weight54 n p) - ↑n * OddZetaPNT.h158Profile54 (↑p / ↑n)| ≤ 2
+'OddZetaPNT.h158Weight54_band_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Weight55_band_rounding (n : ℕ) (hn : 1 ≤ n) (p : ℕ) :
+  p ∈ {p ∈ ⌊56 * ↑n⌋₊.primesLE | 55 * ↑n < ↑p} → |↑(OddZetaPNT.h158Weight55 n p) - ↑n * (2 * (↑p / ↑n) - 110)| ≤ 2
+'OddZetaPNT.h158Weight55_band_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Weight56_band_rounding (n : ℕ) (hn : 1 ≤ n) (p : ℕ) :
+  p ∈ {p ∈ ⌊57 * ↑n⌋₊.primesLE | 56 * ↑n < ↑p} → |↑(OddZetaPNT.h158Weight56 n p) - ↑n * (↑p / ↑n - 55)| ≤ 1
+'OddZetaPNT.h158Weight56_band_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Content54_error (n : ℕ) (hn : 1 ≤ n) :
+  |OddZetaPNT.h158Content54 n / ↑n ^ 2 - OddZetaPNT.primeWeightedInterval n OddZetaPNT.h158Profile54 54 55| ≤
+    2 * OddZetaPNT.primeIntervalMass n 54 55 / ↑n ^ 2
+'OddZetaPNT.h158Content54_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Content55_error (n : ℕ) (hn : 1 ≤ n) :
+  |OddZetaPNT.h158Content55 n / ↑n ^ 2 - OddZetaPNT.primeWeightedInterval n (fun x => 2 * x - 110) 55 56| ≤
+    2 * OddZetaPNT.primeIntervalMass n 55 56 / ↑n ^ 2
+'OddZetaPNT.h158Content55_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Content56_error (n : ℕ) (hn : 1 ≤ n) :
+  |OddZetaPNT.h158Content56 n / ↑n ^ 2 - OddZetaPNT.primeWeightedInterval n (fun x => x - 55) 56 57| ≤
+    OddZetaPNT.primeIntervalMass n 56 57 / ↑n ^ 2
+'OddZetaPNT.h158Content56_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Content54_rate :
+  Filter.Tendsto (fun n => OddZetaPNT.h158Content54 n / ↑n ^ 2) Filter.atTop (nhds (5 / 4))
+'OddZetaPNT.h158Content54_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Content55_rate : Filter.Tendsto (fun n => OddZetaPNT.h158Content55 n / ↑n ^ 2) Filter.atTop (nhds 1)
+'OddZetaPNT.h158Content55_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+OddZetaPNT.h158Content56_rate :
+  Filter.Tendsto (fun n => OddZetaPNT.h158Content56 n / ↑n ^ 2) Filter.atTop (nhds (3 / 2))
+'OddZetaPNT.h158Content56_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
