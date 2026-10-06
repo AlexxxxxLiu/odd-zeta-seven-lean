@@ -1,0 +1,375 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=28mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\usepackage{microtype}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\R}{\mathbb R}
+\newcommand{\F}{\mathbb F}
+\newcommand{\code}[1]{\texttt{\small\detokenize{#1}}}
+\newcommand{\rising}[2]{(#1)_{#2}}
+\DeclareMathOperator{\cont}{cont}
+\title{At Least One of $\zeta(7),\zeta(9),\ldots,\zeta(19)$ Is Irrational\\[5pt]
+\large A Growing-Determinant Proof with Lean Certification}
+\author{Jingwei Liu\\\small The University of Western Australia}
+\date{Version 1\quad\textbar\quad 6 October 2026}
+\hypersetup{pdftitle={At Least One of zeta(7), zeta(9), ..., zeta(19) Is Irrational},pdfauthor={Jingwei Liu},pdfsubject={Number theory; irrationality; Lean formalization}}
+\begin{document}
+\maketitle
+\begin{abstract}
+We prove that at least one of the seven odd zeta values from
+$\zeta(7)$ through $\zeta(19)$ is irrational.
+A higher-derivative rational kernel gives a sequence of
+$2n\times2n$ matrices whose entries are affine rational combinations of
+these values. Primitive normalization converts their determinants into
+integer polynomials of degree at most $2n$. We establish the global estimate
+$|\det H_n/c_n|\leq \exp(-n^2/2)$ for all sufficiently large $n$.
+A reduction at primes $55n+1$ proves nonvanishing under the joint-rationality
+assumption, completing the integer contradiction. The proof is formalized
+in Lean using Mathlib's Riemann zeta function. This article gives the
+construction, the quantitative assembly, and the correspondence with the
+complete machine-checked proof distributed with this version.
+\end{abstract}
+\noindent\textbf{Keywords.} Odd zeta values; irrationality; hypergeometric
+forms; determinants; formal verification.\\
+\textbf{Mathematics Subject Classification.} 11J72, 11M06, 68V15.
+
+\section{The seven-value theorem}
+For integers $s>1$, write $\zeta(s)=\sum_{k=1}^{\infty}k^{-s}$.
+Our main result is the following.
+\begin{theorem}\label{thm:main}
+At least one of $\zeta(7),\zeta(9),\zeta(11),\zeta(13),\zeta(15),
+\zeta(17),\zeta(19)$ is irrational.
+\end{theorem}
+The construction belongs to the higher-derivative hypergeometric framework
+developed by Zudilin~\cite{zudilin}. Public proof developments of
+Devincenzis~\cite{devincenzis} and CoolRmal~\cite{coolrmal} establish the
+eight-value result ending at $\zeta(21)$. Theorem~\ref{thm:main} shortens
+that list by one value.
+
+The determinant, rather than an individual linear form, is the decisive
+object here. Its size grows with $n$, so both the analytic estimate and
+the arithmetic cost occur on the $n^2$ scale. Under joint rationality,
+clearing the seven fixed denominators costs only $Q^{2n}$. The resulting
+quadratic-exponential decay contradicts nonzero integrality.
+
+We use the $158$-centered staircase kernel described below. This parameter
+family and related local denominator refinements occur in the development
+notes associated with~\cite{devincenzis}. The contribution of the present
+proof is the growing-determinant construction and its completed arithmetic,
+analytic, and nonvanishing estimates for the seven-value list. The attached
+Lean development supplies the detailed proofs of the estimates used in
+Sections~\ref{sec:rates} and~\ref{sec:gate}; Section~\ref{sec:formal}
+identifies their exact declarations.
+
+\section{The rational kernel and matrix}
+For $m\geq0$, let $\rising{x}{m}=\prod_{j=0}^{m-1}(x+j)$. Define
+\begin{align}
+\kappa_n&=2\frac{\prod_{b=0}^{15}((52-2b)n)!}
+ {\prod_{a=0}^{4}((48+a)n)!^2},\label{eq:kappa}\\
+R_n(t)&=\kappa_n(t+79n+1)
+ \frac{\displaystyle\prod_{a=0}^{4}
+ \rising{t+1}{(48+a)n}\rising{t+158n+2-(48+a)n}{(48+a)n}}
+ {\displaystyle\prod_{b=0}^{15}
+ \rising{t+(53+b)n+1}{(52-2b)n+1}}.\label{eq:kernel}
+\end{align}
+Its degree at infinity is $-92n-15$. The numerator vanishes to order at
+least five at every $-k$ with $1\leq k\leq48n$, and the denominator is
+nonzero at those points.
+
+Use the even, integer-valued polynomial basis
+\begin{equation}\label{eq:basis}
+E_0(x)=1,\qquad
+E_i(x)=\frac{2x^2\prod_{j=1}^{i-1}(x^2-j^2)}{(2i)!}\quad(i\geq1).
+\end{equation}
+For $i\geq1$ the identity
+$E_i(x)=\binom{x+i}{2i}+\binom{x+i-1}{2i}$ proves integer-valuedness on
+$\Z$. Set $d=2n$ and, for $0\leq i,j<d$, put
+\begin{align}
+R_{n,i,j}(t)&=R_n(t)E_i(t+79n+1)E_j(t+79n+1),\\
+H_n(i,j)&=\frac1{4!}\sum_{v=0}^{\infty}R_{n,i,j}^{(4)}(v-48n).
+\label{eq:matrix}
+\end{align}
+Every entry kernel has degree at infinity at most $-84n-19$.
+The fourth-derivative series in~\eqref{eq:matrix} therefore converges
+absolutely. All its evaluation points lie strictly to the right of its poles.
+
+\subsection{The seven coordinates}
+Expand the entry kernel in its unique partial fractions,
+\begin{equation}\label{eq:pf}
+R_{n,i,j}(t)=\sum_k\sum_{\ell=1}^{m_{n,k}}
+ \frac{a_{n,i,j,k,\ell}}{(t+k)^\ell},\qquad m_{n,k}\leq16,
+\end{equation}
+with rational coefficients. The sums over $k$ are finite and supported
+between $53n+1$ and $105n+1$. Write
+$h_s(K)=\sum_{v=1}^{K}v^{-s}$. Termwise differentiation and summation give
+\begin{equation}\label{eq:entry-eval}
+H_n(i,j)=\sum_k\sum_{\ell=1}^{m_{n,k}}
+ a_{n,i,j,k,\ell}\binom{\ell+3}{4}
+ \bigl(\zeta(\ell+4)-h_{\ell+4}(k-48n-1)\bigr).
+\end{equation}
+The reflection $t\mapsto-t-158n-2$ makes the entry kernel odd. Pairing
+reflected poles cancels the even zeta coordinates. The degree at infinity
+is at most $-2$, which gives
+$\sum_k a_{n,i,j,k,1}=0$, cancelling the $\zeta(5)$ coordinate. Consequently
+\begin{equation}\label{eq:seven}
+H_n(i,j)=b_{n,i,j}+\sum_{r=0}^{6}b_{n,i,j,r}\zeta(7+2r),
+\qquad b_{n,i,j},b_{n,i,j,r}\in\Q.
+\end{equation}
+The constant in~\eqref{eq:seven} includes the entire harmonic correction
+in~\eqref{eq:entry-eval}.
+
+Let $\mathcal H_n(\mathbf X)$ denote the matrix obtained from
+\eqref{eq:seven} by replacing $\zeta(7+2r)$ with $X_r$, and set
+$D_n(\mathbf X)=\det\mathcal H_n(\mathbf X)$. This is a rational polynomial
+in seven variables of total degree at most $2n$. For
+$\mathbf z=(\zeta(7),\ldots,\zeta(19))$, the exact identity is
+\begin{equation}\label{eq:det-eval}
+D_n(\mathbf z)=\det H_n.
+\end{equation}
+
+\section{Primitive normalization and the global estimate}\label{sec:rates}
+When $D_n\ne0$, choose $c_n\in\Q^\times$ and
+$P_n\in\Z[X_0,\ldots,X_6]$ with content one such that
+\begin{equation}\label{eq:normalization}
+D_n=c_nP_n,\qquad \deg P_n\leq2n.
+\end{equation}
+For the zero polynomial use $c_n=1$ and $P_n=0$. Thus $c_n\ne0$ for every
+$n$, and
+\begin{equation}\label{eq:same-object}
+P_n(\mathbf z)=\frac{\det H_n}{c_n}
+\end{equation}
+holds for every index. Define the logarithmic arithmetic cost
+$C_n=-\log|c_n|$ and the constant
+\begin{equation}\label{eq:analytic-constant}
+A=\frac{8123483}{8000}-12+8\log4.
+\end{equation}
+
+\begin{proposition}[Certified arithmetic and analytic estimates]\label{prop:rates}
+For every $\epsilon>0$, the following inequalities hold for all sufficiently
+large $n$:
+\begin{align}
+C_n&\leq(1012+\epsilon)n^2&&\text{if }D_n\ne0,\label{eq:arith}\\
+|\det H_n|&\leq\exp\bigl((-A+2+\epsilon)n^2\bigr).
+&&\label{eq:analytic}
+\end{align}
+Moreover $A>1014+\tfrac12$.
+\end{proposition}
+
+The arithmetic estimate uses the prime-by-prime Gauss valuations of the
+same polynomial $D_n$. Its three certified contributions have upper
+quadratic rates $74$, $433$, and $505$, which sum to $1012$. The assembly
+retains exceptional primes and endpoint corrections. The passage from
+prime sums to rates uses the bundled formal proof of the prime number theorem.
+
+For the analytic estimate, a change to a scaled monic even basis preserves
+the determinant up to its explicit leading-coefficient normalization.
+Bounds on modulus moments give a product estimate over the $2n$ rows.
+The compact phase bounds, the infinite tails, and finite-index drift are
+included in that estimate. A uniform allowance of one per row contributes
+the $+2$ on the quadratic scale. The determinant's factorial prefactor and
+polynomial prefactors contribute $o(n^2)$; the exact basis normalization
+contributes the remaining terms in~\eqref{eq:analytic-constant}.
+
+These statements are proved by the declarations
+\code{h158ArithmeticCertifiedRate} and
+\code{h158AnalyticCertifiedRate}. Their source dependencies contain the
+finite rational certificates and their all-index assembly. The numerical
+constant comparison is the theorem
+\code{h158ConservativeBudget_slack_gap}.
+
+\begin{theorem}[Global determinant estimate]\label{thm:global}
+For all sufficiently large integers $n$,
+\begin{equation}\label{eq:global}
+\left|\frac{\det H_n}{c_n}\right|
+ =|P_n(\mathbf z)|\leq e^{-n^2/2}.
+\end{equation}
+\end{theorem}
+\begin{proof}
+If $D_n=0$, identity~\eqref{eq:det-eval} makes the left-hand side zero.
+Otherwise apply Proposition~\ref{prop:rates} with
+$\epsilon=(A-1014-\tfrac12)/3>0$. Since $|c_n|^{-1}=e^{C_n}$,
+\[
+\left|\frac{\det H_n}{c_n}\right|
+\leq\exp\bigl((1014-A+2\epsilon)n^2\bigr)
+\leq\exp(-n^2/2).
+\]
+Equation~\eqref{eq:same-object} supplies the polynomial formulation.
+\end{proof}
+
+\section{Nonvanishing at auxiliary primes}\label{sec:gate}
+The next argument supplies nonvanishing for rational specializations,
+precisely as needed in the proof by contradiction.
+\begin{proposition}[Auxiliary-prime nonvanishing]\label{prop:gate}
+Let $p=55n+1$ be prime, and let $\mathbf x\in\Q^7$ have coordinates
+integral at $p$. Then
+\[
+D_n(\mathbf x)\ne0,\qquad v_p(D_n(\mathbf x))=-4n.
+\]
+\end{proposition}
+The entrywise local computation proves that $p^2\mathcal H_n(\mathbf x)$
+is integral at $p$ and that its reduction satisfies
+\begin{equation}\label{eq:gate-reduction}
+\overline{p^2\mathcal H_n(\mathbf x)}=V_nW_nV_n^{\mathsf T}
+\quad\text{over }\F_p,
+\end{equation}
+where $W_n$ is diagonal with every diagonal entry nonzero. The entries of
+$V_n$ are the reductions of $E_i(u_j)$ at
+\[
+u_j=24n+1+j,\qquad 0\leq j<2n.
+\]
+The complete local reduction is established in
+\code{H158GateAssembly.lean}; its weights are defined there from the
+Laurent coefficients of the concrete kernel~\eqref{eq:kernel}.
+
+To see why this reduction proves the proposition, observe that
+$0<u_j<p$ and $u_j+u_k<p$. Hence the squares $u_j^2$ are pairwise distinct
+modulo $p$. Each $E_i(u)$ is a degree-$i$ polynomial in $u^2$ with nonzero
+leading coefficient modulo $p$, because $2i<p$. Thus $V_n$ is an
+invertible change of basis of a Vandermonde matrix. Taking determinants
+in~\eqref{eq:gate-reduction} shows that $p^2\mathcal H_n(\mathbf x)$
+has unit determinant in the local ring. As its size is $2n$,
+\[
+0=v_p\!\left(\det(p^2\mathcal H_n(\mathbf x))\right)
+ =4n+v_p(D_n(\mathbf x)),
+\]
+which proves both assertions.
+
+\section{Proof of Theorem~\ref{thm:main}}
+Suppose that all seven coordinates of $\mathbf z$ are rational. Choose a
+positive integer $Q$ such that $Qz_r\in\Z$ for every $0\leq r\leq6$.
+By the degree bound in~\eqref{eq:normalization},
+\begin{equation}\label{eq:integer}
+I_n=Q^{2n}P_n(\mathbf z)\in\Z
+\end{equation}
+for every $n$. This follows monomial by monomial: a monomial of degree
+$k\leq2n$ acquires an integral coefficient after multiplication by
+$Q^{2n}$.
+
+Dirichlet's theorem on primes in arithmetic progressions gives infinitely
+many primes $p\equiv1\pmod{55}$. Omitting the finitely many prime divisors
+of $Q$ leaves an unbounded set of indices $n$ with $p=55n+1$ prime and
+$p\nmid Q$. At each such index the coordinates of $\mathbf z$ are integral
+at $p$, and Proposition~\ref{prop:gate} gives $D_n(\mathbf z)\ne0$.
+Equations~\eqref{eq:normalization} and~\eqref{eq:integer} therefore give
+$I_n\ne0$.
+
+On this same unbounded set, Theorem~\ref{thm:global} implies
+\[
+0<|I_n|\leq\exp\bigl(2n\log Q-n^2/2\bigr)<1
+\]
+for all sufficiently large $n$. This is impossible for an integer.
+Theorem~\ref{thm:main} follows.\hfill$\square$
+
+\section{Lean certification and reproducibility}\label{sec:formal}
+The final declaration is
+\begin{quote}\small
+\code{OddZetaMixed.exists_irrational_riemannZeta_seven_to_nineteen}.
+\end{quote}
+It asserts the existence of an exponent in $\{7,9,11,13,15,17,19\}$ for
+which the real part of Mathlib's \code{riemannZeta} is irrational. At these
+real arguments the complex Riemann zeta function equals its real Dirichlet
+series. The declaration has no additional mathematical hypotheses. Its
+transitive axiom dependencies are \code{propext}, \code{Classical.choice},
+and \code{Quot.sound}.
+
+\begin{center}\small
+\begin{tabular}{@{}p{0.28\textwidth}p{0.65\textwidth}@{}}
+\toprule
+Proof component & Source in \code{OddZetaMixed/}\\
+\midrule
+Kernel and basis & \code{H158Kernel.lean}, \code{EvenBasis.lean}, \code{KernelBasis.lean}\\[3pt]
+Convergent matrix entries & \code{H158Functional.lean}\\[3pt]
+Seven-coordinate identity & \code{H158SevenIdentity.lean}\\[3pt]
+Primitive normalization & \code{H158Normalization.lean}\\[3pt]
+Arithmetic rate & \code{H158ArithmeticCertified.lean}\\[3pt]
+Analytic rate & \code{H158AnalyticCertified.lean}\\[3pt]
+Auxiliary-prime reduction & \code{H158GateAssembly.lean}, \code{GateVandermonde.lean}\\[3pt]
+Global bound and theorem & \code{H158SevenIrrational.lean}\\
+\bottomrule
+\end{tabular}
+\end{center}
+The accepted source replay recorded on 6 October 2026 passed all 300 checks,
+rebuilt 256 project modules, and recorded hashes for 326 proof, configuration,
+and verifier inputs. The bundled prime-number-theorem replay rebuilt 22
+dependency modules and two audit files and checked 72 targets. These
+receipts accompany the source in \code{audit/2026-10-06/}.
+
+The pinned toolchain is Lean \code{v4.34.0-rc2}, with Mathlib revision
+\begin{center}\small\texttt{dc4b8d60d5edb3c493c3662126b1b7ccae7d67cf}.\end{center}
+The prime number theorem dependency is selected from the repository
+\begin{center}\small\texttt{AlexKontorovich/PrimeNumberTheoremAnd},\end{center}
+at revision
+\begin{center}\small\texttt{c39a751132c88b6e8080b74c74023fd95b3d8be0}.\end{center}
+The repository records the source selection and compatibility transformations.
+The verifier recompiles project and bundled dependency sources while reusing
+the pinned foundational library artifacts.
+
+From a checkout with the stated toolchain, run:
+\begin{quote}\ttfamily\small
+lake exe cache get\\
+python3 tools/check\_snapshot.py\\
+python3 -m unittest test\_verify\\
+python3 verify.py
+\end{quote}
+The snapshot check establishes byte identity with the recorded proof inputs;
+the full verifier performs the Lean source replay. The formal proof and
+certificate data are part of this version's research artifact.
+
+\clearpage
+\section*{Availability and acknowledgments}
+The manuscript source, Lean development, dependency provenance, and audit
+receipts are distributed at
+\url{https://github.com/AlexxxxxLiu/odd-zeta-seven-lean}.
+This version is identified by the release tag \code{v1.0.0} and its
+accompanying SHA-256 inventory.
+The archival DOI is \href{https://doi.org/10.5281/zenodo.23191331}
+{10.5281/zenodo.23191331}. The manuscript is licensed under CC BY 4.0;
+original code is licensed under Apache-2.0, with upstream notices retained.
+
+The author acknowledges the higher-derivative constructions of Zudilin,
+the public developments of Devincenzis and CoolRmal, and the Lean, Mathlib,
+PrimeNumberTheoremAnd, and LeanArchitect projects. OpenAI Codex assisted
+with mathematical exploration, implementation, verification, and preparation
+of the manuscript. Authorship and responsibility for this work rest with
+Jingwei Liu.
+
+\begin{thebibliography}{9}
+\bibitem{zudilin}
+Wadim Zudilin, \emph{Arithmetic of linear forms involving odd zeta values},
+Journal de Th\'eorie des Nombres de Bordeaux \textbf{16} (2004), no.~1.
+\url{https://arxiv.org/abs/math/0206176}.
+
+\bibitem{devincenzis}
+Gennaro Marco Devincenzis, \emph{At least one of
+$\zeta(7),\zeta(9),\ldots,\zeta(21)$ is irrational}, public proof and
+Lean development, September 2026.
+\url{https://github.com/gmDevi/zeta-7-21-lean}.
+Palomar record \code{PALOMAR-2026-09-30-000007}, version 1.
+
+\bibitem{coolrmal}
+CoolRmal, \emph{Irrationality of at least one of
+$\zeta(7),\ldots,\zeta(21)$ and of at least one of
+$\zeta(9),\ldots,\zeta(33)$: A complete proof via Zudilin's
+higher-derivative construction}, public proof manuscript dated
+28 September 2026, with Lean development.
+\url{https://github.com/CoolRmal/odd-zeta-irrationality}.
+
+\bibitem{pnt}
+PrimeNumberTheoremAnd contributors, \emph{PrimeNumberTheoremAnd},
+Lean formalization.
+\url{https://github.com/AlexKontorovich/PrimeNumberTheoremAnd}.
+
+\bibitem{mathlib}
+The Mathlib Community, \emph{Mathlib 4}, Lean mathematics library.
+\url{https://github.com/leanprover-community/mathlib4}.
+\end{thebibliography}
+\end{document}

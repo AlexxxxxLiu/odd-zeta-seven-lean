@@ -1,4 +1,4 @@
-# Seven odd zeta values: a Lean formalization
+# At least one of zeta(7), zeta(9), ..., zeta(19) is irrational
 
 **Jingwei Liu**
 
@@ -8,9 +8,18 @@ the following statement:
 > At least one of zeta(7), zeta(9), zeta(11), zeta(13), zeta(15), zeta(17),
 > and zeta(19) is irrational.
 
-The conclusion is existential: it does not identify which of the seven
-values is irrational, and does not establish the irrationality of zeta(7)
-individually. The repository is limited to this result and its formalization.
+Version 1 accompanies the proof by Jingwei Liu. It combines a growing
+determinant of higher-derivative zeta forms, primitive integer-polynomial
+normalization, a global quadratic-exponential estimate, and nonvanishing
+at auxiliary primes. The seven-value list strengthens the previously
+published eight-value list ending at zeta(21).
+
+Read the [manuscript](paper/seven-odd-zeta-values-v1.pdf), the
+[proof overview](RESULT.md), and the [attribution](NOTICE.md).
+
+**Version:** [v1.0.0](https://github.com/AlexxxxxLiu/odd-zeta-seven-lean/releases/tag/v1.0.0),
+6 October 2026. **Archive DOI:** [10.5281/zenodo.23191331](https://doi.org/10.5281/zenodo.23191331).
+Citation metadata is provided in [CITATION.cff](CITATION.cff).
 
 ## The theorem
 
@@ -30,7 +39,7 @@ mathematical hypotheses. The same file proves the eventual global bound
 abs(det(h158Functional n) / h158PrimitiveScalar n) <= exp(-n^2 / 2).
 ```
 
-See [RESULT.md](RESULT.md) for the scope and proof outline, and
+See [RESULT.md](RESULT.md) for the proof outline, and
 [`H158UnconditionalAcceptanceCheck.lean`](H158UnconditionalAcceptanceCheck.lean)
 for the closed acceptance statements.
 
@@ -105,6 +114,7 @@ JSON files as mathematical oracles.
 
 ## Attribution
 
-See [NOTICE.md](NOTICE.md). Upstream sources retain their original notices
-and licenses. This private snapshot does not introduce a new blanket license
-for the original project files.
+See [NOTICE.md](NOTICE.md). The manuscript and accompanying original prose
+are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Original code is licensed under [Apache-2.0](LICENSE). Upstream sources
+retain their original notices and licenses.

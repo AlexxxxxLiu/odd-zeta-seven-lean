@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Please cite the archived v1 manuscript and its accompanying Lean proof."
+type: software
+title: "At Least One of zeta(7), zeta(9), ..., zeta(19) Is Irrational: A Growing-Determinant Proof with Lean Certification"
+authors:
+  - family-names: Liu
+    given-names: Jingwei
+    affiliation: The University of Western Australia
+version: v1.0.0
+date-released: 2026-10-06
+doi: 10.5281/zenodo.23191331
+url: https://doi.org/10.5281/zenodo.23191331
+repository-code: https://github.com/AlexxxxxLiu/odd-zeta-seven-lean
+license: Apache-2.0
+preferred-citation:
+  type: report
+  title: "At Least One of zeta(7), zeta(9), ..., zeta(19) Is Irrational: A Growing-Determinant Proof with Lean Certification"
+  authors:
+    - family-names: Liu
+      given-names: Jingwei
+      affiliation: The University of Western Australia
+  year: 2026
+  month: 10
+  day: 6
+  version: v1.0.0
+  doi: 10.5281/zenodo.23191331
+  publisher:
+    name: Zenodo
+  url: https://doi.org/10.5281/zenodo.23191331
+  license: CC-BY-4.0

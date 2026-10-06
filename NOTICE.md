@@ -34,5 +34,13 @@ The audit directory records a fresh source replay of this selected snapshot.
 The seven-value theorem and its project proof files are unchanged by the
 publication source selection.
 
-No new license is assigned to original project material in this private
-snapshot. The pre-existing licenses of third-party material remain in force.
+Copyright (c) 2026 Jingwei Liu.
+
+Original Lean code, verification programs, and source-generation scripts
+are licensed under the Apache License, Version 2.0 (see `LICENSE`). The
+manuscript, its TeX source, and accompanying original prose are licensed
+under Creative Commons Attribution 4.0 International:
+https://creativecommons.org/licenses/by/4.0/.
+
+Third-party material retains its pre-existing licenses and notices. The
+bundled license and provenance files identify that material individually.
